@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\pagestyle{empty}
+
+\setlength{\topmargin}{-.75in}
+\setlength{\textheight}{9.2in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.25in}
+\setlength{\textwidth}{6.75in}
+\setlength{\parskip}{4pt}
+
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\documentclass{amsart}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{breqn}
+\setlength{\textfloatsep}{5pt}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{dis}[thm]{Discussion}
+\newtheorem{rem}[thm]{remark}
+\newcounter{casecount}
+\setcounter{casecount}{0}
+\newenvironment{case}{\refstepcounter{casecount}\textbf{Case \arabic{casecount}:}}{}
+
+\usepackage{etoolbox}
+\AtBeginEnvironment{proof}{\setcounter{casecount}{0}}
+\newtheorem{remark}[thm]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\R}{\mathbb{R}}  % The real numbers.
+\newcommand{\Q}{\mathbb{Q}}  % The rational numbers.
+\newcommand{\C}{\mathbb{C}}  % The rational numbers.
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\D}{\mathcal{O}_K}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\B}{\mathfrak{B}}
+\DeclareMathOperator{\dist}{dist} % The distance.
+
+\def\Out{\mathrm{Out}}
+\begin{document}
+
+\begin{center}
+{\sf\LARGE Class February 23}
+\end{center}
+
+\begin{enumerate} %I will number each of the proofs that I perform using this.
+
+\item Direct Products and Finite Abelian Groups
+\begin{definition}
+$G$ always denotes a group. G is the inner direct product of the subgroups $A, B \leq G$ if i) $A \vartriangleleft G$, $B \vartriangleleft G$ ii) $A \cap B = \{e\}$ iii) $G = AB$. The notation for direction products is $G = A \times B$.
+\end{definition}
+\begin{lem}
+Assume $G = A \times B$. \\
+(a) $A$ and $B$ commute element-wise i.e. $ab = ba$ $\forall a \in A, b \in B$.\\
+(b) if $A$ and $B$ are abelian, then so is $G$.
+\end{lem}
+\begin{proof}
+(a) Consider the commutators $[a, b] := (aba^{-1})b^{-1} = a(ba^{-1}b^{-1}) \in A \cap B = \{e\}$\\
+$\implies aba^{-1}b^{-1} = e \implies ab = ba$ $\forall a \in A, b \in B$\\
+(b) $g_1, g_2 \in G \implies \exists a_1, a_2 \in A, b_1, b_2 \in B$ s.t. $g_1 = a_{1}b_{1}$ and $g_2 = a_{2}b_{2} \implies g_{1}g_{2} = a_{1}b_{1}a_{2}b_{2} = a_{1}a_{2}b_{1}b_{2}$ and because $A, B$ are abelian, this equals $a_{2}(a_{1}b_{2})b_{1} = a_{2}b_{2}a_{1}b_{1} = g_{2}g_{1}$
+\end{proof}
+\begin{example}
+(a) $V = <(12)(34)> \times <(13)(24)> \cong \Z_2 \times \Z_2 $\\
+(b) $U(8) = \{[1], [3], [5], [7]\} = <[3]> \times <[5]> \cong \Z_2 \times \Z_2$.\\
+(c) $\Z_6 = <[3]> \cong \Z_3 \times <[2]> \cong \Z_2$\\
+(d) $D_6 = \{b^{i}, ab^{i} \shortmid 0 \leq i \leq 5 \}$ such that $a^{2} = b^{6} = e$, $aba^{-1} = aba = b^{-1}$. Therefore, $D_6 \cong <b^{3}> \times \{e, b^{2}, b^{4}, a, ab^{2}, ab^{4}\}$ $\implies D_6 \cong \Z_2 \times D_3$\\
+(e) By contrast, neither $D_4$ nor $Q_8$ can be written as direct products of two proper subgroups (Exercise).\\
+(f) Trivially, $\forall G, G = G \times \{e\}$
+\end{example}
+\begin{lem}
+If $|G| = p^{2}$, $p$ is prime, then either $G$ is cyclic or $G = A \times B (\cong \Z_p \times \Z_p)$ with subgroups $A$ and $B$ of order $p$.
+\end{lem}
+\end{enumerate}
+
+\begin{center}
+{\sf\LARGE Class February 26}
+\end{center}
+
+\end{document}

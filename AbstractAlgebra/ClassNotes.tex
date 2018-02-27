@@ -26,7 +26,7 @@
 \newtheorem{definition}[thm]{Definition}
 \newtheorem{example}[thm]{Example}
 \newtheorem{dis}[thm]{Discussion}
-\newtheorem{rem}[thm]{remark}
+\newtheorem{rem}[thm]{Remark}
 \newcounter{casecount}
 \setcounter{casecount}{0}
 \newenvironment{case}{\refstepcounter{casecount}\textbf{Case \arabic{casecount}:}}{}
@@ -78,10 +78,43 @@ $\implies aba^{-1}b^{-1} = e \implies ab = ba$ $\forall a \in A, b \in B$\\
 \begin{lem}
 If $|G| = p^{2}$, $p$ is prime, then either $G$ is cyclic or $G = A \times B (\cong \Z_p \times \Z_p)$ with subgroups $A$ and $B$ of order $p$.
 \end{lem}
+\begin{proof}
+$G$ is a p-group so the center $Z(G)$ is nontrivial. Assume $Z(G) = p$ $\implies G/Z(G) \cong \Z_p$ $\implies G/Z(G)$ is cyclic and therefore $G$ is abelian. But this is a contradiction, because if $G$ is abelian, $|G| = |Z(G)|$ by definition.Therefore, we know that $G$ is abelian and $G = Z(G)$.\\
+Assume $G$ is not cyclic $\implies |g| = p$ $\forall g \in G \smallsetminus \{e\}$. Pick any $a \in G \smallsetminus \{e\}$ and set $A = <a> \leq G$ $\implies |a| = |A| = p$. Therefore, $|G \smallsetminus A| = p^{2} - p > 0$ $\implies G \smallsetminus A \neq \emptyset$. Pick $b \in G \smallsetminus A$ and set $B := <b> \leq G$ $\implies |b| = |B| = p$.\\
+Now, check (1) $A \vartriangleleft G, B \vartriangleleft G$ because $G$ is abelian. (2) $A \cap B = \{e\}$. If $e \neq x \in A \cap B$ $\implies |x| = p$ $\implies A = <x> = B \implies b \in A$ which is a contradiction. (3) $G = AB$. $AB = \frac{|A||B|}{|A \cap B|} = \frac{p*p}{1} = p^{2} = |G|$ $\implies G = AB$
+\end{proof}
 \end{enumerate}
 
 \begin{center}
 {\sf\LARGE Class February 26}
+\end{center}
+
+\begin{lem}
+If $G = A \times B$ with subgroups $A, B \leq G$, then $|ab| = lcm(|a|, |b|)$ if $a \in A, b\in B$
+\end{lem}
+\begin{rem}
+If $a, b \in G$ with $|a|, |b| < \infty$, then $|ab| \shortmid lcm(|a|, |b|)$ of $ab = ba$. If $ab \neq ba$, you cannot say anything about $|ab|$. If $ab = ba$, then $|ab| < lcm(|a|, |b|)$ is possible in general (e.g. $b = a^{-1}$). If $ab = ba$ and $gcd(|a|, |b|) = 1$, then $|ab| = |a||b| = lcm(|a|, |b|)$. This uses the fact that $<a> \cap <b> = \{e\}$.
+\end{rem}
+\begin{definition}
+The (outer) direct product of the groups $A, B$ is defined as $A \times B = \{(a,b) | a \in A, b \in B\}$ as set with a binary operation $\implies (a_1, b_1)(a_2, b_2) = (a_{1}a_{2}, b_{1}b_{2})$ $\forall a_{1}, a_{2} \in A$ and $\forall b_{1}, b_{2} \in B$.
+\end{definition}
+This yields a group since (i) $A \times B$ satisfies associativity since $A$ and $B$ do (ii) $e_{A \times B} = (e_A, e_B)$ and (iii) $(a, b)^{-1} = (a^{-1}, b^{-1})$ for $a \in A, b \in B$. \\
+Define $\iota_A : A \rightarrow A \times B$ which maps $a \rightarrow (a, e)$ and $\iota_B : B \rightarrow A \times B$ which maps $b \rightarrow (e, b)$. Then, $\iota_A, \iota_B$ are injective group homomorphisms.\\
+$A \cong \iota_{A}(A) =: A' = \{(a, e) | a \in A\} \leq A \times B$ and $B \cong \iota_{B}(B) =: B' = \{(e, b) | b \in B\} leq A \times B$.\\
+\begin{rem}
+Properties of subgroups $A', B'$ of $A \times B$:\\
+(1) $A', B' \vartriangleleft A \times B$, e.g. $(\widetilde{a}, b)(a, e)(\widetilde{a}^{-1}, b^{-1}) = (\widetilde{a}a\widetilde{a}^{-1}, beb^{-1}) = (\widetilde{a}a\widetilde{a}^{-1}, e) \in A'$\\
+(2) $A' \cap B' = \{(a, b) \in A \times B | b = e, a = e \} = \{(e, e)\}$.\\
+(3) $G = A'B' \implies$ given $(a, b) \in A \times B$, then $(a, b) = (a, e)(e, b)$\\
+The consequence is that the outer product equals the inner product such that $A \times B = A' \times B'$
+\end{rem}
+\begin{lem}
+Assume that $G = A \times B$ (inner; $A, B \leq G$) and that $A', B'$ are groups with $A' \cong A$ and $B' \cong B$. Then, $G \cong A' \times B'$ (outer).
+\end{lem}
+An application of this is that if $|G| = A \times B$ with $|A| = |B| = p$ $\implies G \cong \Z_p \times \Z_p$ (outer).
+
+\begin{center}
+{\sf\LARGE Class February 28}
 \end{center}
 
 \end{document}

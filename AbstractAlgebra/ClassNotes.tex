@@ -39,6 +39,7 @@
 \newcommand{\Q}{\mathbb{Q}}  % The rational numbers.
 \newcommand{\C}{\mathbb{C}}  % The rational numbers.
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}} %the natural numbers
 \newcommand{\D}{\mathcal{O}_K}
 \newcommand{\p}{\mathfrak{p}}
 \newcommand{\B}{\mathfrak{B}}
@@ -55,7 +56,7 @@
 
 \item Direct Products and Finite Abelian Groups
 \begin{definition}
-$G$ always denotes a group. G is the inner direct product of the subgroups $A, B \leq G$ if i) $A \vartriangleleft G$, $B \vartriangleleft G$ ii) $A \cap B = \{e\}$ iii) $G = AB$. The notation for direction products is $G = A \times B$.
+$G$ always denotes a group. G is the inner direct product of the subgroups $A, B \leq G$ if i) $A \vartriangleleft G$, $B \vartriangleleft G$ ii) $A \cap B = \{e\}$ iii) $G = AB$. The notation for direct products is $G = A \times B$.
 \end{definition}
 \begin{lem}
 Assume $G = A \times B$. \\
@@ -71,7 +72,7 @@ $\implies aba^{-1}b^{-1} = e \implies ab = ba$ $\forall a \in A, b \in B$\\
 (a) $V = <(12)(34)> \times <(13)(24)> \cong \Z_2 \times \Z_2 $\\
 (b) $U(8) = \{[1], [3], [5], [7]\} = <[3]> \times <[5]> \cong \Z_2 \times \Z_2$.\\
 (c) $\Z_6 = <[3]> \cong \Z_3 \times <[2]> \cong \Z_2$\\
-(d) $D_6 = \{b^{i}, ab^{i} \shortmid 0 \leq i \leq 5 \}$ such that $a^{2} = b^{6} = e$, $aba^{-1} = aba = b^{-1}$. Therefore, $D_6 \cong <b^{3}> \times \{e, b^{2}, b^{4}, a, ab^{2}, ab^{4}\}$ $\implies D_6 \cong \Z_2 \times D_3$\\
+(d) $D_6 = \{b^{i}, ab^{i} \mid 0 \leq i \leq 5 \}$ such that $a^{2} = b^{6} = e$, $aba^{-1} = aba = b^{-1}$. Therefore, $D_6 \cong <b^{3}> \times \{e, b^{2}, b^{4}, a, ab^{2}, ab^{4}\}$ $\implies D_6 \cong \Z_2 \times D_3$\\
 (e) By contrast, neither $D_4$ nor $Q_8$ can be written as direct products of two proper subgroups (Exercise).\\
 (f) Trivially, $\forall G, G = G \times \{e\}$
 \end{example}
@@ -89,11 +90,8 @@ Now, check (1) $A \vartriangleleft G, B \vartriangleleft G$ because $G$ is abeli
 {\sf\LARGE Class February 26}
 \end{center}
 
-\begin{lem}
-If $G = A \times B$ with subgroups $A, B \leq G$, then $|ab| = lcm(|a|, |b|)$ if $a \in A, b\in B$
-\end{lem}
 \begin{rem}
-If $a, b \in G$ with $|a|, |b| < \infty$, then $|ab| \shortmid lcm(|a|, |b|)$ of $ab = ba$. If $ab \neq ba$, you cannot say anything about $|ab|$. If $ab = ba$, then $|ab| < lcm(|a|, |b|)$ is possible in general (e.g. $b = a^{-1}$). If $ab = ba$ and $gcd(|a|, |b|) = 1$, then $|ab| = |a||b| = lcm(|a|, |b|)$. This uses the fact that $<a> \cap <b> = \{e\}$.
+If $a, b \in G$ with $|a|, |b| < \infty$, then $|ab| \mid lcm(|a|, |b|)$ of $ab = ba$. If $ab \neq ba$, you cannot say anything about $|ab|$. If $ab = ba$, then $|ab| < lcm(|a|, |b|)$ is possible in general (e.g. $b = a^{-1}$). If $ab = ba$ and $gcd(|a|, |b|) = 1$, then $|ab| = |a||b| = lcm(|a|, |b|)$. This uses the fact that $<a> \cap <b> = \{e\}$.
 \end{rem}
 \begin{definition}
 The (outer) direct product of the groups $A, B$ is defined as $A \times B = \{(a,b) | a \in A, b \in B\}$ as set with a binary operation $\implies (a_1, b_1)(a_2, b_2) = (a_{1}a_{2}, b_{1}b_{2})$ $\forall a_{1}, a_{2} \in A$ and $\forall b_{1}, b_{2} \in B$.
@@ -117,4 +115,98 @@ An application of this is that if $|G| = A \times B$ with $|A| = |B| = p$ $\impl
 {\sf\LARGE Class February 28}
 \end{center}
 
+\begin{lem}
+If $G = A \times B$ with subgroups $A, B \leq G$ and $a \in A, b \in B$ then $|ab| = lcm(|a|, |b|)$  ($= \infty$ if $|a| = \infty$ or $|b| = \infty$).
+\end{lem}
+\begin{proof}
+A previous lemma revealed that if $G = A \times B$, then $A$ and $B$ commute element-wise i.e. $ab = ba$ $\forall a \in A, b \in B$. This implies that $(ab)^{n} = ab*...*ab = a^{n}b^{n}$ $\forall n \in \N$ $\implies$ $(ab)^{n} = e \Leftrightarrow  a^{n}b^{n} = e \Leftrightarrow a^{n} = b^{-n} \in A \cap B = \{e\}$. $\therefore (ab)^{n} = e \Leftrightarrow a^n = e$ and $b^n = e$ $\implies$ if $|a| = \infty$ or $|b| = \infty$, then $a^{n} \neq e$ $\forall n \in N$ or $b^{n} \neq e$ $\forall n \in N$. Now, assume $k = |a| < \infty$ and $l = |b| < \infty$. $ab)^{n} = e$ $\Leftrightarrow a^n = e$ and $b^n = e$ $\Leftrightarrow k \mid n$ and $l \mid n$ $\Leftrightarrow lcm(k, l)$. Hence, $|ab| = min\{n \in \N \mid (ab)^{n} = e \} = lcm(k, l) = lcm(|a|, |b|)$
+\end{proof}
+\begin{rem}
+This is also true for the outer direct product $A \times B$, i.e. for $a \in A$ and $b \in B$, we get $|(a, e) * (e, b)| = |(a, b)| = lcm(|a|, |b|)$. This follows from the previous lemma and $A \times B = A' \times B'$ (outer direct product equals inner direct product). More remarks follow:
+\begin{enumerate}
+    \item $a_1, b_1) * (a_2, b_2) = (a_{1}a_{2}, b_{1}b_{2})$
+    \begin{example}
+    $\Z_4 \times \Q_8 \leadsto ([k], x)([l], y) = ([k + l], xy)$ Moreover, note that all subgroups of $\Z_4$ and all subgroups of $\Q_8$ are normal but $\Z_4 \times \Q_8$ has a non-normal subgroup.
+    \end{example}
+    \item $H \leq A, K \leq B$ $\implies H \times K = \{(h, k) \mid h \in H, k \in K\} \leq A \times B$. But not all subgroups of $A \times B$ need to be of this form.
+    \item $H \times K \vartriangleleft A \times B$ $\Leftrightarrow H \vartriangleleft A$ and $K \vartriangleleft B$ (check both directions with definitions).
+\end{enumerate}
+\end{rem}
+\begin{lem}
+$A, B \leq G$, $G = A \times B$ and $A' \cong A, B' \cong B$. Then, $G \cong A' \times B'$ (outer direct product)
+\end{lem}
+\begin{proof}
+$A' \cong A$ means $\exists$ isomorphism $\varphi_A : A' \rightarrow A$, $B' \cong B$ means $\exists$ isomorphism $\varphi_B : B' \rightarrow B$. Therefore, define a map $\varphi: A' \times B' \rightarrow G$ which maps $(a', b') \rightarrow \varphi_{A}(a')\varphi_{B}(b')$\\
+NTS that $\varphi$ is in fact an isomorphism:\\
+To show that $\varphi$ is a group homomorphism: $\varphi((a'_{1}, b'_{1})(a'_{2},b'_{2})) = \varphi((a'_{1}a'_{2},b'_{1}b'_{2})) = \varphi_{A}(a'_{1}b'_{2})\varphi_{B}(b'_{1}b'_{2}) = \varphi_{A}(a'_{1})\varphi_{A}(a'_{2})\varphi_{B}(b'_{1})\varphi_{B}(b'_{2}) = \varphi_{A}(a'_{1})\varphi_{B}(b'_{1})\varphi_{A}(a'_{2})\varphi_{B}(b'_{2}) = \varphi((a'_{1},b'_{1})\varphi((a'_{2},b'_{2}) \leadsto$ group homomorphism.\\
+$\varphi$ is injective since $\varphi_{A}$ and $\varphi_{B}$ are injective; check $\ker(\varphi) = \{(e, e)\}$ (also use $A \cap B = \{e\}$). $\varphi_{A}(a')\varphi_{B}(b') = e \in G$ $\implies$ $\varphi_{A}(a') = e$ and $\varphi_{B}(b') = e$.\\
+$\varphi$ is surjective since $\varphi_{A}$ and $\varphi_{B}$ are surjective. Given $g = ab \in G$ ($a \in A, b \in B$), find preimages $a' \in A, b' \in B$ $\implies$ $\varphi((a', b')) = ab = g$.\\
+$ \therefore \varphi$ is an bijective homomorphism, or an isomorphism.
+\end{proof}
+\begin{prop}
+If $m , n \in \N$ with $gcd(m ,n) = 1$, then $\Z_{nm} \cong \Z_n \times \Z_m$
+\end{prop}
+\begin{proof}
+$\Z_{nm} = \{[k]_{nm} \mid 1 \leq k \leq nm \}$. Set $a := [m]_{nm}$, $A :=<a>$ $\implies$ $|a| = |A| = n$ and $b := [n]_{nm}$, $B := <b>$ $\implies$ $|b| = |B| = m$. Claim: $\Z_{nm} = A \times B$ (inner direct product). To show this, (1) $A, B \vartriangleleft \Z_{nm}$ because $\Z_{nm}$ is abelian (2) $x \in A \cap B$ $\implies$ $|x| \mid gcd(|A|, |B|) = gcd(n, m) = 1$ $\implies$ $x = [0]_{nm} = [nm]_{nm}$ (3) $|A + B| = \frac{|A|*|B|}{|A \cap B|} = \frac{n * m}{1} = nm = |\Z_{nm}|$ $\implies$ $A + B = \Z_{nm}$ ("Chinese Remainder Theorem"). $A \cong \Z_{n}$, $B \cong \Z_{m}$ $\implies$ $\Z_n \times \Z_m \cong \Z_{nm}$
+\end{proof}
+\begin{dis}
+Direct products with $> 2$ factors can be done in two ways:
+\begin{enumerate}
+    \item inductively: $A_1 \times ... \times A_n = (A_n \times ... \times A_{n-1}) \times A_n$
+    \item "inner": subgroups $A_1, ..., A_n \leq G$ such that (1) $A_i \vartriangleleft G$ $\forall i$ (2) $A_i \cap A_1 ... A_{i-1}A_{i+1}...A_n = \{e\}$ ($\implies$ $A_i \cap A_j = \{e\}$)
+    \item $G = A_{1}...A_{n}$
+\end{enumerate}
+\end{dis}
+\begin{example}
+$G = \Z_2 \times \Z_2$. $A_1 = <([1], [0])>$, $A_2 = <([0], [1])>$, $A_3 = <([1], [1])>$. $A_{i} \cap A_{j} = \{([0],[0])\}$ $\forall i \neq j$, but $G \neq A_1 \times A_2 \times A_3$ (must have $|G| = \prod\limits_{i=1}^n |A_i|$) if $G = A_1 \times...\times A_n$. "outer": Given groups $A_1,...,A_n$ $\leadsto$ $A_1 \times...\times A_n = \{(a_i)_{1 \leq i \leq n} \mid a_i \in A$ $\forall i \}$ with multiplication $(a_{i})(a_{i'}) := (a_{i}a_{i'})_{1 \leq i \leq n}$
+\end{example}
+\begin{rem}
+$G = A_1 \times...\times A_n$ (inner), then $A_{i} \cap A_{j} = \{e\}$ $\forall i \neq j$ $\implies$ $A_i$ and $A_j$ commute element-wise (using $A_{i}, A_{j} \vartriangleleft G$). Then it follows that (outer) $A_1 \times...\times A_n \cong G$ ($= A_{1} \times ... \times A_{n}$ (inner))
+\end{rem}
+
+\begin{center}
+{\sf\LARGE Class March 2}
+\end{center}
+
+\begin{prop}
+Let $G$ be a finite group with $|G| = \prod\limit_{i=1}^n p_{i}^{e_{i}}$ such that $p_1, ..., p_n$ are distinct primes. Pick $P \in Syl_{P}(G)$ $\forall i$. If $n_p = 1$ ($\Leftrightarrow$ $P \vartriangleleft G$) $\forall i$, then $G = P_1 \times...\times P_n$. Note that the assumption that $P_i \vartriangleleft G$ ($\Leftrightarrow n_{p_i} = 1$) applies in particular to finite abelian groups.
+\end{prop}
+\begin{proof}
+Verify (1)-(3) of an inner direct product (1) $P_i \vartriangleleft G$ $\forall i$ (Consequence: Any product of some of the $P_i$'s is a (normal) subgroup of $G$. We apply $|AB| = \frac{|A|*|B|}{|A \cap B|}$ $\forall A, B \leq G$ $\leadsto |P_{1}...P_{l}| = \prod\limits_{i=1}^l P_{i}^{n_{i}}$ $(l \leq k)$, $|P_1...P_{i-1}P_{i+1}...P_{k}| = \frac{|G|}{P_{i}^{n_i}} =: \hat{P_{i}}$ (2) $P_i \cap \hat{P_i} = \{e\}$ since $gcd(|P_{i}|, |\hat{P_i}|) = gcd(p_{i}^{n_i}, \frac{|G|}{P_{i}^{n_{i}}}) = 1$\\ (3) $|P_1...P_k| = \prod\limits_{i=1}^{k} P_{i}^{n_i}  |G|$ $\implies$ $P_{1}...P_{k} = G$
+\end{proof}
+\begin{rem}
+$G$ finite, $p$ prime, $p \mid |G|$ $\implies$ by the 2nd Sylow Theorem, any element of $p$-power order is contained in some Sylow $p$-subgroup of $G$. $x \in G$, $|x| = p^{i}$ $\implies$ $|<x>| = p^{i}$ $\implies$ $\exists P \in Syl_{P}(G) : x \in P$. If $n_{p} = 1$ i.e. $Syl_{P}(G) = \{P\}$, then $P = \{x \in G \mid |x| = p^{i}$ with $i \in \N_0$\} ($|e| = p^{0}$). ($\supseteq$ as remarked and $\subseteq$ because any element of the $p$-subgroup $P$ must have $p$-power order)
+\end{rem}
+\begin{cor}
+Two finite abelian groups $G$ and $G'$ are isomorphic $\Leftrightarrow$ they have isomorphic Sylow subgroups
+\end{cor}
+\begin{proof}
+($\implies$) $\exists$ isomorphism $\varphi: G \rightarrow G'$. $G = P_{1} \times...\times P_{k}$ and $G' = P_{1}' \times...\times P_{k}'$. $G \cong G'$ $\implies$ the same primes $p_1,...,p_k$ divide $|G|$ and $|G'|$. Note that since $\varphi$ is an isomorphism, $|x| = |\varphi(x)|$ $\forall x \in G$. $\{x \in G \mid |x|$ is a power of $p_i \} = P_i$ $\implies$ $\varphi(P_i) = \varphi(\{x \in G \mid |x|$ is a power of $p_i \}$) = $\{x' \in G \mid |x'|$ is a power of $p_i \}$ = $P_{i}'$. Consequence: By restriction, $\varphi$ induces an isomorphism between $P_i$ and $P_{i}'$ for any $1 \leq i \leq k$.\\
+($\Leftarrow$) $G = P_{i} \times...\times P_{k}$, $G' = P_{1}' \times...\times P_{k}'$. Assume $\exists$ isomorphisms $\varphi_i : P_{i} \rightarrow P_{i}'$ $\forall 1 \leq i \leq k$. Then, define $\varphi: G \rightarrow G'$ by $\varphi(x_{1},...,x_{k}) := \varphi_{1}(x_1)...\varphi_{k}(x_k)$ whenever $x_i \in P_i$ $\forall i$. Note the following (i) every $g \in G$ can be written in this way since $G = P_1...P_k$ (ii) if $x_1...x_k = y_1...y_k$ with $x_{i}y_{i} \in P_i$ $(1 \leq i \leq k)$ then $x_i = y_i$ $\forall i$ and also $P_i$ and $P_j$ commute $\forall i \neq j$ e.g. $y_1^{-1}x_{1} = y_{2}x_{2}^{-1}...y_{k}x_{k}^{-1} \in P_{1} \cap P_{2} \cap...\cap P_{k} = \{e\}$. Now check $\varphi$ is a group isomorphism (exercise).
+\end{proof}
+Consequence: The analysis of finite abelian groups reduces to the analysis of finite abelian $p$-groups.
+\begin{prop}
+If $G$ is a finite abelian $p$-group and $a \in G$ with $|a| = max\{|b| \mid b \in G\}$, then there exists a subgroup $H \leq G$ such that $G = <a> \times H$
+\end{prop}
+\begin{proof}
+Algebra: Pure and Applied by Aigli (page 124/125)
+\end{proof}
+\begin{cor}
+Induction on $|G|$, if $G$ is abelian, $|G| = p^n$, $p$ prime, then there exists $e_1,...,e_r \in \N$ such that $e_1 \geq ... \geq e_r \geq 1$, $e_1 +...+ e_r = n$ and $G \cong \Z_{p}e_1 \times...\times \Z_{p}e_r$
+\end{cor}
+\begin{prop}
+$G$ abelian, $|G| = p^{n}$, $p$ prime. Assume $G = \Z_{p}e_1 \times...\times \Z_{p}e_r$, $e_1 \geq ... \geq e_r \geq 1$, $\cong \Z_{p}e_{1}' \times...\times \Z_{p}e_{s}'$, $e_{1}' \geq ... \geq e_{s}' \geq 1$. Then $r = s$ and $e_{i} = e_{i}'$ $\forall$ $1 \leq i \leq r$
+\end{prop}
+\begin{proof}
+Proposition 3.4.13 on Page 127
+\end{proof}
+\begin{thm}
+Fundamental Theorem of Finite Abelian Groups. If $G$ is a finite abelian group, $|G| = \prod\limits_{i=1}^k p_{i}^{n_{i}}$ with distinct primes $p_1,...,p_k$, then there exist uniquely determined $r_i \in \N$; $e_{ij} \in \N$ $1 \leq j \leq r_{i}$, $e_{i1} \geq...\geq e_{ir_{i}}$ and $e_{i1}+...+e_{ir_{i}} = n_{i}$ such that $G \cong \Z_{p_{1}}e_{11} \times...\times \Z_{p_{1}}e_{1r_{1}} \times...\times \Z_{p_{k}}e_{kr_{i}}$.
+\end{thm}
+\begin{proof}
+Exercise that uses previously stated propositions and corollaries.
+\end{proof}
+\begin{example}
+Determine, up to isomorphism, all abelian groups of order 72. $72 = 2^{3} * 3^{2}$. Therefore, abelian groups of order $8$: $\Z_8$, $\Z_4 \times \Z_2$, $\Z_2 \times \Z_2 \times \Z_2$ $\mid 3$. Abelian groups of order 9: $\Z_9$, $\Z_3 \times \Z_3$ $\mid 2$. Abelian groups of order 72 $\implies$ there are $3*2 = 6$ (form all the combinations between abelian groups of order $8$ and $9$).
+\end{example}
 \end{document}

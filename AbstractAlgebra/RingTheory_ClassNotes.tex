@@ -99,4 +99,171 @@ Conventions regarding 1 (multiplicative unity):
     \end{enumerate}
     \end{example}
 \end{enumerate}
+
+\begin{center}
+{\sf\LARGE Class March 14}
+\end{center}
+
+\begin{remark}
+Units. $(R*=)$ $U(R) := \{a \in R \mid \exists$ $b \in R$ s.t. $ab = ba = 1 \}$
+
+\begin{enumerate}
+    \item There can only be one $b \in R$ with $ab = ba = 1$. In fact, if $ba = 1 = ab = ab'$ for some $b' \in R$ $\implies$ $(ba)b = (ba)b'$ $\implies$ $1b = 1b'$ $\implies$ $b = b'$. Notation: $a \in U(R)$ $ab = ba = 1$ $\leadsto$ $b = a^{-1}$ multiplicative inverse.
+    \item For non-commutative $R$, $ab = 1$ usually does not imply $ba = 1$. However, if $\exists c \in R$ with $ca = 1$, then $c = b$ and hence also $ba = 1$. This is seen by $c = c*1 = c(a*b) = (ca)b = 1*b = b$.
+    \item $U(R)$ is closed under multiplication and $(ab)^{-1}=b^{-1}a^{-1}$ for $ab \in U(R)$. Immediately checks that $(U(R),*)$ is a group.
+    \item $a, b \in R$ are called zero divisors if $a, b \neq 0$ but $ab = 0$. $U(R) \cap \{$zero divisors$\} = \emptyset$.
+\end{enumerate}
+\end{remark}
+
+\begin{example}
+\begin{enumerate}
+    \item $F$ field (or skew field) $\implies$ $U(F) = F \setminus \{0\} =: F*$
+    \item $U(\Z) = \{1, -1\}$. $\Z[i] = \{a+bi \mid a, b \in \Z\}$ $\implies$ $U(\Z[i]) = \{1, -1, i, -i\} = \{x \in \Z[i] \mid |x|=1\}$
+    \item $U(\Z_n) = \{[a] \in \Z_n \mid $ gcd$(a, n) = 1 \}$. Notation $U(\Z_n) = U(n)$.
+    \item $U(R \times S) = U(R) \times U(S)$ (direct product groups). $(a, b)$ $\implies$ $(a, b)^{-1} = (a^{-1},b^{-1})$.
+    \item $U(M(n, F)) = GL(n, F) = \{A \in M(n, F) \mid det(A) \neq 0\}$
+\end{enumerate}
+\end{example}
+
+\begin{remark}
+The Center (of a Ring). $Z(R) := \{z \in R \mid za = az$ $\forall$ $a \in R$. This is a subring of $R$:
+\begin{enumerate}
+    \item $1 \in Z(R)$ since $a*1 = 1*a = a$ $\forall$ $a \in R$
+    \item $z \in Z(R)$ $\implies$ $-z \in Z(R)$: $-z*a = -(za) = -(az) = a*(-z)$ $\forall$ $a \in R$.
+    \item $y, z \in Z(R)$ $\implies$ $y+z \in Z(R)$: $(y+z)a = ya + za = ay + az = a(y+z)$ $\forall a \in R$.
+    \item $y, z \in Z(R)$ $\implies$ $yz \in Z(R)$. $(yz)a = y(za) = y(az) = (ya)z = (ay)z = a(yz)$ $\forall$ $a \in R$.
+\end{enumerate}
+\end{remark}
+
+\begin{remark}
+Integral Multiples (of element of $R$). For $a \in R$, $n \in \Z$, we define $n*a := $ if $n > 0, a+...+a$, if $n = 0$, $0$ n-times and if $n < 0$, $(-a)+...+(-a)$ n-times.\\
+Note: $n > 0$: $a+...+a = 1_{R}a+...+1_{R}a$. $a(1_{R}+...+1_{R}) = (n*1_{R})a$. If $n < 0$, $n*a = (-a)+...+(-a) = ((-1_{R})+...+(-1_{R}))a = (n*1_{R})a$. Always, $n*a = (n*1_{R})a$ $\forall$ $a \in R$ $\forall$ $n \in \Z$.\\
+\end{remark}
+\begin{remark}
+More rules:\\
+\begin{enumerate}
+    \item $a \in Z(R)$ (e.g. $a = 1_{R}$), then $n*a \in Z(R)$ $\forall$ $n \in \Z$ since $Z(R)$ is a subring of $R$.
+    \item $(-n)*a = -(n*a)$ $\forall$ $n \in \Z$, $a \in R$
+    \item $1*a = a$ $\forall$ $a \in R$ by definition
+    \item $n*(a+b) = n*a + n*b$ $\forall$ $n \in \Z$ $\forall$ $a, b \in R$ (follows from $(R, +)$ is an abelian group).
+    \item $(n+m)*a = n*a + m*a$
+    \item $(nm)*(ab) = (n*a)(m*b)$ $\forall$ $n, m \in \Z$ $\forall$ $a, b \in R$.
+    \item $(nm)*a = n*(m*a)$ $\forall$ $n, m \in \Z$, $\forall$ $a \in R$.
+\end{enumerate}
+\end{remark}
+\begin{definition}
+For any ring $R$, there is a unique ring homomorphism $\varphi = \varphi_{R}: \Z \rightarrow R$ which maps $1 \rightarrow 1_{R}$. Must have $\varphi(1) = 1_{R}$.\\
+If $n \in \Z$, $n > 0$ then $\varphi(n) = \varphi(1+...+1) = \varphi(1)+...+\varphi(1) = 1_{R}+...+1_{R} = n*I_{R}$. $n \in \Z$, $n < 0$, then $\varphi(n) = -\varphi(-n) = -\varphi(1+...+1) = -(-n*1_{R}) = n*I_{R}$. Therefore, the only possible ring homomorphism is $\varphi_{R}: \Z \rightarrow R$ (which maps $n \rightarrow n*1_{R}$) $\ni \varphi(n) = n*1_{R}$ $\forall$ $n \in \Z$.\\
+Now, we check $\varphi: \Z \rightarrow R$ which maps $n \rightarrow n*I_{R}$ is in fact a ring homomorphism:
+\begin{enumerate}
+    \item $\varphi(1) = 1_{R}$ by definition
+    \item $\varphi(n+m) = (n+m)1_{R} = n*1_{R} + m*1_{R} = \varphi(n) + \varphi(m)$ $\forall$ $n, m \in \Z$.
+    \item $\varphi(n*m)=(nm)1_{R} = (nm)(1_{R}*1_{R}) = n1_{R} * m1_{R} = \varphi(n)\varphi(m)$ $\forall$ $n, m \in \Z$.
+\end{enumerate}
+Note: $\varphi$ ring hom $\implies$ $\varphi(\Z) = \{n*1_{R} \mid n \in \Z\}$ is a subring of $R$. Moreover, $\varphi(\Z) \subseteq Z(R)$ since $n*1_{R} \in Z(R)$ $\forall$ $n \in \Z$. The kernel of $\varphi_{R}$ is an ideal of $\Z$. Hence, $Kern(\varphi_{R}) = n\Z$ for a unique $n \in \N_0$.
+\end{definition}
+
+\begin{definition}
+The characteristic of $R$ is defined as $char(R) = n \in \N_0$ with $Kern(\varphi_{R}) = n\Z$. Alternatively, $char(R) = 0$ $\Leftrightarrow$ $m*1_{R} \neq 0$ $\forall$ $m > 0$. $char(R) = n > 0$ $\Leftrightarrow$ $n*1_{R} = 0$ and $m*1_{R} \neq 0$ $\forall$ $1 \leq m < n$.
+\end{definition}
+
+\begin{center}
+{\sf\LARGE Class March 16}
+\end{center}
+
+\begin{remark}
+Some review! For any given ring $R$ with 1, $\exists$ unique ring homomorphism $\varphi_{R}:\Z \rightarrow R$ which maps $m \rightarrow m*1_{R}$. It is important to note that $\varphi_{R}(\Z)$ is a subring of $R$, $\varphi_{R}(\Z) \subseteq Z(R)$, and $Kern(\varphi_{R})$ is an ideal of $\Z$ $\implies$ $\exists$ unique $n \in N_{0}$ with $Kern(\varphi_{R}) = n\Z$. (For notation purposes, $\N_0 = \N \cup \{0\}$)
+\end{remark}
+
+\begin{definition}
+If $Kern(\varphi_{R}) = n\Z$, $n \in \N_{0}$, then $n$ is called the characteristic of $R$, $char(R) = n$. An alternative characterization:
+\begin{enumerate}
+    \item $m*1_{R} \neq 0$ $\forall$ $m \in \N$ $\Leftrightarrow$ $char(R) = 0$
+    \item $n$ is the smallest natural number with $n*1_{R} = 0$ $\Leftrightarrow$ $char(R) = n$.
+\end{enumerate}
+\end{definition}
+
+\begin{example}
+\begin{enumerate}
+    \item $char(\Z) = 0$ ($\varphi_{\Z} = id_{Z}$) $\Q, \R, \C$ are all fiels of characteristic $0$ and $char(\Z[i]) = 0$
+    \item $char(\Z_{n}) = n$ $\forall$ $n \in \N$ and $\varphi_{\Z_{n}}:\Z \rightarrow \Z_{n}$ which maps $m \rightarrow [m]$
+    \item if $p$ is prime, then $\Z_{p}$ is a field of characteristic $p$.
+\end{enumerate}
+\end{example}
+
+\begin{remark}
+If $S$ is a subring of $R$, then $char(S) = char(R)$
+\end{remark}
+\begin{proof}
+$1_{S} = 1_{R}$ $\implies$ $\varphi_{S}(m) = \varphi_{R}(m) = m*1_{R}$ $\forall$ $m \in \Z$ $\implies$ $char(S) = char(R)$
+\end{proof}
+
+\begin{definition}
+Any ring $R$ has a unique smallest subring called the prime subring $R_{0}$ of $R$, namely $R_{0} = \varphi_{R}(\Z) = \{m*1_{R} \mid m \in \Z\}$ and any subring of $R$ must contain $1_{R}$ and hence $\{m*1_{R} \mid m \in \Z\} = R_{0}$
+\end{definition}
+
+\begin{thm}{1st Isomorphism Theorem for Rings:}
+If $\varphi:R \rightarrow S$ is a ring homomorphism, then $Kern(\varphi)$ is an ideal of $R$ and $R/Kern(\varphi) \cong \varphi(R) (\subseteq S)$.
+\end{thm}
+
+\begin{proof}
+On the level of abelian groups, the map $\hat{\varphi}: R/Kern(\varphi) \rightarrow \varphi(R)$ which maps $a+Kern(\varphi) \rightarrow \varphi(a)$. This map is a well-defined isomorphism (see 1.2.2). We want a ring homomorphism. Therefore, we have to check that $\hat{\varphi}$ is also multiplicative. $\hat{\varphi}((a+K)(b+K)) = \hat{\varphi}(ab + K) = \varphi(ab) = \varphi(a)\varphi(b) = \hat{\varphi}(a+K)\hat{\varphi}(b+K)$
+\end{proof}
+
+\begin{prop}
+$R$ ring with prime subring $R_{0}$. If $char(R) = 0$, then $R_{0} \cong \Z$. If $char(R) = n > 0$, then $R_{0} \cong \Z_{n}$
+\end{prop}
+
+\begin{proof}
+$\varphi_{R}: \Z \rightarrow R$ with $Kern(\varphi_{R}) = n\Z$ for $n  \in \N_{0}$, $n = char(R)$. $R_{0} := \varphi_{R}(\Z) = \Z/Kern(\varphi_{R}) = \Z/n\Z \cong $ $\Z$ if $n < 0$ and $\Z_{n}$ if $n \geq 0$
+\end{proof}
+
+\begin{remark}
+$R$ is an integral domain $\rightarrow$ By definition, $R$ is commutative (w/ $1 \neq 0$).
+\end{remark}
+
+\begin{cor}
+If $R$ is an integral domain, then either $char(R) = 0$ or $char(R)$ is a prime number.
+\end{cor}
+
+\begin{proof}
+$R_{0}$, as a subring of an integral domain must be an integral domain itself. But by the previous proposition, $R_{0} \cong \Z$ $\implies$ $char(R) = 0$ (integral domain) or $R_{0} \cong \Z_{n}$ with $char(R) = n$, but $\Z_{n}$ is an integral domain $\Leftrightarrow$ $n$ is prime (implies zero divisors). $a, b \in R$ are zero divisors $\Leftrightarrow$ $a \neq 0$ and $b \neq 0$ and $ab = 0$ $n = ml$, $1<m, l<n$ $\implies$ $[m], [l]$ are zero divisors in $\Z_{n}$ $\implies$ $[m][l] = [n] = [0]$.
+\end{proof}
+
+Ideals. $R$ ring with 1.
+\begin{definition}
+Repetition. A subset $I \subseteq R$ is called an ideal of $R$ of (1) $0 \in I$ (2) $a, b \in I$ $\implies$ $a + b \in I$ (3) $r \in R$, $a \in I$ $\implies$ $ra, ar \in I$.
+\end{definition}
+
+\begin{remark}
+$a \in I$ $\implies$ by (3) $(-1)a = -a \in I$. Hence, $(I, +)$ is a subgroup of the abelian group $(R, +)$. Notation: $I \vartriangleleft R$ means that $I$ is an ideal of $R$ $\leadsto$ quotient ring $R/I$ such that $+: (a+I) + (b+I) := (a+b) + I$ ($a, b \in R$) and $*: (a+I)*(b+I) := ab + I$. These operations are well-defined and yield a (quotient) ring $(R/I,+,*)$. $0_{R/I} = I = (0+I)$ and $1_{R/I} = 1 + I$.\\
+Why is $*$ well-defined? Assume $a+I = a'+I$, $b+I = b'+I$ $\implies$ $a' = a+x$ for some $x \in I$ and $b' = b+y$ for some $y \in I$. $a'b' = (a+x)(b+y) = ab + (ay + xb + xy)$ $\implies$, by $(ay + xb + xy) \in I$, $a'b' + I = ab + I$.
+\end{remark}
+
+\begin{lem}
+$\varphi: R \rightarrow S$ is a ring homomorphism.
+\begin{enumerate}
+    \item if $J \vartriangleleft S$, then $\varphi^{-1}(J) \vartriangleleft R$
+    \item if $I \vartriangleleft R$ and $\varphi$ is surjective, then $\varphi(I) \vartriangleleft S$
+\end{enumerate}
+\end{lem}
+
+\begin{remark}
+(2) is not true without surjectivity e.g. $\varphi: \Z \rightarrow \Q$ which maps $m \rightarrow m$ and $n\Z \vartriangleleft \Z$ but $n\Z \ntriangleleft \Q$ (unless $n = 0$.
+\end{remark}
+
+\begin{proof}
+Proof of (1).
+\begin{enumerate}
+    \item $0_{S} \in J \vartriangleleft S$ and $\varphi(0_{R}) = 0_{S}$ $\implies$ $0_{R} \in \varphi^{-1}(J)$
+    \item $a, b \in \varphi^{-1}(J)$ $\implies$ $\varphi(A), \varphi(B) \in J$ $\implies$ $\varphi(a+b) = varphi(a) + \varphi(b) \in J$ $\implies$ $a+b \in \varphi^{-1}(J)$
+    \item $a \in \varphi^{-1}(J)$, $r \in R$ $\implies$ $\varphi(a) \in J$ $\implies$ $varphi(ar) = \varphi(a)\varphi(r) \in J$, $\varphi(ra) = \varphi(r)\varphi(a) \in J$ $\implies$ $ar \in \varphi^{-1}(J)$ and $ra \in \varphi^{-1}(J)$
+\end{enumerate}
+\end{proof}
+
+\begin{remark}
+In particular, $Kern(\varphi) = \varphi^{-1}(\{0\})$ is an ideal of $R$.
+\end{remark}
+
+
 \end{document}

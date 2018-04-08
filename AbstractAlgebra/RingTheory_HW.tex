@@ -1,0 +1,365 @@
+\documentclass[11pt]{article}
+\pagestyle{empty}
+
+\setlength{\topmargin}{-.75in}
+\setlength{\textheight}{9.2in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.25in}
+\setlength{\textwidth}{6.75in}
+\setlength{\parskip}{4pt}
+
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{breqn}
+\usepackage{dsfont}
+\setlength{\textfloatsep}{5pt}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{dis}[thm]{Discussion}
+\newtheorem{rem}[thm]{Remark}
+\newcounter{casecount}
+\setcounter{casecount}{0}
+\newenvironment{case}{\refstepcounter{casecount}\textbf{Case \arabic{casecount}:}}{}
+
+\usepackage{etoolbox}
+\AtBeginEnvironment{proof}{\setcounter{casecount}{0}}
+\newtheorem{remark}[thm]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\R}{\mathbb{R}}  % The real numbers.
+\newcommand{\Q}{\mathbb{Q}}  % The rational numbers.
+\newcommand{\C}{\mathbb{C}}  % The rational numbers.
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}} %the natural numbers
+\newcommand{\D}{\mathcal{O}_K}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\B}{\mathfrak{B}}
+\DeclareMathOperator{\dist}{dist} % The distance.
+
+\def\Out{\mathrm{Out}}
+\begin{document}
+
+\begin{center}
+{\sf\LARGE Ring Theory Homeworks}
+\end{center}
+
+\begin{rem}
+Unless otherwise specified, we're working with commutative rings with unity $1$.
+\end{rem}
+
+\section{Homework 7}
+
+\begin{rem}
+Problems 1-4 are on group theory. Focus on Ring Theory for this exam (problems 5-8).
+\end{rem}
+
+\begin{prob}
+$S = \{$
+$\begin{bmatrix}
+a  &b\\
+-b &a\\
+\end{bmatrix}$
+$\mid a, b \in \R\}$. Verify that $S$ is a ring (with unity) and show that it is isomorphic to the field of complex numbers.
+\end{prob}
+
+I'll leave the first part as an exercise to the reader (\textit{to prove $S$ is a ring}). To do this, you would need to prove $S$ is an abelian group under addition while also maintaining closure under multiplication, multiplicative associativity, and distributivity.\\
+
+To show that $S$ is isomorphic to the field of complex numbers, we will show that the homomorphism $\varphi: a+bi \rightarrow $
+$\begin{bmatrix}
+a  &b\\
+-b &a\\
+\end{bmatrix}$
+is injective and surjective.\\
+For injectivity, we need to show that if $z_{1}, z_{2} \in \C$ and $\varphi(z_{1}) = \varphi(z_{2})$ $\implies$ $z_{1} = z_{2}$.\\ Assume $\varphi(a+bi) = $
+$\begin{bmatrix}
+a  &b\\
+-b &a\\
+\end{bmatrix}$
+$=$
+$\begin{bmatrix}
+a'  &b'\\
+-b' &a'\\
+\end{bmatrix}$
+$= \varphi(a' + b'i)$\\
+$\implies$
+$\begin{bmatrix}
+a-a'        &b-b'\\
+-b-(-b')    &a-a'\\
+\end{bmatrix}$
+$=$
+$\begin{bmatrix}
+0   &0\\
+0   &0\\
+\end{bmatrix}$\\
+$\implies$ $a = a'$ and $b = b'$ $\implies$ $a+bi = a' + b'i$ $\implies$ \textbf{injective}.\\
+For surjectivity, all the matrices are of the form
+$\begin{bmatrix}
+a   &b\\
+-b  &a\\
+\end{bmatrix}$
+ such that $a, b \in \R$ and the element $a+bi \in \C$ maps to it $\implies$ \textbf{surjective} because we can always find an $a+bi$ for every matrix in $S$\\
+ $\therefore$ $\varphi$ is an isomorphism.
+
+\begin{prob}
+Prove $\Q[\sqrt(3)]$ is a field.
+\end{prob}
+\begin{proof}To do this, I will prove that $\Q[\sqrt(3)]$ is a subfield of $\R$.\\
+For $a+b\sqrt(3), c+d\sqrt(3) \in \Q[\sqrt(3)]$, $(a+b\sqrt(3))+(c+d\sqrt(3)) = (a+c) + (b+d)\sqrt(3) \in \Q(\sqrt(3))$ $\implies$ closed under addition.\\
+$(a+b\sqrt(3))*(c+d\sqrt(3)) = (ac+3bd) + (ad+bc)\sqrt(3) \in \Q[\sqrt(3)]$ $\implies$ closed under multiplication.\\
+Suppose $a \neq 0$ and $b \neq 0$. Then, $\frac{1}{a+b\sqrt(3)} = \frac{a-b\sqrt(3)}{a^{2}-3b^{2}} = \frac{a}{a^{2}-3b^{2}} + (\frac{-b}{a^{2}-3b^{2}})\sqrt(3)$. Since $a^{2} - 3b^{2} \neq 0$ (because $\sqrt(3)$ is irrational), $\frac{a}{a^{2}-3b^{2}}, \frac{-b}{a^{2}-3b^{2}} \in \Q$ $\implies$ $\frac{1}{a+b\sqrt(3)} \in \Q[\sqrt(3)]$ $\implies$ existence of multiplicative inverses.\\
+$\therefore$ $\Q[\sqrt(3)]$ is a subfield of $\R$
+\end{proof}
+
+\begin{prob}
+Determine whether $I = \{$
+$\begin{bmatrix}
+0   &n\\
+0   &m\\
+\end{bmatrix}$
+$\mid n, m \in \Z\}$ is an ideal in $R = \{$
+$\begin{bmatrix}
+a   &b\\
+0   &c\\
+\end{bmatrix}$
+$\mid a, b, c \in \Z\}$.
+\end{prob}
+\begin{proof}
+To prove $I \vartriangleleft R$, we must prove product absorption such that given $x \in I$, $r \in R$ $\implies$ $rx = xr \in I$.\\
+For some $n, m, a, b, c \in \Z$, we can define $x = $
+$\begin{bmatrix}
+0   &n\\
+0   &m\\
+\end{bmatrix}$ $\in I$, $r = $
+$\begin{bmatrix}
+a   &b\\
+0   &c\\
+\end{bmatrix}$ $\in R$.\\
+$xr = $
+$\begin{bmatrix}
+0   &n\\
+0   &m\\
+\end{bmatrix}$
+$*$
+$\begin{bmatrix}
+a   &b\\
+0   &c\\
+\end{bmatrix}$
+$=$
+$\begin{bmatrix}
+0   &cn\\
+0   &cm\\
+\end{bmatrix}$ and $cn, cm \in \Z$ (because $\Z$ is a field) $\implies$ $xr \in I$\\
+$\therefore$ $I \vartriangleleft R$
+\end{proof}
+
+\begin{prob}
+Find all the maximal ideals in $\Z_{6} \times \Z_{15}$, and in each case describe the quotient ring.
+\end{prob}
+
+Since the prime divisors of 12 are 2 and 3, the prime ideals are $\{0\}$, $\{0, 2, 4, 6, 8, 10\}$, and $\{0, 3, 6, 9\}$ $\implies$ the 2 maximal ideals are $J = \{0, 2, 4, 6, 8, 10\}$ and $K = \{0, 3, 6, 9\}$ such that $\Z_{12}/J$ contains 2 elements ($\frac{12}{6} = 2$) and $\Z_{12}/K$ contains 3 elements ($\frac{12}{4} = 3$).
+
+\section{Homework 8}
+In the first four exercises, $R$ and $S$ are rings (with 1) and $\vaphi: R \rightarrow S$ is a ring homomorphism.
+
+\begin{prob}
+If $\varphi$ is surjective and $I \vartriangleleft R$, show that $\varphi(I) \vartriangleleft S$.
+\end{prob}
+
+\begin{proof}
+To show that this is true, we only need to show that for all $s_{1}, s_{2} \in S$ such that $s_{1} \in \varphi(I)$, $\exists$ $r_{1}, r_{2} \in R$ such that $r_{1} \in I \vartriangleleft R$. This really implies that for our given elements of $s$, we must prove that $s_{1}s_{2} \in \varphi(I)$ and $s_{1} + s_{2} \in \varphi(I)$. Both of these follow from the properties of ring homomorphisms such that $\varphi(r_{1} + r_{2}) = \varphi(r_{1}) + \varphi(r_{2}) = s_{1} + s_{2}$ and $r_{1}+r_{2} \in I$ $\implies$ $s_{1} + s_{2} \in \varphi(I)$. Moreover, $\varphi(r_{1}r_{2}) = \varphi(r_{1}) *\varphi(r_{2}) = s_{1}s_{2} \in \varphi(I)$ and $r_{1}r_{2} \in I$ $\implies$ $s_{1}s_{2} \in \varphi(I)$. $\therefore$ $\varphi(I) \vartriangleleft S$.
+\end{proof}
+
+\begin{prob}
+Prove that if $\varphi(I)$ is a prime ideal of $S$, then $I$ is a prime ideal for $R$.
+\end{prob}
+
+\begin{proof}
+It follows from the fourth isomorphism theorem in Ring Theory (lattice theorem) that for a commutative ring homomorphism, $\varphi: R \rightarrow S$, if $\varphi(I) \vartriangleleft S$, then $\varphi$ determines an injection: $\Tilde{\varphi}: R/I \rightarrow S/\varphi(I)$. In this case, $\varphi(I) \vartriangleleft S$ is prime $\Longleftrightarrow$ $S/\varphi(I)$ is an integral domain. Note that $R/\Tilde{\varphi}^{-1}(\varphi(I))$ embeds $S/\Tilde{\varphi}^{-1}(\varphi(I))$. Since a subring of an integral domain is in turn an integral domain, $\Tilde{\varphi}^{-1}(\varphi(I)) = I$ is necessarily prime.
+\end{proof}
+
+\begin{prob}
+Does this follow for maximal ideals? (same as last question)
+\end{prob}
+
+\begin{proof}
+ This is not the case and we will see why by assuming it is the case and working backwards. An ideals $J \vartriangleleft S$ is maximal if and only if $S/J$ is a field. Moreover, if we set $I$ to be the preimage of $J$, $R/I$ embeds the field $S/J$. However, subrings of fields are not necessarily also fields. Therefore, maximal ideals are not 'transferrable' in the same way that prime ideals can be transferred. However, if $\varphi$ is surjective, then the embedding $\Tilde{\varphi}$ is surjective and therefore $\varphi$ is an isomorphism and $\R/I$ is a field (so $I$ is a maximal ideal of $R$).
+\end{proof}
+
+\begin{prob}
+Assume that $R$ is a field and that $S$ is not the zero ring. Prove that $\varphi$ is injective.
+\end{prob}
+
+\begin{proof}
+$R$ is a field $\implies$ the only ideals of $R$ are $R$ or $\{0\}$. If $S \neq \{0\}$, then the fact that $R \vartriangleleft R$ $\implies$ $\varphi(S) \vartriangleleft S$ and this ensures based on the properties of the homomorphism that $\forall$ $r \in R$, $\exists$! $s \in S$ such that $\varphi(r) = s$. This achieves the definition of injectivity for $\varphi$.
+\end{proof}
+
+\begin{prob}
+Show that $Z(\textbf{H}) = R$ where $\textbf{H}$ denotes the skew field of quaternions.
+\end{prob}
+
+\begin{proof}
+If $a \in \R$ then $aq = qa$ $\forall$ $q \in \textbf{H}$ because $a$ commutes with $i, j, k$. Conversely, let $q = a+bi+cj+dk$ lie in $Z(\textbf{H})$. Then, $iq = qi$ $\implies$ $-b+a+dj-ck=-b+ai-dj+ck$. Equating coefficients yields $c = 0 = d$ $\implies$ $q = a+bi$. Moreover, $qj = jq$ $\implies$ $b = 0$, so $q=a \in \R$ as required.
+\end{proof}
+
+\begin{prob}
+Let $R$ be a finite commutative ring with unity. Show that every prime ideal in $R$ is a maximal ideal in $R$.
+\end{prob}
+
+\begin{proof}
+Let $I$ be a prime ideal in $R$. Since $I$ is prime, $R/I$ is an integral domain and $R$ is finite $\implies$ $R/I$ is a finite integral domain $\implies$ $R/I$ is a field $\implies$ $I$ is a maximal ideal in $R$.
+\end{proof}
+
+\begin{prob}
+Let $I, J$ be ideals in a ring $R$. \begin{enumerate}
+    \item Show that $I+J = \{a+b \mid a \in I, b \in J\}$ is an ideal.
+    \item Show that $IJ = \{a_{1}b_{1}+a_{2}b_{2}+...+a_{n}b_{n} \mid a_{i} \in I, b_{i} \in J\}$ is an ideal.
+    \item Show that $IJ \subseteq I \cap J$.
+    \item If $R$ is commutative and $I+J = R$, show that $IJ = I \cap J$.
+\end{enumerate}
+\end{prob}
+
+\begin{enumerate}
+\item \begin{proof}To check if it is an ideal, we will verify that it is closed under addition and that it maintains product absorption. For any $x = a+ b$, $y = c + d$ such that $a, c \in I$, $b, d \in J$ $\implies$ by definition of $I+J$, $x, y \in I+J$. In this case, $x+y = (a+c)+(b+d) \in I+J$ because $a+c \in I$ and $b+d \in J$. Moreover, if we take $r \in R$, $xr = ar + br$ $\implies$ $ar \in I$ and $br \in J$ because $I, J \vartriangleleft R$. Therefore, $xr \in I+J$ by definition $\implies$ $I+J$ is an ideal.
+\end{proof}
+
+\item \begin{proof} To prove that $IJ$ is an ideal, we will verify that it is closed under addition and it maintains product absorption. For any $x \in I$, $y \in J$ $xy \in I$ and $xy in J$ based on the properties of product absorption for those two ideals. Moreover, $xy \in IJ$ by definition. Based on the properties of $I, J$, for $r \in R$, $xr \in I$ $yr \in J$ and, therefore, $xyr \in IJ$ $\implies$ $IJ$ maintains product absorption.
+\end{proof}
+
+\item \begin{proof}$\forall$ $x \in I \cap J$, $x \in I$ and $x \in J$ by definition. But (wlog) for all $y \in I$, if $z \in J$ $\implies$ $yz \in I$ and $yz \in J$ based on product absorption for both ideals. Therefore $\forall$ $yz \in IJ$, $yz \in I \cap J$ $\implies$ $IJ \subseteq I \cap J$.
+\end{proof}
+
+\item \begin{proof}$I \cap J = (I \cap J)R = (I \cap J)(I+J) = I(I \cap J) + J(I \cap J)$. We know that $I \cap J \subseteq I$ and $I \cap J \subseteq J$ by definition of intersection $\implies$ $I(I \cap J) + J(I \cap J) \subseteq IJ + IJ = IJ$ $\implies$ $I \cap J = IJ$.
+\end{proof}
+
+\end{enumerate}
+
+\begin{prob}
+Let $D$ be an integral domain and $a, b \in D$. Show that $<a> = <b>$ if and only if $a = ub$ for some unit $u$ in $U(D)$.
+\end{prob}
+
+\begin{proof}
+"$\rightarrow$": There are two cases that arise from $<a> = <b>$. (1) $a \in <b>$ $\implies$ $\exists$ $u \in D$ such that $a = ub$ and (2) $b \in <a>$ $\implies$ $\exists$ $v \in D$ such that $b = va$. Both (1) and (2) $\implies$ $a = u(va) = uva $ $\implies$
+$a - uva = 0$ $\implies$ $a(1-uv) = 0$ and, because $D$ has no zero divisors (because it is an integral domain), either $a = 0$ $\implies$ $b = v*a = 0$ $\implies$ $a = 1*b$ such that $u = 1$ or $1-uv = 0$ $\implies$ $uv = vu = 1$ $\implies$ $u, v \in U(D)$.
+
+\begin{rem}
+If $R$ is just a commutative ring with $1$ and $a, b \in R$, then $<a> = <b>$ does not necessarily imply that $a = ub$ with $u \in U(R)$.
+\end{rem}
+
+"$\leftarrow$" $a = ub$ with $u \in U(D)$ $\implies$ $a \in <b>$ and therefore $<a> \subseteq <b>$. However, because $u \in U(D)$, it follows that (given $u^{-1} \in D$), $b = u^{-1}a \in <a>$ $\implies$ $<b> \subseteq <a>$. Therefore, $<a> = <b>$.
+\end{proof}
+
+\begin{prob}
+In the ring of Gaussian integers $\Z[i]$, consider the ideal $J = <1+i>$.
+\begin{enumerate}
+    \item Show that $2 \in J$.
+    \item Find all the cosets of $J$ in $\Z[i]$.
+    \item Describe the quotient ring $\Z[i]/J$.
+\end{enumerate}
+\end{prob}
+
+\begin{enumerate}
+    \item $(1+i)*(1-i) = 2 \in J$. The consequence is that $2r \in J$ $\forall$ $r \in R$.
+    \item Two ways of solving this:
+\begin{enumerate}
+    \item \begin{proof} Let $r = a+bi \in R$ with $a, b \in \Z$ be given. Since $2R \subseteq J$, we can reduce $a$ and $b$ modulo 2 without changing the coset $r+J$, i.e. if $r' = a'+b'i$ with $a, b \in \Z$ and $a' \equiv a$ mod 2, $b' \equiv b$ mod 2, then $r+J = r'+J$ since $r-r' \in 2R \subseteq J$. So, $r+J \in \{J, 1+J, i+J, (1+i)+J\}$. Now, $1+i \in J$ $\implies$ $(1+i)+ J = J$. Furthermore, $i+J = -i+J$ since $2i \in J$ and $-i+J = 1+J$ since $1+i \in J$. Finally, $J \neq 1+J$ since $1 \notin J$: If we had $1 \in J$, then there exists $a+bi \in R$ ($a, b \in \Z$) with $(a+bi)(1+i) = 1$ $\implies$ $|a+bi|^{2}*|1+i|^{2} = 1^{2} = 1$ $\implies$ $(a^{2}+b^{2})2 = 1$, which is impossible for $a, b \in \Z$ ($\implies$ $a^{2} + b^{2} = 0$ or $\geq 1$). Therefore, there are precisely 2 cosets modulo $J$, namely $J$ and $1+J$; in other words, $R/J = \{J, 1+J\}$.
+    \end{proof}
+    \item \begin{proof} We directly compute the multiples of $1+i$ in $R$. $r = a+bi$ with $a, b \in \Z$ $\implies$ $r(1+i) = (a+bi)(1+i) = a+ai+bi+bi^{2} = (a-b)+(a+b)i$. Note that $a-b \equiv a+b$ mod 2 since $(a+b)-(a-b) = 2b \in 2\Z$.\\
+    \underline{Claim}: $J = \{m+ni \mid m, n \in \Z$ and $m \equiv n$ mod 2 $\} =: J'$. We just saw that $J = \{r(1+i) \mid r \in R\} \subseteq J'$. Now, let $m+ni \in J'$ with $m \equiv n$ mod 2 be given. Then, $a = \frac{m+n}{2}$ and $b = \frac{n-m}{2}$ are in $\Z$ $\implies$ $r = a+bi \in R$ and $r(1+i) = (a-b)+(a+b)i = m+ni$. this shows that every element of $J'$ is in $J = <1+i>$, i.e. $J' \subseteq J \subseteq J'$ $\implies$ $J = J'$. Now, with this description of $J$, it is easy to see that $R/J$ has precisely two elements such that $J = \{m+ni \mid m, n \Z$ and $m \equiv n$ mod 2$\}$ and $R \setminus J = \{m+ni \mid m, n \in \Z$ and $m \not\equiv n$ mod 2$\} = 1+J$.
+    \end{proof}
+\end{enumerate}
+    \item By (2), $R/J = \{J, 1+J\} = \{0_{R/J}, 1_{R/J}\}$. Hence, $R/J$ is the field with 2 elements $\{0, 1\}$, a copy of $\Z_{2}$.
+    \begin{rem}
+    The last statement is best generalized as follows: If $S$ is any ring with $1$ such that $|S| = p$ and $p$ is a prime, then $S \cong \Z_{p}$ (and so $S$ is a field). Note first that, since $|S| = p$, $(S, +)$ is isomorphic to the cyclic group $\Z_{p}$. This implies that \underline{$char(S) = p$} $\implies$ the prime subring $S_{0}$ of $S$ is isomorphic to the ring (=field here) $\Z_{p}$. But $|S_{0}| = p = |S|$ $\implies$ $S_{0} = S$ $\implies$ $S \cong \Z_{p}$
+    \end{rem}
+\end{enumerate}
+
+\section{Homework 9}
+
+In the first two exercises, $R_{1}$ and $R_{2}$ are nonzero commutative rings with $1$, $I_{1} \vartriangleleft R_{1}$, $I_{2} \vartriangleleft R_{2}$.
+\begin{prob}
+\begin{enumerate}
+    \item Verify that $I_{1} \times I_{2} = \{(a, b) \mid a \in I_{1}, b \in I_{2}\}$ is an ideal of $R_{1} \times R_{2}$.
+    \item Prove that \textbf{every} ideal $I$ of $R_{1} \times R_{2}$ is of the form $I_{1} \times I_{2}$ for suitable ideals $I_{1}$ of $R_{1}$ and $I_{2}$ of $R_{2}$ (Hint: if $(a, b)$ is an element of $I$, show that $(a, 0)$ and $(0, b)$ are also in $I$).
+\end{enumerate}
+\end{prob}
+
+\begin{enumerate}
+    \item \begin{proof}For $a_{1}, a_{2} \in I_{1}, b_{1}, b_{2} \in I_{2}, c_{1} \in R_{1}, d_{1} \in R_{2}$, it follows from the fact that $I_{1} \vartriangleleft R_{1}$ and $I_{2} \vartriangleleft R_{2}$ $\implies$ $(a_{1}, b_{1}), (a_{2}, b_{2}) \in I_{1} \times I_{2}$. Moreover, $(a_{1}, b_{1}) + (a_{2}, b_{2}) = (a_{1}+a_{2}, b_{1}+b_{2}) \in I_{1} \times I_{2}$ because $a_{1}+a_{2} \in I_{1}$ and $b_{1}+b_{2} \in I_{2}$. Moreover, for $(c_{1}, d_{1}) \in R_{1} \times R_{2}$ $(a_{1}, b_{1})*(c_{1}, d_{1}) = (a_{1}c_{1}, b_{1}d_{1}) \in I_{1} \times I_{2}$ because $a_{1}c_{1} \in I_{1}$ and $b_{1}d_{1} \in I_{2}$ based on the product absorption properties of $I_{1}, I_{2}$ $\implies$ $I_{1} \times I_{2} \vartriangleleft R_{1} \times R_{2}$.
+    \end{proof}
+    \item \begin{proof}$0_{R_{1}} \in I_{1}$, $0_{R_{2}} \in I_{2}$ because $I_{1} \vartriangleleft R_{1}, I_{2} \vartriangleleft R_{2}$ $\implies$ $(0, 0) \in I_{1} \times I_{2}$. Therefore, if $(a,b) \in I = I_{1} \times I_{2}$ $\implies$ $(a,0_{R_{2}}) \in I$ and $(0_{R_{1}}, b) \in I$ because $0_{R_{2}} \in I_{2}$ and $0_{R_{1}} \in I_{1}$. Now, define $I_{1}:=\{a \in R_{1} \mid (a, b) \in I$ and $b \in R_{2}\} \vartriangleleft R_{1}$, $I_{2}:=\{b \in R_{2} \mid (a, b) \in I$ and $a \in R_{1}\} \vartriangleleft R_{2}$. \\
+    $\therefore$ $I_{1} \times I_{2} = I \vartriangleleft R_{1} \times R_{2}$.
+    \end{proof}
+\end{enumerate}
+
+\begin{prob}
+\begin{enumerate}
+    \item Show that the map $\varphi:R_{1} \times R_{2} \rightarrow (R_{1}/I_{1}) \times (R_{2}/I_{2})$ defined by $\varphi(a, b)) = (a+I_{1}, b+I_{2})$ is a surjective ring homomorphism with kernel $I_{1} \times I_{2}$. Deduce that the quotient ring $(R_{1} \times R_{2})/(I_{1} \times I_{2})$ is isomorphic to $(R_{1}/I_{1}) \times (R_{2}/I_{2})$.
+    \item If $I_{1}$ is a maximal ideal of $R_{1}$ and $I_{2}$ is a maximal ideal of $R_{2}$, show that $I_{1} \times R_{2}$ and $R_{1} \times I_{2}$ are maximal ideals of $R_{1} \times R_{2}$.
+    \item Show that \textbf{all} maximal ideals of $R_{1} \times R_{2}$ are of the form described in (2).
+\end{enumerate}
+\end{prob}
+
+\begin{enumerate}
+    \item \begin{proof}
+    Let $\varphi(a, b) = (a+I_{1}, b+I_{2}) \in R_{1}/I_{1} \times R_{2}/I_{2}$ $\implies$ $\varphi$ is surjective because the homomorphism maps to every element in its image. Let $(a, b) \in I_{1} \times I_{2}$. Then, $\varphi(a, b) = 0$ $\implies$ $I_{1} \times I_{2} \subseteq Kern(\varphi)$. Suppose that $(a, b) \notin I_{1} \times I_{2}$. Wlog $a \notin I_{1}$ $\implies$ $\varphi(a, b) = (a+I_{1}, b+I_{2}) \neq (0, 0)$ since $a+I_{1} \neq I_{1}$ $\implies$ by the first isomomorphism theorem for rings, $\frac{R_{1} \times R_{2}}{I_{1} \times I_{2}} \cong \frac{R_{1}}{I_{1}} \times \frac{R_{2}}{I_{2}}$
+    \end{proof}
+    \item \begin{proof}
+    Suppose $I_{1} \times J_{1} \vartriangleleft R_{1} \times R_{2}$ and $I_{1} \times J_{1} \subseteq I_{1} \times R_{1}$. Because $I_{2}$ is the maximal ideal of $R_{2}$ $\implies$ $J_{1} = I_{2}$ $\implies$ $I_{1} \times J_{1} = I_{1} \times I_{2}$ or $J_{1} = R_{2}$ $\implies$ $I_{1} \times J_{1} = I_{1} \times R_{2}$. This proves that $I_{1} \times R_{2}$ is a maximal ideal of $R_{1} \times R_{2}$.\\
+    Conversely, suppose that $J_{1} \times I_{2} \vartriangleleft R_{1} \times R_{2}$ and $J_{1} \times I_{2} \subseteq R_{1} \times I_{1}$. Because $I_{1}$ is the maximal ideal of $R_{1}$ $\implies$ $J_{1} = I_{1}$ $\implies$ $J_{1} \times I_{2} = I_{1} \times I_{2}$ or $J_{1} = R_{1}$ $\implies$ $J_{1} \times I_{2} = R_{1} \times I_{2}$. This shows that $R_{1} \times I_{2}$ is a maximal ideal of $R_{1} \times R_{2}$.
+    \end{proof}
+    \item \begin{proof}$I \times R_{2} \vartriangleleft R_{1} \times R_{2}$ (WTS Maximal). Suppose $\exists$ $I_{1} \times I_{2} \vartriangleleft R_{1} \times R_{2}$ and $I_{1} \times I_{2} > I \times R_{2}$ $\implies$ $I_{1} > I$ $\implies$ $I_{1} = R_{1}$. Similarly, for $R_{1} \times I \vartriangleleft R_{1} \times R_{2}$, suppose $\exists$ $I_{1} \times I_{2} \vartriangleleft R_{1} \times R_{2}$ and $I_{1} \times I_{2} > R_{1} \times I$ $\implies$ $I_{2} > I$ $\implies$ $I_{2} = R_{2}$. This shows that any maximal ideal of $R_{1} \times R_{1}$ takes this form.
+    \end{proof}
+\end{enumerate}
+
+\begin{prob}
+Find an example of a nonzero commutative ring $R$ and a polynomial $f(x)$ with $deg(f(x)) > 0$ such that $f(x)$ is a unit of $R[x]$.
+\end{prob}
+
+$2x+1$ in $\Z/4\Z$. Specifically, $(2x+1)^{2} = 4x^{2}+4x+1 = 1$ in $\Z/4\Z$
+
+\begin{prob}
+Let $\curlyvee: \Z[x] \rightarrow \Z[i]$ be the (by 2.3.3 uniquely determined) ring homomorphism which is the identity when restricted to $\Z$ and satisfied $\curlyvee(x) = i$.
+\begin{enumerate}
+    \item Compute $\curlyvee(2+3x+4x^{2}-5x^{3}+x^{4})$ i.e. write it in the form $a+bi$ with $a, b \in \Z$.
+    \item Prove that the principal ideal $<x^{2}+1>$ of $\Z[x]$ is equal to the kernel of $\curlyvee$.
+    \item Decide whether $<x^{2}+1>$ is a prime or a maximal ideal of $\Z[x]$.
+\end{enumerate}
+\end{prob}
+
+\begin{enumerate}
+    \item $\curlyvee(2+3x+4x^{2}-5x^{3}+x^{4}) = 2+3i+4i^{2}-5i^{3}+i^{4} = -1 + 8i$
+    \item $\curlyvee(x^{2}+1) = i^{2}+1 = -1+1 = 0$ $\implies$ $x^{2} + 1 \in Kern(\curlyvee)$ $\implies$ $<x^{2}+1> \subseteq Kern(\curlyvee)$, since $Kern(\curlyvee) \vartriangleleft \Z[x]$. Now assume that $f(x) \in Kern(\curlyvee)$. We first apply the \underline{division algorithm} (2.3.7) to $f(x)$ and $g(x) = x^{2}+1 \in \Z[x]$. Note that $l(x^{2}+1) = 1 \in U(\Z)$. So there exists $q(x), r(x) \in \Z[x]$ with $f(x) = q(x)(x^{2}+1)+r(x)$ \underline{and} $r(x) = 0$ or $deg(r(x)) < deg(x^{2}+1) = 2$. The latter implies that $r(x) = a+bx$ with $a, b \in \Z$ (If $r(x) = 0$, then $a = b = 0$). Now we use that $f(x) \in Kern(\curlyvee)$: \\
+    $0 = \curlyvee(f(x)) = \curlyvee(q(x)(x^{2}+1) + r(x)) = \curlyvee(q(x))\curlyvee(x^{2}+1)+\curlyvee(a+bx) = \curlyvee(q(x))*0+\curlyvee(a+bx) = \curlyvee(a+bx) = a+bi$ but if $a+bi = 0$ in $\Z[i]$, then $a = b = 0$ $\implies$ \underline{$r(x) = 0$}. Hence, $f(x) = q(x)(x^{2}+1) \in <x^{2}+1>$. Since $f(x) \in Kern(\curlyvee)$ was arbitrary, this shows that $Kern(\curlyvee) \subseteq <x^{2}+1> \subseteq Kern(\curlyvee)$ $\implies$ \underline{$Kern(\curlyvee) = <x^{2}+1>$}
+    \item $\curlyvee$ is surjective (by $\curlyvee(a+bx) = a+bi$ $\forall$ $a, b \in \Z$), and so by the isomorphism theorem 2.1.11 $\Z[x]/<x^{2}+1> = \Z[x]/Kern(\curlyvee) \cong \Z[i]$. Since $\Z[i]$ is an integral domain but not a field, it follows from 2.2.8 and 2.2.7 that $<x^{2}+1>$ is a \underline{prime ideal} but \underline{not a maximal ideal} of $\Z[x]$
+\end{enumerate}
+
+\begin{prob}
+Show that the principal ideal $<x^{2}+1>$ of $\R[x]$ is a maximal ideal.
+\end{prob}
+
+\begin{proof}
+$<x^{2}+1>$ is a prime ideal (from the previous question) $\implies$ $\R[x]/<x^{2}+1>$ is an integral domain and because $\R[x]$ is finite, $\R[x]/<x^{2}+1>$ is a finite integral domain $\implies$ $R[x]/<x^{2}+1>$ is a field. WTS $\exists$ isomomorphism $\varphi: \R[x]/<x^{2}+1> \rightarrow \C$ which maps $\varphi(-ax^{2}+bx) \rightarrow a+bi$. Because this covers all $a+bi \in \C$ $\implies$ $\varphi$ is surjective because we only need to change $a, b \in \R$ for $-ax^{2}+bx$ to map to all of the elements in $\C$ of the form $a+bi$.\\
+$\varphi$ is surjective $\Longleftrightarrow$ $<x^{2}+1>$ is a maximal ideal.
+\end{proof}
+
+\section{Homework 10}
+
+\begin{prob}
+Prove that the polynomials $q(x)$ and $r(x)$ in the Division Algorithm are uniquely determined.
+\end{prob}
+
+\begin{proof}
+Suppose we have $f(x) = q_{1}(x)g(x)+r_{1}(x)$ \underline{and} $f(x) = q_{2}(x)g(x)+r_{2}(x)$ such that $r_{i}(x) = 0$ or $deg(r_{i}(x)) < deg(g(x))$. Subtracting the two equations, we get $0 = [q_{1}(x)-q_{2}(x)]g(x)+[r_{1}(x)-r_{2}(x)]$. Therefore, $[q_{1}(x)-q_{2}(x)]g(x) = r_{2}(x) - r_{1}(x)$. We must have $r_{2}(x)-r_{1}(x) = 0$ because if this isn't true, then $deg[r_{2}(x)-r_{1}(x)] < deg(g(x))$ (which is a clear contradiction). Therefore, we must have $r_{1}(x) = r_{2}(x)$ and because $q_{1}(x)-q_{2}(x) = 0$ $\implies$ $q_{1}(x) = q_{2}(x)$.
+\end{proof}
+
+\end{document}

@@ -10,14 +10,13 @@
 
 \usepackage{amsfonts}
 \usepackage{amsthm}
-\documentclass{amsart}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{amsmath}
 \usepackage{breqn}
-\usepackage{dsfont} %for the Hamilton's quaternions
+\usepackage{dsfont}
 \setlength{\textfloatsep}{5pt}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{prop}[thm]{Proposition}
@@ -44,6 +43,7 @@
 \newcommand{\D}{\mathcal{O}_K}
 \newcommand{\p}{\mathfrak{p}}
 \newcommand{\B}{\mathfrak{B}}
+\newcommand{\H}{\mathds{H}}
 \DeclareMathOperator{\dist}{dist} % The distance.
 
 \def\Out{\mathrm{Out}}
@@ -59,7 +59,7 @@
 
 Conventions regarding 1 (multiplicative unity):
 \begin{enumerate}
-    \item Every ring $R$ has a multiplicatuve unity denoted by $1$ or $1_R$ such that $1*a = a*1$ $\forall$ $a \in R$. Note: $1 = 0$ in $R$ $\Leftrightarrow$ $R = \{0\}$ because $\forall a \in R$: $a = a * 1 = a * 0 = 0$.
+    \item Every ring $R$ has a multiplicative unity denoted by $1$ or $1_R$ such that $1*a = a*1$ $\forall$ $a \in R$. Note: $1 = 0$ in $R$ $\Leftrightarrow$ $R = \{0\}$ because $\forall a \in R$: $a = a * 1 = a * 0 = 0$.
     \item Any subring $S$ of $R$ must contain $1_R$. For subring, check
     \begin{enumerate}
         \item $1_{R} \in S$
@@ -264,6 +264,583 @@ Proof of (1).
 \begin{remark}
 In particular, $Kern(\varphi) = \varphi^{-1}(\{0\})$ is an ideal of $R$.
 \end{remark}
+
+\begin{center}
+{\sf\LARGE Class March 19}
+\end{center}
+
+
+Before anything else, we'll review a few concepts from last class.
+
+\begin{definition}
+$\varphi:R \rightarrow S$ ring homomorphism.
+\begin{enumerate}
+    \item $J \vartriangleleft S$ $\implies$ $\varphi^{-1}(J) \vartriangleleft R$
+    \item $I \vartriangleleft R$ and $\varphi$ surjective $\implies$ $\varphi(I) \vartriangleleft S$
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+Ideals of $R/I$ ($I \vartriangleleft R$).\\
+$\exists$ surjective ring homomorphism $\pi: R \rightarrow R/I$ which maps $a \rightarrow a + I$ with $Kern(\pi) = I$ because $a + I = 0$ $\Leftrightarrow$ $a \in I$.\\
+For any $I' \vartriangleleft R$ with $I \subseteq I'$, we define $I'/I := \{a+I \mid a \in I'\} = \pi(I') \vartriangleleft R/I$.
+\end{definition}
+
+Claim: $f: \{I' \vartriangleleft R \mid I \subseteq I' \} \rightarrow \{J \vartriangleleft R/I\}$ (which maps $I' \righatrrow I'/I$) is bijective.\\
+\begin{proof}
+$f$ is surjective: Let $J \vartriangleleft R/I$ be given $\leadsto$ set $I':=\pi^{-1}(J) \vartriangleleft R$ by part (a) of the definition of ring homomorphism. Also, $I' \supseteq \pi^{-1}(0) = Kern(\pi) = I$ such that $f(I') = I'/I = \pi(I') = \pi(\pi^{-1}(J)) = J$ since $\pi$ is surjective $\implies$ $f$ is surjective.\\
+$f$ is injective: $I'_{1}, I'_{2} \vartriangleleft R$; $I'_{1}, I'_{2} \supseteq I$ and $f(I'_{1}) = f(I'_{2})$ to show $I'_{1} = I'_{2}$. Specifically, $a \in I'_{1}$ $\implies$ $a + I \in I'_{1}/I = f(I'_{1})$ = $f(I'_{2}) = I'_{2}/I$ $\implies$ $\exists$ $b \in I'_{2}$ s.t. $a \in b + I$. $a \in b + I \subseteq I'_{2} + I = I'_{2}$ (since $I \subseteq I'_{2}$) $\implies$ $a \in I'_{2}$ for any $a \in I'_{1}$ $\implies$ $I'_{1} \subseteq I'_{2}$. Similarly, $I'_{1} \subseteq I'_{2}$ $\implies$ $I'_{1} = I'_{2}$
+\end{proof}
+
+\begin{lem}
+Let $R$ be a commutative ring with $1 \neq 0$. Then, $R$ is a field $\Leftrightarrow$ $R$ has precisely two ideals, namely $\{0\}$ and $R$
+\end{lem}
+
+\begin{proof}
+"$\Rightarrow$" Assume $\{0\} \neq I \vartriangleleft R$. Want to show $I = R$. $I \neq \{0\}$ $\implies$ $\exists$ $0 \neq x \in I$, $R$ is a field $\implies$ $\exists$ $x^{-1} \in R$ $\implies$ for any $a \in R$, we obtain $a = a*1 = a(x^{-1}x) = (ax^{-1})x \in I$ $\implies$ $ I = R$.\\
+"$\Leftarrow$" To show $0 \neq x \in R$ $\implies$ $x \in U(R)$. Consider the principal ideal $I:=<x>:=\{rx \mid r \in R\} \vartriangleleft R$. $0 \neq x = 1*x \in I$ $\implies$ $I \neq \{0\}$ $\implies$ $I = R$ by assumption $\implies$ $1 \in I = <x>$ $\implies$ $\exists$ $r \in R$ with $1 = rx = xr$ $\implies$ $x \in U(R)$. Hence, $U(R) = R \setminus \{0\}$ $\implies$ $R$ is a field.
+\end{proof}
+
+From now on, we assume that the ring $R$ with 1 is commutative.
+
+\begin{definition}
+\begin{enumerate}
+    \item A proper ideal $I \vartriangleleft R$ (i.e. $I \neq R$) is called a prime ideal of $R$ if the $x, y \in R$, $xy \in I$ $\implies$ $x \in I$ or $y \in I$.
+    \item A proper ideal $I \vartriangleleft R$ is called a maximal ideal of $R$ if: $J \vartriangleleft R$ with $I \subseteq J$ $\implies$ $J = I$ or $J = R$.
+    \item $\{0\}$ is allowed in (1) and (2)
+\end{enumerate}
+\end{definition}
+
+\begin{remark}
+One can show using Zorn's Lemma that every proper ideal of $R$ is contained in some maximal ideal.
+\end{remark}
+
+\begin{prop}
+Assume $I \vartriangleleft R$, $I \neq R$ $\implies$ $R \neq \{0\}$ $\implies$ $1 \neq 0$. Then, $I$ is a maximal ideal of $R$ $\Leftrightarrow$ $R/I$ is a field.
+\end{prop}
+
+\begin{proof}
+($\Rightarrow$) By definition of a maximal ideal, $\{I' \vartriangleleft R \mid I \subseteq I'\} = \{I, R\}$ $\implies$ $\{J \vartriangleleft R/I\} = \{I/I = \{0\}, R/I\}$ $\implies$ $R/I$ is a field.\\
+($\Leftarrow$) Assume $R/I$ is a field $\implies$ $\{0\}$ and $R/I$ are only ideals of $R/I$ $\implies$ $\{I' \vartriangleleft R \mid I' \supseteq I\} = \{I, R\}$ $\implies$ $I$ is a maximal ideal of $R$.
+\end{proof}
+
+\begin{prop}
+$I \vartriangleleft R$, $I \neq R$ ($\implies$ $1 \neq 0$). Then, $I$ is a prime ideal of $R$ $\Leftrightarrow$ $R/I$ is an integral domain.
+\end{prop}
+
+\begin{proof}
+($\Rightarrow$) $R/I$ is a commutative ring with $1 + I \neq 0 + I$ since $1 \notin I$ ($1 \in I$ $\implies$ $I = R$). To show, $R/I$ has no zero divisors. So assume for $x, y \in R$, we have $(x+I)(y+I) = 0 + I$ in $R/I$ $\Leftrightarrow$ $xy + I = I$ $\implies$ $xy \in I$ $\implies$ ($I is prime$) $x \in I$ or $y \in I$ $\implies$ $x + I = I$ or $y + I = I$ ($=0$ in $R/I$) $\implies$ no zero divisors in $R/I$ is an integral domain. Assume $xy \in I$ for $x, y \in R$ $\implies$ $I = xy + I = (x+I)(y+I)$ $\implies$ ($R/I$ has no zero divisors) $x+I = I$ or $y+I = I$ $\implies$ $x \in I$ or $y \in I$
+\end{proof}
+
+\begin{prop}
+Assume $I \vartriangleleft R$, $I \neq R$. $I$ is a maximal ideal of $R$ $\Leftrightarrow$ $R/I$ is a field.
+\end{prop}
+
+\begin{cor}
+$I \vartriangleleft R$, $I \neq R$. If $I$ is maximal, then it's also a prime ideal of $R$.
+\end{cor}
+
+\begin{proof}
+$I$ maximal $\implies$ $R/I$ is a field $\implies$ $R/I$ is an integral domain $\implies$ $I$ is a prime ideal
+\end{proof}
+
+\begin{example}
+\begin{enumerate}
+    \item if $F$ is a field, $\{0\}$ is a prime and a maximal ideal of $F$
+    \item $\{0\}$ is a prime ideal of $R$ $\Leftrightarrow$ $R/\{0\} \cong R$ is an integral domain.
+\end{enumerate}
+\end{example}
+
+\begin{center}
+{\sf\LARGE Class March 23}
+\end{center}
+
+$R$ commutative ring with $1 \neq 0$, $R \neq I \vartriangleleft R$. $I$ is a \textbf{prime ideal} of $R$ $\Leftrightarrow$ $x, y \in R$, $xy \in I$ $\rightarrow$ $x \in I$ or $y \in I$. $I$ is a \textbf{maximal ideal} of $R$ $\Leftrightarrow$ $\{J \mid J \vartriangleleft R$ and $I \subseteq J \} = \{I, R\}$.
+
+\begin{prop}
+$I$ maximal $\Leftrightarrow$ $R/I$ is an integral domain.
+\end{prop}
+
+\begin{example}
+\begin{enumerate}
+    \item $F$ is a field $\implies$ $\{0\}, F$ are its only ideals $\implies$ $\{0\}$ is the only prime and maximal ideal of $F$.
+    \item $\{0\}$ is a prime ideal of $R$ $\Leftrightarrow$ $R$ is an integral domain.
+    \begin{remark}
+    $\{0\}$ is a maximal ideal of $R \Leftrightarrow$ $R$ is a field $\cong R/\{0\}$.
+    \end{remark}
+    \item $R = \Z$ $\{$ideals of $\Z \}$ $= \{$subgroups of $(\Z, +)\}$ $= \{<n>=n\Z \mid n \in \N_{0} \}$\\
+    $n = 0$: $n\Z = \{0\}$ is a prime ideal of $\Z$ (not maximal). $n > 0$: $<n>$ is prime $\Leftrightarrow$ $\Z/<n> = \Z_{n}$ is an integral domain $\Leftrightarrow$ $\Z_{n}$ is a field $\Leftrightarrow$ $n$ is prime $\Leftrightarrow$ $<n>$ is maximal.
+    \item $\Z \times \{0\} = \{(a, 0) \mid a \in \Z\}$ is a prime ideal of $\Z \times \Z$ since $\Z \times \Z/\Z \times \{0\} \cong \Z$ integral domain but not a field $\implies$ $\Z \times \{0\}$ is not maximal in $\Z \times \Z$ e.g. $\Z \times \{0\} \subsetneq \Z \times <n>$ with $n \geq 2$.
+\end{enumerate}
+\end{example}
+
+\textbf{Polynomial Rings}. We start with the standard assumption that $R$ is a commutative ring with $1 \neq 0$.
+\begin{definition}
+A \textbf{polynomial} (in one variable $x$) with coefficients in $R$ is a finite formal sum $f(x) = \sum_{i=1}^{n} a_{i}x^{i}$ with $n \in \N_{0}$ and $a_{i} \in R$ $\forall$ $i$. Identify $x^{0} = 1$, $1*x^{i} = x^{i}$, $a_{0}*x^{0} = a_{0}$. If $f(x) \neq 0$, $f(x) = \sum_{i=0}^{n}a_{i}x^{i}$ with $a_{n} \neq 0$, we define the \textbf{degree} of $f(x)$ as $deg(f):=n$ and the \textbf{leading coefficient} $l(f) := a_{n} \neq 0$. $f(x)$ is called \textbf{monic} if $l(f(x)) = 1$.
+\end{definition}
+
+Conventions regarding $deg(0): deg(0) = -1$, $deg(0) = -\infty$ or $deg(0)$ is not defined. \underline{Never} $deg(0) = 0$ $\implies$ \underline{Always} $deg(0) \neq 0$. \underline{Rather} $deg(f(x)) = 0$ $\Leftrightarrow$ $f(x) \in R \setminus \{0\}$.
+
+\begin{lem}
+Defining addition and multiplication  of polynomials: $f(x) = \sum_{i=0}^{n}a_{i}x^{i}$, $g(x) = \sum_{i=0}^{m}b_{i}x^{i}$.\\
+$f(x) + g(x) = \sum_{i=0}^{max(m, n)} (a_{i}+b_{i})x^{i}$ with the convention that $a_{i} = 0$ $\forall$ $i > n$ if $m > n$ and $b_{i} = 0$ $\forall$ $i > m$ if $n > m$. $a_{i} = 0$ $\forall$ $i > n$ if $m > n$ and $b_{i} = 0$ $\forall$ $i > m$ if $n > m$. \\
+$f(x)g(x) := \sum_{j=0}^{m+n} c_{j}x^{j}$ with $c_{j} := \sum_{i=0}^{i} a_{i}b_{j-i} = \sum_{i, k \in \N_{0}, i+k = j} a_{i}b_{k}$ and $a_{i} = 0$ if $i > n$ and $b_{j-i} = 0$ if $j - i > m$. In particular, $c_{0} = a_{0}b_{0}$, $c_{n+m} = a_{n}b_{m}$. Also, $x^{n}x^{m} = (1*x^{n})(1*x^{m}) = 1*x^{n+m} = x^{n+m}$.
+\end{lem}
+
+\begin{lem}
+With addition and multiplication as defined above $R[x] := \{f(x) = = \sum_{i=0}^{n} a_{i}x^{i} \mid n \in \N_{0}$, all $a_{i} \in R \}$ becomes a commutative ring with $1_{R}$ called the \textbf{polynomial ring} (in one variable) over $R$. Note: $R$ is a \underline{subring} of $R[x]$ $\implies$ $1_{R[x]} = 1_{R}$, more generally, $a(\sum_{i=0}^{n} a_{i}x^{i}) = \sum_{i = 0}^{n}(aa_{i})x^{i}$. Verification of the ring axioms is left as an exercise.
+\end{lem}
+
+For commutative law $\implies$ $\sum_{i, k \in \N_{0}, i + k = j} a_{i}b_{k}$ $\leadsto$ commutativity. For the associative law for multiplication, $(f(x)g(x))h(x) = f(x)(g(x)h(x))$ $\leadsto$ coefficients in the product $\sum_{l = 0} d_{l}x^{l}$. $\sum_{i, j, k \in \N_{0}, i + j + k = l} (a_{i}b_{j})c_{k} = \sum_{i, j, k \in \N_{0}, i + j + k = l}a_{i}(b_{j}c_{k})$.
+
+\begin{prop}["Universal Property"]
+$R, S$ commutative rings with $1$, $\varphi: R \rightarrow S$ is a ring hom and $s \in S$, then there exists a unique ring hom $\Tilde{\varphi} = \Tilde{\varphi}_{S}: R[x] \rightarrow S$ with $\varphi_{1R} = \varphi$ and $\Tilde{\varphi}(x) = s$.
+\end{prop}
+
+\begin{proof}
+Assume $\Tilde{\varphi}$ exists and $f(x) = \sum_{i = 0}^{n}a_{i}x^{i}$. $\Tilde{\varphi}(f(x)) = \Tilde{\varphi}(\sum_{i =  0}^{n}a_{i}x^{i}) = \sum_{i = 0}^{n} \Tilde{\varphi}(a_{i}x^{i}) = \sum_{i=1}^{n} \Tilde{\varphi}(a_{i})\Tilde{\varphi}(x^{i}) = \sum_{i = 0}^{n}\varphi(a_{i})s^{i}$. Verify that this yields a ring such that $\varphi_{1R} = \varphi$.\\
+It follows from the  fact that $\varphi(a_{i} + b_{i}) = \varphi(a_{i}) + \varphi(b_{i})$ that $\Tilde{\varphi}(f+g) = \Tilde{\varphi}(f)+\Tilde{\varphi}(g)$ $\forall$ $f, g \in R[x]$. Multiplication of $\Tilde{\varphi}$: $f(x) = \sum_{i = 0}^{n} a_{i}x^{i}$, $g(x) = \sum_{i = 0}^{m} b_{i}x^{i}$ $\implies$ $f(x)g(x) = \sum_{j}^{n+m}c_{j}x^{j}$ such that $c_{j} = \sum_{i=0}^{j}a_{i}b_{j-i}$. $\Tilde{\varphi}(f(x)g(x)) = \Tilde{\varphi}(f(x)g(x)) = \Tilde{\varphi}(\sum_{j = 0}^{n+m}(\sum_{i = 0}^{j}a_{i}b+{j-i})x^{j}$ $= \sum_{j = 0}^{n+m} \varphi(\sum_{i = 0}^{j} a_{j}b_{j-i})s^{j} = (\varphi$ is a ring hom$)$ $= \sum_{j=0}^{n+m}(\sum_{i = 0}^{j} \varphi(a_{i})s^{i} \sum_{i = 0}^{m} \varphi(b_{i})s^{i} = \Tilde{\varphi}(f(x))\Tilde{\varphi}(g(x))$. Also, $\Tilde{\varphi}(a_0) = \varphi(a_{0})$ by definition of $\Tilde{\varphi}$ and $\Tilde{\varphi}(x) = \Tilde{\varphi}(x) = \Tilde{\varphi}(1*x) = \varphi(1_{R})s = 1_{s}*s = s$.
+\end{proof}
+
+\begin{center}
+{\sf\LARGE Class March 26}
+\end{center}
+
+\begin{proposition}["Universal Property"]
+$R, S$ commutative rings with 1, $s \in S$, $varphi:R \rightarrow S$ ring homomorphism. Then, there exists a unique ring homomorphism $\Tilde{\varphi}: R[x] \rightarrow S$ such that $\Tilde{\varphi}_{1R} = \varphi$ and $\Tilde{\varphi}(x) = s$ ($\varphi(a) = a$ $\forall$ $a \in R$).
+\end{proposition}
+
+\begin{cor}[Special cases of last proposition]
+\begin{enumerate}
+    \item $\varphi: R \rightarrow S$ ring homomorphism $\implies$ $\exists$ unique ring homomorphism $\Tilde{\varphi}: R[x] \rightarrow S[x]$ with $\sum_{i=1}^{n}a_{i}x^{i} \rightarrow \sum_{i=1}^{n} \varphi(a_{i})x^{i}$. This follows from 2.3.3 with $S = S[x]$, $\varphi: R \rigtarrow S[x]$ ($S$ is a subring of $S[x]$).
+    \item With $S = R$, $\varphi = id_{R}$. For any $r \in R$, there exists a unique evaluation homomorphism (at $r$): $x \rightarrrow r$ $\implies$ $\Tilde{\varphi}: R[x] \rightarrow R$ such that $\sum_{i=0}^{n}a_{i}x^{i} \rightarrow \sum_{i=0}^{n}a_{i}r^{i} =: f(r)$ $\implies$ $f(x) \rightarrow \Tilde{\varphi}(f(x))$. From this, we know that $\Tilde{\varphi}$ is a ring homomorphism $\implies$ $\forall$ $f, g \in R[x] : (fg)(r) = f(r)g(r)$, $(f+g)(r) = f(r) + g(r)$. $r \in R$ is called the root of $f(x) \in R[x]$ if $f(r) = 0$.
+    \item $R$ is a subring of $S$ and $\varphi: R \rightarrow S$ is the embedding homomorphism $r \rightarrow r$. For any given $s \in S$, we obtain a ring homomorphism, $\Tilde{\varphi}: R[x] \rightarrow S$ which maps $\sum_{i=0}^{n} a_{i}x^{i} \rightarrow \sum_{i=0}^{n}a_{i}s^{i} =: f(s)$. Therefore, $\Tilde{\varphi}$ is a ring homomorphism $\implies$ $\Tilde{\varphi}(R[x])$ is a subring of $S$. More explicitly, $\Tilde{\varphi}(R[x]) = \{\sum_{i=0}^{n} a_{i}s^{i} \mid n \in \N_{0}, $ all $a_{i} \in R \}$ wich is the smallest subring of $S$ containing $R$ and $s$. \textit{Notation} $\Tilde{\varphi}(R[x]) = R[s] \subseteq S$. We say that $R[s]$ is obtained from $R$ by adjoining $s$.
+\end{enumerate}
+\end{cor}
+
+\begin{example}
+$R = \Z, S = \C, s = i$,$\Z[i] = \{\sum_{j=0}^{n} a_{j}i^{i} \mid n \in \N_{0}, \forall a_{i} \in \Z \} = \{a_{0}+a_{1}i \mid a_{0}, a_{1} \in \Z \}$ which is the smallest subring of $\C$ containing $\Z$ and $i$.\\
+Similarly, $\Z[\sqrt{2}] \in \R$ and $\Z[\sqrt{2}] = \{a+b^{2} \mid a, b \in \Z \}$.
+\end{example}
+
+\begin{remark}
+Using the evaluation homomorphism in 2.3.4(b) every polynomial $f(x) \in R[x]$ defines a function $R \rightarrow R$ such that $r \rightarrow f(r)$. One has to distinguish between the polynomial and the corresponding function since different polynomials induce the same function $R \rightarrow R$.
+\end{remark}
+
+\begin{example}
+$R \ \Z_{3}$, $f(x) = x^{3} - x$, $g(x) = 0$, $f(x) = 0 = g(r)$ $\forall$ $r \in \Z_{3}$
+\end{example}
+
+\begin{lem}
+$f(x), g(x) \in R[x] \setminus \{0\}$.
+\begin{enumerate}
+    \item If $l(f(x))$ or $l(g(x))$ is \underline{not} a zero divisor (automatically satisfied if $R$ is an integral domain), then $deg(f(x)g(x)) = deg(f(x)) + deg(g(x))$ and $l(f(x)g(x)) = l(f(x))l(g(x))$.
+    \item $R$ is an integral domain $\implies$ $R[x]$ is an integral domain and $U(R[x]) = U(R)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$f(x) = \sum_{i=0}^{n}a_{i}x^{i}$, $g(x) = \sum_{i=0}^{m} b_{i}x^{i}$ and $a_{n} \neq 0 \neq b_{m}$ $\implies$ $deg(f(x)) = n$, $l(f(x)) = a_{n}$ and $deg(g(x)) = m$, $l(g(x)) = b_{m}$.
+\begin{enumerate}
+    \item Assumption $\implies$ $a_{n}b_{m} \neq 0$. $f(x)g(x) = \sum_{j=0}^{m+n}c_{j}x^{j}$, $c_{n+m} = a_{n}b_{n} \neq 0$ $\implies$ $deg(f(x)g(x)) = n+m = deg(f(x)) + deg(g(x))$, $l(f(x)g(x)) = c_{n+m} = a_{n}b_{m} = l(f(x))l(g(x))$.
+    \item $R[x]$ is a commutative ring with $ 1 \neq 0$. $R[x]$ has no zero divisors: $f(x), g(x) \in R[x] \setminus \{0\}$ $\implies$ (1) $\implies$ $deg(f(x)g(x)) = deg(f(x)) + deg(g(x)) \geq 0$ $\implies$ $f(x)g(x) \neq 0$.\\
+    $U(R) \subseteq U(R[x])$: $a \in U(R) $ $\implies$ $\exists$ $a^{-1} \in R \in R[x]$ $\implies$ $a \in U(R[x])$ and $a*a^{-1} = 1$. \textbf{More generally, if $R$ is a subring of $S$, then $U(R) \subseteq U(S)$)}. $U(R[x]) \subseteq U(R)$. $f \in R[x]$ $\implies$ $\exists$ $g \in R[x]: fg = 1 (= gf)$ $\implies$ $0 = deg(1) = deg(fg) = deg(f) + deg(g)$ $\implies$ $deg(f) = deg(g)$ $\implies$ $f, g
+    in R \setminus \{0\}, fg = 1$ $\implies$ $f \in U(R)$.
+\end{enumerate}
+\end{proof}
+
+\begin{thm}[Division Algorithm]
+Assume $f(x), g(x) \in R[x]$, $g(x) \neq 0$ and $l(g(x)) \in U(R)$. Then there exist uniquely determined $g(x), r(x) \in R[x]$ such that $f(x) = q(x)g(x) + r(x)$ \underline{and} $r(x)$ or $deg(r(x)) < deg(g(x))$. \\
+\underline{Special cases}:
+\begin{enumerate}
+    \item $R = F$, a field, $g(x) \in F[x]$ any polynomial $\neq 0$ ($F \setminus \{0\} = U(F)$.
+    \item $g(x)$ is monic (i.e. $l(g(x)) = 1$).
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+$f(x) = \sum_{i=0}^{n}a_{i}x^{i}$, $g(x) = \sum_{i=0}^{m}b_{i}x^{i}$, $deg(g(x)) = m$, $b_{m} = l(g(x)) \in U(R)$. Proof by induction on $deg(f(x))$: we may assume $f(x) \neq 0$, $n = deg(f(x))$. If $n < m$, then $f(x) = 0*g(x) + f(x)$ satisfies the requirements with $q(x) = 0$, $r(x) = f(x)$. If $n \geq m$: we consider $f_{1}(x) = f(x) - a_{n}b_{m}^{-1}x^{n-m}g(x) = (a_{n}-a_{n}b_{m}^{-1}b_{m})x^{n}$ + lower terms $\implies$ $deg(f_{1}(x) < n = deg(f(x))$ $\implies$ I.H> $\exists$ $g_{1}(x), r_{1}(x)$ with $f_{1}(x) = q_{1}(x)g(x) + r_{1}(x)$ and $r_{1}(x)$ = 0 or $deg(r_{1}(x)) < deg(g(x))$ $\implies$ $f(x) = f_{1}(x) + a_{n}b_{m}^{-1}x^{n-m}g(x)$ = $(q_{1}(x) + a_{n}b_{m}^{-1}x^{n-m})g(x) + r_{1}(x)$ = $q(x) + r(x)$
+\end{proof}
+
+\begin{center}
+{\sf\LARGE Class March 28}
+\end{center}
+
+\textbf{More arguments in the existence proof from last class}: $f(x) = \sum_{i=1}^{n}a_{i}x^{i}$, $g(x) = \sum_{i=0}^{m}b_{i}x^{i}$, $l(g(x)) = b_{m} \in U(R)$. $n = deg(f) \geq m = deg(g)$; $b_{m} \in U(R)$ $\leadsto$ Consider $f_{1}(x) = f(x) - a_{n}b_{m}^{-1}x^{n-m}g(x)$ $\implies$ $deg(f_{1}) < n$.\\
+\underline{Uniqueness}: Assume $f(x) = q(x)g(x) + r(x) = q'(x)g(x) + r'(x)$ and $r(x)r'(x)$ are $0$ or of degree $< deg(g(x))$ $\implies$ $(q(x) - q'(x))g(x) = r'(x) - r(x)$ and apply 2.3.6(a).
+
+\begin{example}
+$R = \Z_{3}$, $f(x) = [3]x^{3} + [4]x^{2} + [2], g(x) = [5]x^{2}+[1] \in \Z_{12}[x]$. $[5]^{-1} = [5]$ (since $[5]*[5] = [1]$ in $\Z_{12}$). ($[3]x^{3}+[4]x^{2} + [2]) \div ([5]x^{2} + [1]) = [3]*[5]x + [4]*[5]$ = $[3]x + [8] = q(x)$.\\
+$([3]x^{3} + [4]x^{2} + [2]) - ([3]x^{3}+[3]x) = (f_{1} = ) [4]x^{2} - [3]x + [2] - ([4]x^{2} + [8]) = (-[3]x - [6]) = [9]x + [6] = r(x)$. \underline{Check}: $q(x)g(x) + r(x) = f(x)$
+\end{example}
+
+\begin{cor}
+If $a \in R$ is a root of $0 \neq f(x) \in R[x]$, then $x - a \mid f(x)$ in $R[x]$.
+\end{cor}
+
+\begin{proof}
+$l(x-a) = 1 \in U(R)$ so 2.3.7 applies $\implies$ $\exists$ $q(x), r(x) \in R[x]$ with $f(x) = q(x)(x-a) + r(x)$ \underline{and} $r(x) = 0$ or $deg(r(x)) < 1$, i.e. $r(x) \in R$ a root of $f(x)$ $\implies$ $0 = f(a) = q(a)(a-a) + r = r$ $\implies$ $r = 0$ $\implies$ $f(x) = q(x)g(x)$ $\implies$ $x -a \mid f(x)$ in $R[x]$.
+\end{proof}
+
+\begin{prop}
+If $R$ is an \underline{integral domain} and $0 \neq f(x) \in R[x]$, then $f(x)$ has at most $deg(f(x))$ many roots.
+\end{prop}
+
+\begin{proof}
+By induction on $deg(f(x)) = n$.\\
+$n = 0$ $\implies$ $f(x) \in R \setminus \{0\}$, $0$ roots\\
+$n \geq 1$: Assume the claim is true for polynomials degree $< n$. If $f(x)$ has no root $\leadsto$ done! Assume $a \in R$ is a root of $f(x)$, i.e. $f(a) = 0$ $\implies$ (2.3.9) $(x-a) \mid f(x)$ $\implies$ $f(x) = (x-a)q(x)$ with $q(x) \in R[x]$. 2.3.6 $\implies$ $n = deg(f(x)) = deg(x-a) + deg(q(x)) = 1 + deg(q(x))$ $\implies$ $deg(q(x)) = n-1 < n$ $\implies$ I.H. $q(x)$ has at most $n-1$ roots. For any root $b \in R$ of $f(x)$, we obtain $0 = f(b) = (b-a)q(b)$ $\Leftrightarrow$ $b-a = 0$ or $q(b) = 0$. \underline{Conclusion}: $\{$roots of f$\} = \{$roots of q$\} \cup \{a\}$ $\implies$ $f$ has at most $n$ roots.
+\end{proof}
+
+\begin{thm}
+If $R$ is an integral domain, then any  \underline{finite} subgroup $G \subseteq U(R)$ is cyclic.
+\end{thm}
+
+\begin{proof}
+$R$ commutative $\implies$ $U(R)$ is abelian $\implies$ $G$ is abelian, finite. Set $n = |G| = \prod_{i = 1}^{k} p_{i}^{e_{i}}$, $p_{1},...,p_{k}$ are distinct primes $e_{i} \in \N$. (Wlog $G \neq \{0\}$). $P_{i} \in Syl_{p_{i}}(G)$, $1 \leq i \leq k$ i.e. $|P_{i}| = p_{i}^{e_{i}} = n_{i}$. $G$ abelian $\implies$ $P_{i} \vartriangleleft G$, $n_{p_{i}} = 1$ $\implies$ $G = P_{1} \times ... \times P_{k}$ (1.5.12). Now assume, by way of contradiction, that $P_{i}$ \underline{is not cyclic} $\implies$ $|a| < |P_{i}| = p_{i}^{e_{i}}$ for some $i$ and $\forall$ $a \in P_{i}$. But also, $|a| \mid |P_{i}|$ $\implies$ $|a| \mid p_{i}^{e_{i-1}} = m_{i} < n_{i}$ $\forall$ $a \in P_{i}$ $\implies$ $a^{m_{i}} = 1$ $\forall$ $a \in P_{i}$ $\implies$ the polynomial $x^{m_{i}} - 1 \in R[x]$ of degree $m_{i} \geq 1$ has $\geq |P_{i}| = n_{i} > m_{i}$ many roots, which contradicts 2.3.10. Hence, $\implies$ $P_{i}$ is cyclic, $P_{i} \cong \Z_{n_{i}} (n_{i} = p_{i}^{e_{i}}$) $\implies$ $G = P_{1} \times ... \times P_{k} \cong \Z_{n_{1}} \times ... \times \Z_{n_{k}} \cong \Z_{n_{1}*...*n_{k}} = \Z_{n}$. This follows from the fact that $gcd(n_{i}, n_{j}) = 1$ $\forall$ $i \neq j$.
+\end{proof}
+
+\begin{cor}
+For any prime number $p$, $U(p) = U(\Z_{p})$ is cyclic.
+\end{cor}
+
+\begin{proof}
+$\Z_{p}$ is a field $\implies$ integral domain $\implies$ $U(\Z_{p})$ is cyclic, i.e. $U(p) \cong \Z_{p-1}$
+\end{proof}
+
+\begin{example}
+(Counterexample) \begin{enumerate}
+    \item $R = \Z_{12}$, $U(R) = U(12) = \{[1], [5], [7], [11]\} \cong \Z_{2} \times \Z_{2}$.
+    \item $R = H$, division ring (no zero divisors but not commutative). $U(R) = H^{*}$ contains the finite subgroup $Q_{8}$, which is not cyclic.
+\end{enumerate}
+\end{example}
+
+\begin{center}
+{\sf\LARGE Class March 30}
+\end{center}
+
+\begin{definition}
+$n \in \N$, $R$ commutative ring with $1$ $\leadsto$ $R[x_{1},...,x_{n}] := R[x_{1},...,x_{n-1}][x_{n}]$. Direct definition: $R[x_{1},...,x_{n}]:= \{\sum_{i_{1},..,i_{n}=0}^{m}x_{1}^{i_{i1}}*...*x_{b}^{i_{n}} \mid m \in \N_{0}$, all $i_{1},...i_{n} \in R\}$ such that we define $+: $component wise, $*: x_{1}^i_{1}*...*x_{n}^{i_{n}}*x_{1}^{j_{1}}*...*x_{n}^{j_{n}} = x_{1}^{i_{1}+j_{1}}*...*x_{n}^{i_{n}+j_{n}}$ and Distributive Law.
+\end{definition}
+
+\textbf{Euclidean Domains}. In this section, $R$ is an integral domain.
+
+\begin{definition}
+$R$ is a Euclidean domain if there exists a function $\curlyvee: R \setminus \{0\} \rightarrow \N_{0}$ s.t. (*) $\forall$ $a, b \in R$ with $b \neq 0$ $\exists$ $q, r \in R$ s.t. $a = bq + r$ \underline{and} $r = 0$ or $\curlyvee(r) < \curlyvee(b)$
+\end{definition}
+
+\begin{remark}
+\begin{enumerate}
+    \item if $\curlyvee(0)$ is defined and $\curlyvee(0) < \curlyvee(b)$ $\forall$ $b \in R \setminus \{0\}$, then we can drop "$r = 0$" in (*) and simply write $\curlyvee(r) < \curlyvee(b)$.
+    \item We will \underline{not} require (though it's satisfied in many examples) that $\curlyvee(x) \leq \curlyvee(xy)$ $\forall$ $R \setminus \{0\}$.
+    \item We do not require that $q$ and $r$ are uniquely determined.
+\end{enumerate}
+\end{remark}
+
+\begin{example}
+\begin{enumerate}
+    \item $R = \Z$, $\curlyvee: \Z \rightarrow \N_{0}$, $\curlyvee(a) = |a|$ (here $\curlyvee(0) = 0 < \curlyvee(b)$ $\forall$ $b \in \Z \setminus \{0\})$. (*) $\forall$ $a, b \in \Z$ with $b \neq 0$ $\exists$ $q, r \in \Z$ with $a = qb + r$ and $|r| < |b|$ (see 0.3.11 in the Pure & Applied Algebra textbook).
+    \item $F$ field, $R = F[x]$, $\curlyvee = deg: F[x] \setminus \{0\} \rightarrow \N_{0}$ then (*) is satisfied by Division Algorithm $f, g \in F[x]$, $g \neq 0$ $\implies$ $\exists$ $q, r \in F[x]: f = qg+r$ and $r = 0$ or $deg(r) < deg(g)$.
+\end{enumerate}
+\end{example}
+
+\begin{definition}
+$R$ (integral domain) is called a principal ideal domain (\underline{PID}) if every ideal $I$ of $R$ is \underline{principal} (generated by one element) i.e. $I = <a> = \{ra \mid r \in R\}$ for some $a \in I$.
+\end{definition}
+
+\begin{example}
+$\Z$ is a PID. Every ideal of $\Z$ is of the form $<n> = n\Z$ for some $n \in \N_{0}$.
+\end{example}
+
+\begin{thm}
+Every Euclidean domain $R$ is a PID. (Note: use this to prove something is a PID, we can prove that it is a Euclidean domain)
+\end{thm}
+
+\begin{proof}
+Let $I \vartriangleleft R$ be given. We may assume $I \neq \{0\} = <0>$. Set $n:=min\{\curlyvee(a) \mid 0 \neq a \in I\}$. Pick $0 \neq b \in I$ with $\curlyvee(b) = n$. Claim: $I = <b>$. Note: $b \in I$ $\implies$ $<b> \leq I$. Let $a \neq 0$ be any element of $I \setminus \{0\}$. (*) $\implies$ $\exists$ $q, r \in R$: $a = qb + r$ and $r = 0$ or $\curlyvee(r) < \curlyvee(b)$. Here only $r = 0$ is possible. $a, b \in I$ $\implies$ $a, qb \in I$ $\implies$ $r = a - qb \in I$. If we had $r \neq 0$, $r \in I$ $\implies$ $\curlyvee(r) \geq n$ by definition of $n$. But also $\curlyvee(r) < \curlyvee(b) = n$, contradiction! Hence, $r = 0$ $\implies$ $a = qb \in <b>$. This shows $I \subseteq <b> \subseteq I$ $\implies$ $I = <b>$ (principal ideal by defn)
+\end{proof}
+
+\begin{example}
+$<2, x> = \{2f + xg \mid f, g \in \Z[x]\}$ is \underline{not} a principal ideal. \underline{Notation}: $a_{1},...,a_{n} \in R$ $\leadsto$ $<a_{1},...,a_{n}> = \{\sum_{i=0}^{n}r_{i}a_{i} \mid r_{i} \in R$ $\forall$ $i \} \vartriangleleft R$. This is the smallest ideal of $R$ containing $a_{1},...,a_{n}$. $d \in \Z$, not a square $\implies$ $\sqrt{d} \in \Q$. Consider $R = \Z[\sqrt{d}] = \{a + b\sqrt{d} \mid a, b \in \Q\} \subseteq \C$. If $a + b\sqrt{d} \in F^{*} = F \setminus \{0\}$ $\implies$ $(a, b) \neq (0, 0)$ and subfield $a, b \in \Q$ $\implies$ $(a+b\sqrt{d})^{-1} = \frac{a-b\sqrt{d}}{a^{2}-db^{2}} \in F$.
+\end{example}
+
+\underline{Question}: When is $R$ a Euclidean domain? Candidate for $\curlyvee: R \rightarrow \N_{0}$ which maps $a+b\sqrt{d} \rightarrow |a^{2} - db^{2}|$ ($a, b \in \Z$).\\
+
+\underline{Extension}: $\Tilde{\curlyvee}: F \rightarrow \Q$ which maps $a+b\sqrt{d} \rightarrow |a^{2} - db^{2}|$ for $a, b \in \Q$.
+
+\begin{prop}
+Assume that for any $\alpha \in F$ there exists $r \in R$ with $\Tilde{\curlyvee}(\alpha - q) < 1'$. Then $R$ is a Euclidean domain satisfying (*) with $\curlyvee$ as above.
+\end{prop}
+
+\begin{cor}
+$\Z[\sqrt{d}]$ is a Euclidean domain for $d = -2, -1, 2, 3$ e.g. $d = -1$ i.e. $R = \Z[i]$. Let $\alpha = a + bi \in \Q(i)$ be given ($a, b \in \Q$). Choose $m, n \in \Z$ with $|a-m|$, $|n-b| \leq \frac{1}{2}$. Set $r = m+ni \in \Z_[i]$ $\implies$ $\Tilde{\curlyvee}((\alpha - m) + (b-n)i) = (\alpha - m)^{2} + (b-n)^{2} \leq \frac{1}{4} + \frac{1}{4} = \frac{1}{2} < 1$ $\implies$ $\Z[i]$ is Euclidean $\implies$ PID.
+\end{cor}
+
+\begin{center}
+{\sf\LARGE Class April 2}
+\end{center}
+
+$d \in \Z$ not a square $\implies$ $\sqrt{d} \notin \Q$.\\
+$R = \Z[\sqrt{d}] = \{a+b\sqrt{d} \mid a, b \in \Z\}$, $F = \Q(\sqrt{d}) = \{a+b\sqrt{d} \mid a, b \in \Z\}$.\\
+$\Tilde{\curlyvee}: F \rightarrow \Q^{\geq 0}$ which maps $a+b\sqrt{d} \rightarrow |a^{2}-db^{2}|$ ($=a^{2}-db^{2}$ if $d < 0$).\\
+$\curlyvee = \Tilde{\curlyvee}_{1R}: R \rightarrow \N_{0}$ ($\curlyvee(x) = 0$ $\longleftarrow$ $x = 0$)\\
+Check $\Tilde{\curlyvee}$ is multiplicative i.e. $\Tilde{\curlyvee}(\alpha \beta) = \Tilde{\curlyvee}(\alpha)\Tilde{\curlyvee}(\beta)$ $\forall$ $\alpha, \beta \in F$.
+
+\begin{prop}
+Assume that for any $\alpha \in F$ $\exists$ $q \in R$ s.t. \underline{$\Tilde{\curlyvee}(\alpha - q) < 1$}. Then $R$ is a Euclidean domain with respect to $\curlyvee$.
+\end{prop}
+
+\begin{proof}
+Given $x, y \in R$, $y \neq 0$ $\implies$ consider $\alpha = \frac{x}{y} \in F$ $\implies$ $\exists$ $q \in R$: $\Tilde{\curlyvee}(\alpha - q) < 1$ and moreover $1*\Tilde{\curlyvee}(y) = \curlyvee(y)$ $\implies$ $\Tilde{\curlyvee}(\alpha - q)\Tilde{\curlyvee}(y) < \curlyvee(y)$ $\implies$ $\Tilde{\curlyvee}(\alpha y - qy) = \Tilde{\curlyvee}(x - qy) =: r \in R$ $\implies$ $x = qy+r$ \underline{and} \underline{$\curlyvee(r) < \curlyvee(y)$} by definition of $r$ ($q, r \in R$).
+\end{proof}
+
+\begin{cor}
+$\Z[\sqrt{d}]$ is a Euclidean domain for $d = -2, 1, 2, 3$.
+\end{cor}
+
+\begin{remark}
+One can show that $\Z[\sqrt{-3}]$ is \underline{not} a PID (hence not Euclidean) but the condition of the proposition can be satisfied with $\Tilde{\curlyvee}(\alpha - q) < 1$.
+\end{remark}
+
+If $R$ is Euclidean $\implies$ $R$ is a PID. Hence, if $a, b \in R$ are given, $\exists c \in R$ such that $<a. b> = <c>$ ($<a, b> = \{\lambda*a + \mu*b \mid \lamba, \mu \in R\} \vartriangleleft R$). \textbf{Question}: How do we \underline{compute} $c$? \textbf{Answer}: Euclidean Algorithm.
+
+\begin{prop}[Euclidean Algorithm]
+$R$ (Euclidean domain); $a, b \in R \setminus \{0\}$.\\
+Then $\exists$ $q_{1}, r_{1} \in R$: $a = q_{1}b+r$ and if $r_{1} \neq 0$, then $\curlyvee(r_{1}) < \curlyvee(b)$\\
+$q_{2}r_{2} \in R: b = q_{2}r_{1}+r_{2}$ and if $r_{2} \neq 0$, then $\curlyvee(r_{2})<\curlyvee(r_{1})$\\
+...\\
+$\exists$ $q_{i+1}, r_{i+1} \in R: r_{i-1} = q_{i+1}r_{i}+r_{i+1}$ and if $r_{i+1} \neq 0$, then $\curlyvee(r_{i+1}) < \curlyvee(r_{i})$\\
+$\exists$ $n$ s.t. $r_{n+1} = 0$ for the first time $r_{n} \neq 0$. $r_{n-2} = q_{n}r_{n-1}+r_{n}$ and $\curlyvee(r_{n})<\curlyvee(r_{n-1})$\\
+$r_{n-1} = q_{n+1}r_{n} + 0 = r_{n+1}$\\
+Then, $<a, b> = <r_{i}, r_{i+1}> = <r_{n}>$ $\forall$ $0 \leq i \leq n$ (because $r_{n+1} = 0$ in the last step).  Furthermore, coefficients with $r_{n} = c_{i+1}r_{j-1}+c_{i}r_{i}$ can be computed recursively: $c_{n+1} = 0$, $c_{n} = 1$, $c_{i-1} = c_{i+1} = + q_{i}c_{i}$ $\forall$ $n \geq i \geq 0$ $\leadsto$ $r_{n} = c_{1}r_{-1}+c_{0}r_{0} = c_{1}a+c_{0}b$
+\end{prop}
+
+\begin{remark}
+$r_{n} = gcd(a, b)$ (clear for $R = \Z$ (has to be defined for general $R$).
+\end{remark}
+
+\begin{proof}
+$a = q_{1}b+r_{1} \in <b, r_{1}>$ $\implies$ $<a, b> \subseteq <b, r_{1}>$\\
+$r_{1} = a - q_{1}b \in <a, b>$ $\implies$ $<b, r_{1}> \subseteq <a, b>$ $\implies$ $<a, b> = <b, r_{1}>$ $\implies$ $<r_{-1}, r_{1}> =<r_{0}, r_{1}>$\\
+Therefore, we WTS $<a, b> = <r_{i-1}, r_{i}> = <r_{i}, r_{i+1}>$\\
+$r_{i-1} = q_{i+1}r_{i} + r_{i+1} \in <r_{i}, r_{i+1}>$ $\implies$ $<r_{i-1}, r_{i}> \subseteq <r_{i}, r_{i+1}>$\\
+$r_{i+1} = r_{i-1} + q_{i+1}r_{i} \in <r_{i-1}, r_{i}>$ $\implies$ $<r_{i}, r_{i+1}> \subseteq <r_{i-1}, r_{i}>$ $\implies$ $<r_{i-1}, r_{i}> = <r_{i}, r_{i+1}>$\\
+Recall $r_{n+1} = 0$, so for $i = n: <a, b> = <r_{n}>$. We prove $r_{n} = c_{i+1}r_{i-1}+c_{i}r_{i}$ for $n \geq i \geq 0$ by (reverse) induction on $i$:\\
+\underline{$i=n$}: $c_{n+1}r_{n-1}+c_{n}r_{n} = 0*r_{n-1} + 1*r_{n} = r_{n}$\\
+$i \rightarrow i-1$: $r_{n} = c_{i+1}r_{i-1}+c_{i}r_{i}$, $r_{i-2} = q_{i}r_{i-1}+r_{i}$ $\Longleftrightarrow$ $r_{i} = r_{i-2} - q_{i}r_{i-1}$. Moreover, $r_{n} = c_{i+1}r_{i-1} + c_{i}(r_{i-2}-q_{i}r_{i-1}) = (c_{i+1}-q_{i}c_{i})r_{i-1} + c_{i}r_{i-2} = c_{(i-1)+1}r_{(i-1)-1}+c_{i-1}r_{i-1}$
+\end{proof}
+
+\begin{example}
+$R = \Z[i]$, $a = 4+7i$, $b = 8 - i$, $a = q_{1}b+r_{1}$\\
+$\alpha_{1} = \frac{a}{b} = \frac{4+7i}{8-i} = \frac{(4+7i)(8+i)}{(8-i)(8+i)} = \frac{25 + 60i}{65}$ approximate by $m+ni \in \Z[i]$ (e.g. $m = 0, n = i$) $\leadsto$ $q_{1} = m+ni = i$, $r_{i} = a-q_{1}b = 3-i$ $\implies$ $a = q_{1}b+r_{1}$ $\Longleftrightarrow$ $4+7i = i(8-i)+(3-i)$\\
+$\alpha_{2} = \frac{b}{r_{1}} = \frac{8-i}{3-i} = \frac{(8-i)(3+i)}{(3-i)(3+i)} = \frac{25+5i}{10} = \frac{5}{2} + \frac{1}{2}i$, $q_{2} = 3$ $\leadsto$ $r_{2} = b-q_{2}r_{1} = -1+2i$\\
+$\therefore$ $8-i = 3(3-i)+(-1+2i)$ $\implies$ $3-i = (-1-i)(-1+2i)+0$ $\leadsto$ $n = 2$ and our first result is that $<4+7i, 8-i> = <-1+2i>$.\\
+$r_{2} = (8-i)-3(3-i) = (8-i)-3(4+7i)-i(8-i) = (1+3i)(8-i)-3(4+7i) = -3a+(1+3i)b = c_{1}a+c_{0}b$. Check that $c_{0} = 1+3i$, $c_{1} = -3$
+\end{example}
+
+\begin{center}
+{\sf\LARGE Miscellaneous Notes from Textbook}
+\end{center}
+
+\begin{thm}
+If $R$ is an integral domain, then $R[x]$ is an integral domain, and the product of any two nonzero polynomials $f(x), g(x) \in R[x]$ such that $deg(f(x)) = m$ and $deg(g(x)) = n$, is a nonzero polynomial $f(x)*g(x)$ of degree $m+n$.
+\end{thm} \\
+\begin{proof}
+if $f(x) = a_{n}x^{n}+...+a_{0}$ and $g(x) = b_{m}x^{m}+...+b_{0}$ $\implies$ $f(x)*g(x) = a_{n}b_{m}x^{m+n}+...+a_{0}b_{0}$ $\implies$ because $R$ is an integral domain, $a_{n}b_{m} \neq 0$ $\implies$ the product has degree $m+n$ and it is also clear that $R[x]$ is an integral domain.
+\end{proof}
+
+\begin{prop}
+ Let $D$ be an integral domain. Then the units in $D[x]$ are precisely the units in $D$.
+\end{prop}
+
+\begin{cor}
+If $F$ is a field, then $F[x]$ is an integral domain but not a field.
+\end{cor}
+\begin{proof}
+$F$ is a field $\implies$ $F$ is an integral domain $\implies$ $F[x]$ is an integral domain, but all nonzero polynomials in $F[x]$ are nonzero elements that are not units (because all units in $F[x]$ are precisely the units of $F$). Therefore $F[x]$ is not a field.
+\end{proof}
+
+ \begin{definition}[Characteristic]
+ The characteristic of a polynomial ring $R[x]$ is the least integer $n > 0$ such that $nf(x) = 0$ $\forall$ $f(x) \in R[x]$ (and is zero if no such $n$ exists).
+ \end{definition}
+
+ \begin{prop}
+  Let $R$ be a ring. Then $R[x]$ has the same characteristic as $R$.
+ \end{prop}
+
+ \begin{proof}
+ Since $R$ is contained in $R[x]$, it is obvious that if $a*f(x)$ $\forall$ $f(x) \in R[x]$ $\implies$ $a*r = 0$ $\forall$ $r \in R$ (because $r \in R[x]$). \\
+ Let $f(x) = a_{n}x^{n}+...+a_{0}$. Then if $a*r = 0$ $\forall$ $r \in R$ $\implies$ $a*f(x) = a*a_{n}x^{n}+...+a*a_{0}$ and because the coefficients are in $R$, all the new coefficients equal $0$ $\implies$ $f(x) = 0$
+ \end{proof}
+
+ \begin{definition}
+ Let $F$ be a subfield of a field $E$ and $\alpha \in E$. The \textbf{evaluation homomorphism} is defined as $\phi_{\alpha}: F[x] \rightarrow E$ such that $f(x) = a_{n}x^{n}+...+a_{1}x+a_{0} \in F[x]$ and $\phi_{\alpha}(f(x)) = a_{n}\alpha^{n}+...a_{1}\alpha+a_{0} \in E$.
+ \end{definition}
+
+ \textbf{Division Algorithm and Proof are worth reviewing}
+
+ \begin{prop}
+  Let $F$ be a field such that $f(x), g(x) \in F[x]$. Then,
+  \begin{enumerate}
+      \item $g(x) \mid f(x)$ $\implies$ $eg(x) \mid f(x)$ for any element $0 \neq e \in F$.
+      \item $g(x) \mid f(x)$ and $f(x) \mid g(x)$ $\implies$ $f(x) = eg(x)$ for some element $0 \neq e \in F$.
+  \end{enumerate}
+ \end{prop}
+
+\begin{enumerate}
+    \item
+    \begin{proof}
+    $g(x) \mid f(x)$ $\implies$ $f(x) = q(x)*g(x)$ $\implies$ $f(x) = (e^{-1}*q(x))*(e*g(x))$ $\implies$ $e*g(x) \mid f(x)$.
+    \end{proof}
+    \item
+    \begin{proof}
+    $g(x) \mid f(x)$ $\implies$ $f(x) = q(x)*g(x)$; $f(x) \mid g(x)$ $\implies$ $g(x) = p(x)*f(x)$. Hence, $f(x) = q(x)*p(x)*f(x)$ $\implies$ $q(x)*p(x) = 1$ $\implies$ $q(x), p(x)$ have degree $0$ and are both constant because their product is constant $\implies$ $q(x) = e$ and $p(x) = e^{-1}$ for some element $0 \neq e \in F$.
+    \end{proof}
+\end{enumerate}
+
+\begin{remark}
+If the leading coefficient is 1, then the polynomial is called \textbf{monic}
+\end{remark}
+
+\begin{definition}
+For $f(x)$ and $g(x)$ in $F[x]$ where $F$ is a field, a \textbf{common divisor} of $f(x), g(x)$ is any polynomial $c(x) \in F[x]$ such that $c(x) \mid f(x)$ and $c(x) \mid g(x)$. A \textbf{greatest common divisor} of $f(x)$ and $g(x)$ is a common divisor $d(x)$ such that for any other common divisor $c(x)$, $c(x) \mid d(x)$. If the only common divisors and therefore the only greatest common divisors of $f(x)$ and $g(x)$ are constants, then $f(x)$ and $g(x)$ are called \textbf{relatively prime}.
+\end{definition}
+
+\begin{remark}
+If $d_{1}(x), d_{2}(x)$ are both greatest common divisors, then $d_{1}(x) = e*d_{2}(x)$ for some $0 \neq e \in F$ $\implies$ there can only be one \textit{monic} greatest common divisor, denoted $gcd(f(x), g(x))$.
+\end{remark}
+
+\begin{thm}
+Let $F$ be a field and $f(x), g(x) \in F[x]$ (not both $0$). Then there exists a greatest common divisor $d(x)$ of $f(x)$ and $g(x)$ that can be written as a linear combination of $f(x)$ and $g(x)$. Therefore, $\exists$ $u(x). v(x) \in F[x]$ such that $d(x) = u(x)*f(x) + v(x)*g(x)$ is a greatest common divisor of $f(x)$ and $g(x)$.
+\end{thm}
+
+\begin{proof}
+Define the set $S = \{m(x)f(x)+n(x)g(x) \mid m(x), n(x) \in F[x]\}$. Note that $f(x), g(x) \in S$. Therefore, $S$ has elements other than $0$. Let $d(x) \in S$ of minimum degree. We may take $d(x)$ to be monic because if it isn't then, we can take $a^{-1}d(x)$ which is monic if $a$ was the leading coefficient of $d(x)$. Because, $d(x) \in S$ $\implies$ $d(x) = u(x)f(x)+v(x)g(x)$ for some $u(x), v(x) \in F[x]$.\\
+Now we must show that $d(x)$ is a common divisor of $f(x)$ and $g(x)$. According to the division algorithm, $f(x) = q(x)d(x)+r(x)$ such that $r(x) = 0$ or $deg(r(x)) < deg(d(x))$. Solving for $r(x)$, we obtain $r(x) = f(x)-q(x)d(x)=f(x)-q(x)(u(x)f(x)+v(x)g(x)) = [1-u(x)q(x)]f(x)-[q(x)v(x)]g(x)$ $\implies$ $r(x) \in S$ by definition. Since $d(x)$ was chosen to be of minimum degree (in $S$), $\implies$ $deg(r(x)) < deg(d(x))$ is not true and therefore $r(x) = 0$ $\implies$ $d(x) \mid f(x)$. Wlog this argument also applies to $g(x)$.\\
+To complete the proof, we need to show that $d(x)$ is the greatest common divisor (so any other common divisor $c(x) \mid d(x)$). If $\exists$ common divisor $c(x)$ $\implies$ $f(x) = q(x)c(x)$ and $g(x) = p(x)c(x)$ by definition. Therefore, $d(x) = u(x)f(x) + v(x)g(x) = [u(x)q(x)+v(x)p(x)]c(x)$ $\implies$ $c(x) \mid d(x)$ $\implies$ $d(x)$ is the $gcd(f(x). g(x)$ by construction.
+\end{proof}
+
+\textbf{Practice using the Euclidean Algorithm}
+
+\begin{thm}[Factor Theorem]
+Let $F$ be a field, $f(x) \in F[x]$ and $a \in F$. Then, $a$ is a zero of $f(x)$ $\Longleftrightarrow$ $(x-a)$ is a divisor of $f(x)$ in $F[x]$.
+\end{thm}
+
+\begin{proof}
+($\Rightarrow$) Assume $a$ is a zero of $f(x)$. Applying the division algorithm, we can write $f(x) = q(x)(x-a)+r(x)$ such that $r(x) = 0$ or $deg(r(x))<deg(x-a)$. Suppose $deg(r(x))<deg(x-a)$. This implies that $deg(r(x)) = 0$ and $r(x) = c \in F$ (a constant). By definition, $0 = f(a) = q(a)(a-a) +c = 0+c$ $\implies$ $r(x) = 0$ $\implies$ $(x-a) \mid f(x)$\\
+($\Leftarrow$) $(x-a) \mid f(x)$ $\implies$ $f(x) = q(x)(x-a)$ $\implies$ $f(a) = q(a)(a-a) = 0$ $\implies$ $a$ is a zero of $f(x)$.
+\end{proof}
+
+\textbf{Irreducible Polynomials not covered on the exam but seem pretty important}
+
+\begin{definition}
+Let $F$ be a field and $f(x)$ a nonconstant polynomial in $F[x]$. Then $f(x)$ is \textbf{irreducible} over $F$ if $f(x)$ \underline{cannot} be expressed as a product $f(x) = g(x)h(x)$ of polynomials $g(x)$ and $h(x)$ in $F[x]$ both of lower degree than $f(x)$. $f(x)$ is \textbf{reducible} over $F$ if it is not irreducible.
+\end{definition}
+
+\begin{thm}
+Let $F$ be a field, $f(x)$ a polynomial in $F[x]$ of degree 2 or 3. Then, $f(x)$ is reducible over $F$ $\Longleftrightarrow$ $f(x)$ has a zero in $F$.
+\end{thm}
+
+\textbf{Ideals in $F[x]$}
+
+\begin{definition}
+If $a \in R$, then the \textbf{principal ideal} $<a>$ generated by $a$ is the ideal $\{ra \mid r \in R\}$ consisting of all multiples by $a$. Therefore, if $F$ is a field, then the principal ideal $<x>$ in $F[x]$ generated by $x$ is the set of all multiples of $x$, which is to say, the set of all polynomials in $F[x]$ with constant term 0.
+\end{definition}
+
+\begin{definition}
+Let $D$ be an integral domain. Then $D$ is called a \textbf{principal ideal domain (PID)} if every ideal in $D$ is a principal ideal.
+\end{definition}
+
+\begin{example}
+$\Z$ is a PID, since as we know every ideal $I$ in $\Z$ is generated by a fixed element $n \in I$, so $I=n\Z=<n>$.
+\end{example}
+
+\begin{thm}
+Let $F$ be a field. Then $F[x]$ is a PID.
+\end{thm}
+
+\begin{proof}
+$F[x]$ is an integral domain because $F$ is an integral domain. Now, we need to show that for any ideal $I$ in $F[x]$ $\exists$ $f(x) \in I$ such that $I = <f(x)>$. If $I$ is the zero ideal $\{0\}$, then $I = <0>$. If $I$ is not the zero ideal, let $g(x)$ be a nonzero element of $I$ of minimal degree. We show that $g(x)$ generates $I$ ($I = <g(x)>$) by showing that if $f(x) \in I \setminus \{g(x)\}$, then $g(x) \mid f(x)$. To show this we apply the division algorithm to write $f(x)=q(x)g(x)+r(x)$ such that $r(x)=0$ or $deg(r(x))<deg(g(x))$. Since $r(x) = f(x) - q(x)g(x) \in I$ and $g(x)$ is chosen to have minimal degree, $deg(r(x))<deg(g(x))$ cannot hold $\implies$ $r(x) = 0$ $\implies$ $f(x) = q(x)g(x)$ which is a multiple of $g(x)$ by definition.
+\end{proof}
+
+\begin{thm}
+Let $F$ be a field. A nontrivial ideal $I = <p(x)>$ is a maximal ideal in $F[x]$ $\Longleftrightarrow$ $p(x)$ is irreducible over $F$.
+\end{thm}
+
+\begin{proof}
+($\Rightarrow$) Suppose $I = <p(x)>$ is a maximal ideal in $F[x]$. $I$ is neither $\{0\}=<0>$ nor $F[x] = <1>$, so $p(x)$ is neither the zero polynomial nor a unit of $F[x]$ (a constant polynomial).If $p(x) = g(x)h(x)$, then $p(x) \in <g(x)>$ and, therefore, $I = <p(x)> \subseteq <g(x)> \subseteq F[x]$. We assume $I$ is maximal $\implies$ either $<p(x)> = <g(x)>$ or $<g(x)>=F[x]$. $<p(x)> = <g(x)>$ $\implies$ $deg(g(x)) = deg(p(x))$. Conversely, $<g(x)>=F[x]$ $\implies$ $deg(g(x)) = 0$ and $deg(h(x)) = deg(p(x))$. This shows that $p(x)$ is irreducible over $F$.\\
+($\Leftarrow$) Suppose $p(x)$ is irreducible over $F$ and let $J = <f(x)>$ be an ideal with $<p(x)> \subseteq J = <f(x)> \subseteq F[x]$. Then, $p(x) \in <f(x)>$ $\implies$ $p(x) = q(x)f(x)$ for some $q(x) \in F[x]$. By our assumption that $p(x)$ is irreducible, we must either have $deg(f(x)) = deg(p(x))$ $\implies$ $q(x)$ is a nonzero constant, or $deg(q(x)) = deg(p(x))$ $\implies$ $f(x)$ is a nonzero constant. In the former case, $<p(x)> = <f(x)>$ and in the latter, $<f(x)> = F[x]$. Either way, this shows that $I = <p(x)>$ is a maximal ideal.
+\end{proof}
+
+\textit{Practice proof techniques from the last few proofs and return to Page 267 in [P]}
+
+\textbf{Chapter 9: Euclidean Domains}
+
+\begin{definition}[Euclidean Domain]
+Informally, a \textbf{Euclidean Domain} is an integral domain in which a division algorithm holds.\\
+More formally, an integral domain $D$ is called a Euclidean domain if $\exists$ $\curlyvee: D \setminus \{0\} \rightarrow \Z \cup \{0\}$ from the set of nonzero elements of $D$ to the set of non negative integers such that
+\begin{enumerate}
+    \item For $x \neq 0$, $y \neq 0$ in $D$, $\curlyvee(x) \leq \curlyvee(xy)$
+    \item Given $a$ and $b \neq 0$ in $D$, $\exists$ $q, r \in D$ such that $a = qb+r$ such that $r = 0$ or $\curlyvee(r) < \curlyvee(b)$
+\end{enumerate}
+\end{definition}
+
+\begin{thm}
+Every Euclidean domain is a PID.
+\end{thm}
+
+\begin{proof}
+Let $I$ be an ideal in a Euclidean domain $D$. If $I = \{0\}$, then $I = <0>$. If $I \neq \{0\}$, let $0 \neq a \in I$ be an element of $I$ such that $\curlyvee(a) \leq \curlyvee(x)$ for all $0 \neq x \in I$. We will show that $I =<a>$. Let $b \in I$. Then $\exists$ $q, r \in D$ such that $b = qa+r$ with $r= 0$ or $\curlyvee(r)<\curlyvee(a)$. $r = b-qa$ $\implies$ $r \in I$. By the minimality of $\curlyvee(a)$, we have that $r = 0$ $\implies$ $b = qa \in <a>$. Therefore, $b \in <a>$ for all $b \in I$ and $I = <a>$ $\implies$ $D$ is a principal ideal domain.
+\end{proof}
+
+\begin{definition}
+Let $R$ be a commutative ring and let $a, b \in R$ with $b \neq 0$.\\
+\begin{enumerate}
+    \item $b$ is said to be a \textbf{divisor} of $a$ in $R$, written $b \mid a$ if $\exists$ $x \in R$ such that $ax = b$
+    \item $c \in R$ is a \textbf{common divisor} of $a$ and $b$ if $c \mid a$ and $c \mid b$.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+Let $R$ be a commutative ring and let $a, b \in R$. A \textbf{greatest common divisor} of $a$ and $b$ is a nonzero element $d \in R$ such that \begin{enumerate}
+    \item $d$ is a common divisor of $a$ and $b$
+    \item If $c$ is a common divisor of $a$ and $b$, then $c \mid d$.
+\end{enumerate}
+\end{definition}
+
+\begin{thm}
+Let $D$ be a Euclidean domain and $a, b \in D$ two nonzero elements of $D$. Then $\exists$ $d \in D$ such that \begin{enumerate}
+    \item $d$ is a greatest common divisor of $a$ and $b$
+    \item $\exists$ $u, v \in D$ such that $d = ua + vb$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+Let $I = \{xa+yb \mid x, y \in D\}$. $I$ is an ideal of $D$ (specifically the ideal generated by $a$ and $b$). Because every Euclidean domain is a principal ideal domain, $I = <d>$ for some $d \in D$. Since $d \in I$ $\implies$ $d = ua+vb$ for some $u, v \in D$. Since $I = <d>$, every element in $I$ is of the form $xd$ for $x \in D$. Since $a \in I$ by construction $\implies$ $d \mid a$ (and the same thing for $b$ $\implies$ $d \mid b$). If $c \mid a$ and $c \mid b$ such that $a = xc$ and $b = yc$ $\implies$ $d = uxc+vyc = (ux+vy)c$ such that $c \mid d$ (and this concludes the proof!).
+\end{proof}
+
+\begin{prop}
+Let $D$ be an integral domain and let $a, b \in D$. Then if $d$ and $d'$ are greatest common divisors of $a, b \in D$, then $d = ud'$ for some unit $u \in D$.
+\end{prop}
+
+\begin{proof}
+Since both $d$ and $d'$ are greatest common divisors of $a$ and $b$, $d \mid d'$ and $d' \mid d$. Therefore, $d = ud'$ and $d' = vd$ for some $u, v \in D$. This implies that $d = u(vd) = (uv)d$ $\implies$ $(1-uv)d = 0$ and $d \neq 0$ $\implies$ $uv = 1$ $\implies$ $u$ is a unit with its inverse $v$ in $D$.
+\end{proof}
+
+\begin{thm}
+Let $D$ be a Euclidean domain. Then,
+\begin{enumerate}
+    \item $\curlyvee(1) \leq \curlyvee(a)$ $\forall$ $0 \neq a \in D$
+    \item $\curlyvee(1) = \curlyvee(a)$ if and only if $a$ is a unit in $D$
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\begin{enumerate}
+    \item $\curlyvee(1) \leq \curlyvee(1*a)=\curlyvee(a)$ $\forall$ $0 \neq a \in D$
+    \item If $a$ is a unit in $D$, then $\curlyvee(a) \leq \curlyvee(a*a^{-1}) = \curlyvee(1) \leq \curlyvee(a)$. hence, $\curlyvee(1) = \curlyvee(a)$. Conversely, if $\curlyvee(1) = \curlyvee(a)$, by the division algorithm $\exists$ $q, r \in D$ such that $1 = qa+r$ with $r = 0$ or $\curlyvee(r) < \curlyvee(a)$. But since $\curlyvee(a) = \curlyvee(1)$ and by (1), $\curlyvee(1) \leq \curlyvee(r)$, we cannot have $\curlyvee(r) < \curlyvee(a)$ and must have $r = 0$. Therefore, $1 = qa$ and $a$ is a unit.
+\end{enumerate}
+\end{proof}
 
 
 \end{document}

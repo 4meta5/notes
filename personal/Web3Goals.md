@@ -7,3 +7,5 @@
 ## References
 * Gav article on What we need for Web3
 * Josh Stark Web3 article
+* look at Mike Goldin's github for his manifesto
+* Liam Horne may also have something good

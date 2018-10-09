@@ -16,6 +16,9 @@ These are a few of the books that have shaped me. I believe that reading is esse
 * [The Alchemist](#thealchemist) by Paulo Coelho
 * [A Farewell to Arms](#afarewelltoarms) by Ernest Hermingway
 * [For Whom the Bell Tolls](#forwhomthebelltolls) by Ernest Hemingway
+
+* [Catch 22](#catch22) by Joseph Heller
+* [The Old Man and the Sea](#oldsea) by Ernest Hemingway
 * [A Random Walk Down Wall Street](#randomwalk) by Burton G. Malkiel
 * [Business Adventures](#adventures) by John Brooks
 * [Flash Boys](#flash) by Michael Lewis
@@ -31,12 +34,19 @@ These are a few of the books that have shaped me. I believe that reading is esse
 * [Summer Ball](#summerball) by Mike Lupica
 * [Travel Team](#travelteam) by Mike Lupica
 
+---
 ## College <a name="college"></a>
 
+---
 ## High School <a name="highschool"></a>
 
 Notable books that I didn't put here include all of the works of F. Scott Fitzgerald. I may add a few of these later.
 
+* [Moby Dick](#mobydick) by Herman Melville
+* [Praise of Folly](#praise) by Erasmus
+* [Sophie's World](#sophie) by Jostein Gaarder
+* [Catch 22](#catch22) by Joseph Heller
+* [The Old Man and The Sea](#oldsea) by Ernest Hemingway
 * [A Random Walk Down Wall Street](#randomwalk) by Burton G. Malkiel
 * [Business Adventures](#adventures) by John Brooks
 * [Flash Boys](#flash) by Michael Lewis
@@ -45,6 +55,83 @@ Notable books that I didn't put here include all of the works of F. Scott Fitzge
 * [The New New Thing](#newnew) by Michael Lewis
 * [The Fellowship of the Ring](#fellowship) by J.R.R. Tolkien
 * [Unbroken](#unbroken) by Laura Hillenbrand
+
+### Moby Dick <a name="mobydick"></a>
+
+> Ignorance is the parent of fear.
+
+> Consider the subtleness of the sea; how its most dreaded creatures glide under water, unapparent for the most part, and treacherously hidden beneath the loveliest tints of azure. Consider also the devilish brilliance and beauty of many of its most remorseless tribes, as the dainty embellished shape of many species of sharks. Consider, once more, the universal cannibalism of the sea; all whose creatures prey upon each other, carrying on eternal war since the world began. 
+> Consider all this; and then turn to the green, gentle, and most docile earth; consider them both, the sea and the land; and do you not find a strange analogy to something in yourself? For as this appalling ocean surrounds the verdant land, so in the soul of man there lies one insular Tahiti, full of peace and joy, but encompassed by all the horrors of the half-known life. God keep thee! Push not off from that isle, thou canst never return!
+
+> To enjoy bodily warmth, some small part of you must be cold, for there is no quality in this world that is not what it is merely by contrast. Nothing exists in itself. If you flatter yourself that you are all over comfortable, and have been so a long time, then you cannot be said to be comfortable any more. For this reason a sleeping apartment should never be furnished with a fire, which is one of the luxurious discomforts of the rich. For the height of this sort of deliciousness is to have nothing but the blanket between you and your snugness and the cold of the outer air. Then there you lie like the one warm spark in the heart of an arctic crystal.
+
+> Who ain’t a slave? Tell me that. Well, then, however the old sea-captains may order me about—however they may thump and punch me about, I have the satisfaction of knowing that it is all right; that everybody else is one way or other served in much the same way— either in a physical or metaphysical point of view, that is; and so the universal thump is passed round, and all hands should rub each other’s shoulder-blades, and be content.
+
+> There is no steady unretracing progress in this life; we do not advance through fixed gradations, and at the last one pause:-- through infancy's unconscious spell, boyhood's thoughtless faith, adolescence' doubt (the common doom), then scepticism, then disbelief, resting at last in manhood's pondering repose of If. But once gone through, we trace the round again; and are infants, boys, and men, and Ifs eternally. Where lies the final harbor, whence we unmoor no more? In what rapt ether sails the world, of which the weariest will never weary? Where is the foundling's father hidden? Our souls are like those orphans whose unwedded mothers die in bearing them: the secret of our paternity lies in their grave, and we must there to learn it.
+
+### Praise of Folly <a name="praise"></a>
+
+> And what am I to say about those who enjoy deluding themselves with imaginary pardons for their sins?
+
+> Had I a hundred tongues, a hundred mouths,
+A voice of iron, I could not count the types 
+Of fool, nor yet enumerate the names
+Of every kind of folly.
+
+> And that 'great theologian' had sweated eight whole months over this discourse, so today he is blinder than a mole, all his keenness of sight doubtless gone to reinforce the sharp edge of his intellect. But the man has no regrets for his lost sight; he even thinks it was a small price to pay for his hour of glory.
+
+> I don't want to look as though I'm writing satire when I should be delivering a eulogy, nor anyone to think that in praising bad princes I mean to censure good ones. I touched briefly on these matters only to make it clear that no mortal can live honestly unless he is initiated in my rites and is sure of my favours.
+
+> the supreme reward for man is no other than a kind of madness. First consider how Plato imagined something of this sort when he wrote that the madness of lovers is the highest form of happiness. For anyone who loves intensely lives not in himself but in the object of his love, and the further he can move out of himself into his love, the happier he is. Now, when the soul is planning to leave the body and cease to make proper use of its organs, it is thought to be mad, and doubtless with good reason...What, then, will life in heaven be like, to which all pious minds so eagerly aspire?
+> And so when the whole man will be outside himself, and be happy for no reason except that he is so outside himself, he will enjoy some ineffable share in the supreme good which draws everything into itself. Although this perfect happiness can only be experienced when the soul has recovered its former body, and been granted immortality, since the life of the pious is no more than a contemplation and foreshadowing of that other life, at times they are able to feel some foretaste and savour of the reward to come. It is only the tiniest drop in comparison with the fount of eternal bliss, yet it far exceeds all pleasures of the body, even if all mortal delights were rolled into one, so much does the spiritual surpass the physical, the invisible the visible...And this is the party of Folly which is not taken away by the transformation of life but is made perfect.
+
+### Sophie's World <a name="sophie"></a>
+
+> There are two kinds of philosophers. One is a person who seeks his own answers to philosophical questions. The other is someone who is an expert on the history of philosophy but does not necessarily construct his own philosophy.
+
+> Kant had talked about something he called 'das Ding an sich'. Although he denied that man could have any clear cognition of the innermost secrets of nature, he admitted that there exists a kind of unattainable 'truth'. Hegel said that the 'truth is subjective,' thus rejecting the existence of any 'truth'  above or beyond human reason. All knowledge is human knowledge, he said.
+
+> We usually say that the era of the great philosophical systems ended with Hegel. After him, philosophy took a new direction. Instead of great speculative systems, we had what we call an existential philosophy or a philosophy of action. This was what Marx meant when he observed that until now, 'philosophers have only interpreted the world in various ways; the point is to change it.' These words mark a significant turning point in the history of philosophy.
+
+> The key words from the middle of the last century were nature, environment, history, evolution, and growth. Marx had pointed out that human ideologies were a product of the basis of society. Darwin showed that mankind was the result of a slow biological evolution, and Freud's studies of the unconscious revealed that people's actions were often the result of 'animal' urges or instincts.
+
+> Freud held that there is a constant tension between man and his surroundings. In particular, a tension--or conflict--between his desires and needs and the demands of society. It is no exaggeration to say that Freud discovered human drives. 
+> Our actions are not always guided by reason. Man is not really such a rational creature as the eighteenth-century rationalists liked to think. Irrational impulses often determine what we think, what we dream, and what we do. Such irrational impulses can be an expression of basic drives or needs. The human sexual drive, for example, is just as basic as the baby's instinct to suckle.
+> This in itself was no new discovery. But Freud showed that these basic needs can be disguised or 'sublimated,' thereby steering our actions without our being aware of it. 
+
+> Another important philosopher who had a great influence on the twentieth century was the German *Friedrich Nietzsche*, who lived from 1844 to 1900. He, too, reacted against Hegel's philosophy and the German 'historicism.' He proposed life itself as a counterweight to the anemic interest in history and what he called the Christian 'slave morality.' He sought to effect a 'revaluation of all values,' so that the life force of the strongest should not be hampered by the weak. According to the Nietzsche, both Christianity and traditional philsophy had turned away from the real world and pointed toward 'heaven' or 'the world of ideas.' But what had hitherto been considered the 'real' world was in fact a pseudo world. 'Be true to the world,' he said. 'Do not listen to those who offer you supernatural expectations.'
+
+### Catch 22 <a name="catch22"></a>
+
+> There was only one catch and that was Catch-22, which specified that a concern for one's safety in the face of dangers that were real and immediate was the process of a rational mind. Orr was crazy and could be grounded. All he had to do was ask; and as soon as he did, he would no longer be crazy and would have to fly more missions. Orr would be crazy to fly more missions and sane if he didn't, but if he was sane he had to fly them. If he flew them he was crazy and didn't have to; but if he didn't want to he was sane and had to. Yossarian was moved very deeply by the absolute simplicity of this clause of Catch-22 and let out a respectful whistle.
+
+> It was miraculous. It was almost no trick at all, he saw, to turn vice into virtue and slander into truth, impotence into abstinence, arrogance into humility, plunder into philanthropy, thievery into honor, blasphemy into wisdom, brutality into patriotism, and sadism into justice. Anybody could do it; it required no brains at all. It merely required no character.
+
+> What is a country? A country is a piece of land surrounded on all sides by boundaries, usually unnatural. Englishmen are dying for England, Americans are dying for America, Germans are dying for Germany, Russians are dying for Russia. There are now fifty or sixty countries fighting in this war. Surely so many countries can't all be worth dying for.
+
+> What a lousy earth! He wondered how many people were destitute that same night even in his own prosperous country, how many homes were shanties, how many husbands were drunk and wives socked, and how many children were bullied, abused, or abandoned. How many families hungered for food they could not afford to buy? How many hearts were broken? How many suicides would take place that same night, how many people would go insane? How many cockroaches and landlords would triumph? How many winners were losers, successes failures, and rich men poor men? How many wise guys were stupid? How many happy endings were unhappy endings? How many honest men were liars, brave men cowards, loyal men traitors, how many sainted men were corrupt, how many people in positions of trust had sold their souls to bodyguards, how many had never had souls? How many straight-and-narrow paths were crooked paths? How many best families were worst families and how many good people were bad people? When you added them all up and then subtracted, you might be left with only the children, and perhaps with Albert Einstein and an old violinist or sculptor somewhere.
+
+> You know, that might be the answer – to act boastfully about something we ought to be ashamed of. That’s a trick that never seems to fail.
+
+> He was going to live forever, or die in the attempt.
+
+> Just because you're paranoid doesn't mean they aren't after you.
+
+> It doesn't make a damned bit of difference who wins the war to someone who's dead.
+
+> There was no telling what people might find out once they felt free to ask whatever questions they wanted to.
+
+> Major Major had been born too late and too mediocre. Some men are born mediocre, some men achieve mediocrity, and some men have mediocrity thrust upon them. With Major Major it had been all three. Even among men lacking all distinction he inevitably stood out as a man lacking more distinction than all the rest, and people who met him were always impressed by how unimpressive he was.
+
+> Yossarian wrinkled his forehead with quizzical amusement. “You won’t marry me because I’m crazy, and you say I’m crazy because I want to marry you? Is that right?”
+
+### The Old Man and The Sea <a name="oldsea"></a>
+
+> First you borrow. Then you beg.
+
+> The thousand times that he had proved it meant nothing. Now he was proving it again. Each time was a new time and he never thought about the past when he was doing it.
+
+> Perhaps it was a sin to kill the fish. I suppose it was even though I did it to keep me alive and feed many people. But then everything is a sin. Do not think about sin. It is much too late for that and there are other people who are paid to do it. Let them think about it. You were born to be a fisherman as the fish was born to be a fish.
 
 ### A Random Walk Down Wall Street <a name="randomwalk"></a>
 
@@ -160,6 +247,7 @@ The crownless again shall be king.”
 
 > “A lifetime of glory is worth a moment of pain. Louie thought: Let go.” 
 
+---
 ## Childhood <a name="childhood"></a>
 
 Notable books that I didn't put here include all of Dan Brown's books, a few books by Tom Clancy (including Threat Vector), and the Artemis Fowl series. When I was really young, I was a big fan of the Magic Treehouse series.

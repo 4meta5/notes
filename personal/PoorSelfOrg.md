@@ -8,7 +8,6 @@ I may consider splitting each of them into their own doc depending on how they g
 Shortfalls of frepresentative democracy
 
 ## Benefits/Advantage of Local Education
-[Grades](Grades.md)
 
 ## Diversity
 **Why Diversity is as important to Blockchains as Decentralization**

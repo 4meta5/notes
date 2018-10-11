@@ -16,4 +16,4 @@ This goes along with the below article.
 ## Not Realizing How the World Is Changing
 Everyone should read [The AI Revolution: The Road to Superintelligence](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html) by Tim Urban.
 
-Good example is people who decide to become a doctor. This might be the worst investment someone could make given how the world is changing.
+You shouldn't pick your career path based on how the world works in the present or the past. Things are changing too fast to have that luxury.

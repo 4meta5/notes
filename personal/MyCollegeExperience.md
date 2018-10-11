@@ -30,7 +30,7 @@ The first semester of my 3rd year, I reached out to Professor David Evans to lea
 
 The summer after my 3rd year, I stayed in Charlottesville. I worked remote as a graduate cryptography research intern for Hyperledger, the blockchain subsidiary of the Linux foundation. During my free time, I built blockchain developer courses for Blockmatics. In the three month period spanning from June to August 2018, I learned more than I have ever learned in any comparable period of my life. At the end of the summer, I was happy and felt fulfilled. Although I had neglected my old social circles, I was satisfied with my progress and excited to continue pushing myself.
 
-## COLLEGE DROP
+## Leaving
 When I started the first semester of my 4th year, I found it hard to pull myself away from the blockchain space. While I tolerated my classes, I was not happy with how they inherently detracted from my career preparation. Cornell has 18 blockchain courses. MIT, Caltech, UC Berkeley, and Stanford all have dedicated research groups, student organizations, and specific classes for learning about blockchain technology. Meanwhile, UVA had one 1-credit class on blockchain technology in the Fall of 2018 and I was teaching it (CS1501). 
 
 After a few weeks into the semester, I became aware of rumors that had been circulating among some of my old friends. Before I was even made aware of the accusations, I was ostracized. The social environment was toxic and, even after I tried to dispel the rumors, nobody listened. I stopped eating and sleeping. Eventually, I realized that I didn’t want to be at UVA any longer.

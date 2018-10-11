@@ -11,7 +11,8 @@ These are a few of my pet peeves.
 * quoting someone to justify a point (like opposite of ad hominem)
 
 ## Attachment to Grades/School
-This goes along with the below article.
+
+great signal that someone doesn't think for themselves is an unjustified attachment to school/grades
 
 ## Not Realizing How the World Is Changing
 Everyone should read [The AI Revolution: The Road to Superintelligence](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html) by Tim Urban.

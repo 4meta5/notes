@@ -17,7 +17,7 @@ Some articles that have especially shaped my worldview...
 
 ### Digital Community <a name="community"></a>
 
-* [Aaron Tyron: listening and trust, part 2](http://aturon.github.io/2018/06/02/listening-part-2/)
+* [Aaron Turon: listening and trust, part 2](http://aturon.github.io/2018/06/02/listening-part-2/)
 
 ## Programming Culture
 

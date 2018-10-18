@@ -6,14 +6,26 @@ Because token standards formalize how we store data on the blockchain, it is imp
 
 **Random Important Links**<br>
 * [EIP Website](https://eips.ethereum.org/)
+* [Ethereum Contract ABI Specification](https://solidity.readthedocs.io/en/develop/abi-spec.html#basic-design)
 * [Walking Through the ERC721 Full Implementation](https://medium.com/blockchannel/walking-through-the-erc721-full-implementation-72ad72735f3c)
 * [OpenZeppelin Solidity Token Contracts](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token)
 
 **Token Standard Notes**<br>
+* [Contract ABI Spec](#abi)
 * [ERC20](#erc20)
 * [ERC165](#erc165)
 * [ERC721](#erc721)
 * [ERC998](#erc998)
+
+## Contract ABI Specification <a name = "abi"></a>
+* [relevant documentation](https://solidity.readthedocs.io/en/develop/abi-spec.html#) <br>
+The first four bytes of the call data for a function call specifies the function to be called. It is the first (left, high-order in big-endian) four bytes of the Kecccak-256 (SHA-3) hash of the signature of the function. 
+
+> The signature is defined as the canonical expression of the basic prototype without the data location specifier, i.e. the function naem with the paranthesised list of parameter types (parameter types are split up by a single comma -- no spaces are used)
+
+Starting from the fifth byte, the encoded arguments follow. This encoding is also used in other places (ie the return values and also event arguments are encoded similarly, without the four bytes specifying the function).
+
+> more details can be found at the [relevant documentation](https://solidity.readthedocs.io/en/develop/abi-spec.html#)
 
 ## ERC 20: Token Standard Interface <a name="erc20"></a>
 > [ERC 20 Token Standard Interface](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
@@ -42,7 +54,10 @@ This standardizes the following:
 3. How to detect if a contract implements ERC-165
 4. How to detect if a contract implements any given interface
 
+EIP-165 defines the interface identifier as the XOR of all function selectors in the interface. 
 
+**Examples**<br>
+* [ENS EIP-137 Standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md)
 
 ## ERC 721: Non-Fungible Token Standard <a name="erc721"></a>
 

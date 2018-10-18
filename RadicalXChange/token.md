@@ -72,7 +72,11 @@ EIP-165 defines the interface identifier as the XOR of all function selectors in
 * [ENS EIP-137 Standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md)
 
 ## ERC 721: Non-Fungible Token Standard <a name="erc721"></a>
+> [eip-721.md](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md)
+* [Ownership](#ownership)
+* [Token Creation](#tokencreation)
 
+### Ownership <a name="ownership"></a>
 Ownership is determined by an array of token indexes or ids that is mapped to your address. The main contract keeps a running list of all the ERC721 tokens created in that contract in an array such that each token has its' respective index within the context of all ERC721 tokens available via the ```allTokens``` array.
 ```
 uint256[] internal allTokens
@@ -85,6 +89,27 @@ In addition to our array of token indexes that we own, we map each token index o
 ```
 mapping (uint256 => address) internal tokenOwner
 ```
+The ```ownedTokensIndex``` maps each token id to its respectve index in its owners' arrray. We also map the token id to its index in the ```allTokens``` array as well.
+```
+// Mapping from token ID to index of the owner tokens list
+mapping(uint256 => uint256) internal ownedTokensIndex;
+
+// Mapping from token id to position in the allTokens array
+mapping(uint256 => uint256) internal allTokensIndex;
+```
+To keep track of how many ERC721 tokens that we actually own, we use ```ownedTokensCount```:
+```
+mapping (address => uint256) internal ownedTokensCount
+```
+### Token Creation <a name="tokencreation"></a>
+> the constructor must carry the *exact same* name as the contract
+
+The constructor may be used to set initial values, ownership, etc. 
+
+Bla Bla Bla bad code examples
+
+### Transfer & Allowance
 
 
 ## ERC 998: Composable Non-Fungible Token Standard <a name="erc998"></a>
+* [erc 998 EIP issue](https://github.com/ethereum/EIPs/issues/998)

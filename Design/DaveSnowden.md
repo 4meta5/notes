@@ -39,3 +39,4 @@ Architecting for discovery instead of architecting for delivery.
 
 > never scale a complex system by aggregation or imitation; you decompose things to the lowest object, define protocols for interactions between the objects, and allow novel interactions between the objects...
 
+Challenge for design and architecture is to move earlier in the cycle to find inarticulated needs. 

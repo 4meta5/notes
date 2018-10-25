@@ -1,4 +1,4 @@
-# Ideas
+# Radical Markets Application Ideas
 
 Place for me to keep my ideas; each of these ideas may be put into a different file once they are more concrete.
 

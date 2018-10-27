@@ -5,6 +5,8 @@
 * [(Rejected by) UVA McIntire School of Commerce](#rejected)
 * [Federal Reserce Challenge](#fedchallenge)
 
+> I'm more into [blockchain](./blockchain.md) now, but may return to markets later!
+
 ## UVA Investment Clubs
 In the Fall of 2015, I joined the McIntire Investment Fund. I was *rejected* by the more exclusive Alternative Investment Fund, but determined to gain admission the next semester. This was the first of many rejections for me in college and I'm glad it happened -- *I learn a lot more from failures than my successes*. One of the key lessons that I learned from my AIF interview was to not leave the interview up to chance. More specifically, I realized that even if I maintained thorough knowledge of certain trends/concepts within finance, success in the interview was dependent upon the interviewer asking questions to which I knew the answer; I needed to give myself better odds.
 

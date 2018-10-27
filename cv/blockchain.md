@@ -5,7 +5,7 @@
 * [Summer 2018](#summer2018)
 * [Next Steps](#next)
 
-> I actually lived another life in finance before blockchain. I believe that my experience studying markets has been invaluable in (1) helping me develop useful decision-making frameworks and (2) building an intuition with respect to incentive management.
+> I actually lived another life in [finance](./markets.md) before blockchain. I believe that my experience studying markets has been invaluable in (1) helping me develop useful decision-making frameworks and (2) building an intuition with respect to incentive management.
 
 ## How I Got Hooked <a name="beginning"></a>
 A few years ago, a good friend of mine told me that the next iteration of the internet was coming and it was going to be decentralized. At the time, we were both taking a class on internet protocols and had recently attended a lecture on the OSI model (a conceptual model for understanding the different layers for dot com internet protocols). A breakdown of the model revealed inefficiencies due to centralization (for example, the control of domain names), but we had been taught that these inefficiencies were necessary due to the economies of scale of technology companies. The possibility of a new system designed to solve these inefficiencies piqued my interest. After a few months of reading, I decided to fully commit myself to studying blockchain protocols. Since I went down the crypto rabbit hole, I have been impressed by the pace of progress in this space and the quality of output.

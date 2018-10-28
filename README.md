@@ -1,6 +1,6 @@
 # Amar's Notes
 
-| [Principles](#Principles) | [Blockchain](#Blockchain) | [Economics](#Economics) | [RadicalXChange](#RadicalXChange) | [Cryptography](#Cryptography) | [cv](#cv) | [website](https://about.me/amar-singh)
+| [Principles](#Principles) | [Blockchain](#Blockchain) | [Economics](#Economics) | [RadicalXChange](#RadicalXChange) | [Cryptography](#Cryptography) | [CV](#cv) | [Website](https://about.me/amar-singh)
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
 # Principles

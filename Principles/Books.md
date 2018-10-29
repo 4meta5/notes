@@ -74,9 +74,9 @@ Notable books that I didn't put here include all of the works of F. Scott Fitzge
 > And what am I to say about those who enjoy deluding themselves with imaginary pardons for their sins?
 
 > Had I a hundred tongues, a hundred mouths,
-A voice of iron, I could not count the types 
-Of fool, nor yet enumerate the names
-Of every kind of folly.
+> A voice of iron, I could not count the types 
+> Of fool, nor yet enumerate the names
+> Of every kind of folly.
 
 > And that 'great theologian' had sweated eight whole months over this discourse, so today he is blinder than a mole, all his keenness of sight doubtless gone to reinforce the sharp edge of his intellect. But the man has no regrets for his lost sight; he even thinks it was a small price to pay for his hour of glory.
 
@@ -218,13 +218,13 @@ Of every kind of folly.
 ### The Fellowship of the Ring <a name="fellowship"></a>
 
 > “All that is gold does not glitter,
-Not all those who wander are lost;
-The old that is strong does not wither,
-Deep roots are not reached by the frost.
-From the ashes a fire shall be woken,
-A light from the shadows shall spring;
-Renewed shall be blade that was broken,
-The crownless again shall be king.”
+> Not all those who wander are lost;
+> The old that is strong does not wither,
+> Deep roots are not reached by the frost.
+> From the ashes a fire shall be woken,
+> A light from the shadows shall spring;
+> Renewed shall be blade that was broken,
+> The crownless again shall be king.”
 
 > “Despair, or folly?' said Gandalf. 'It is not despair, for despair is only for those who see the end beyond all doubt. We do not. It is wisdom to recognize necessity, when all other courses have been weighed, though as folly it may appear to those who cling to false hope. Well, let folly be our cloak, a veil before the eyes of the Enemy! For he is very wise, and weighs all things to a nicety in the scales of his malice. But the only measure that he knows is desire, desire for power; and so he judges all hearts. Into his heart the thought will not enter that any will refuse it, that having the Ring we may seek to destroy it. If we seek this, we shall put him out of reckoning.' 
 'At least for a while,' said Elrond. 'The road must be trod, but it will be very hard. And neither strenght nor wisdom will carry us far upon it. This quest may be attempted by the weak with as much hope as the strong. Yet such is oft the course of deeds that move the wheels of the world: small hands do them because they must, while the eyes of the great are elsewhere.” 

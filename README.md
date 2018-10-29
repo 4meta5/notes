@@ -4,9 +4,9 @@
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
 # Principles
-> "Time is like a river that carries us forward into encounters with reality that require us to make decisions. We can't stop our movement down this river and we can't avoid those encounters. We can only approach them in the best possible way." - [Principles]() by Ray Dalio
+> "Time is like a river that carries us forward into encounters with reality that require us to make decisions. We can't stop our movement down this river and we can't avoid those encounters. We can only approach them in the best possible way." - [Principles](https://www.principles.com/) by Ray Dalio
 
-Inspired by Ray Dalio's book [Principles](), I have started to organize my own life principles/values, most important of which include:
+Inspired by Ray Dalio's book [Principles](https://www.principles.com/), I have started to organize my own life principles/values, most important of which include:
 1. Radical Open Mindedness
 2. Thoughtful Disagreement
 3. Pain + Reflection = Progress

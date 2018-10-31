@@ -113,3 +113,5 @@ Parity's solution: forcibly make 20% of token supply liquid
 **Sealing relay blocks** entails the collection of signed statements from validators over the validity, availability and canonicality of a particular relay-chain block and the parachain blocks that it represents.
 
 The BFT consensus algorithm is motivated by Tangaora (a BFT variant of Raft), Tendermint, and HoneyBadgerBFT. The algorithm must reach an agreement on multiple parachains in parallel.
+
+> page 11 stopped

@@ -3,6 +3,8 @@
 | [Principles](#Principles) | [Blockchain](#Blockchain) | [Economics](#Economics) | [RadicalXChange](#RadicalXChange) | [Cryptography](#Cryptography) | [CV](#cv) | [Website](https://about.me/amar-singh)
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
+> contact me at <ars9he@virginia.edu> or <asinghchrony@protonmail.com>
+
 # Principles
 > "Time is like a river that carries us forward into encounters with reality that require us to make decisions. We can't stop our movement down this river and we can't avoid those encounters. We can only approach them in the best possible way." - [Principles](https://www.principles.com/) by Ray Dalio
 

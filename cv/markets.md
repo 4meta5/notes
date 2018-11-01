@@ -29,7 +29,7 @@ The next summer, I interned at Fitch Ratings in New York City in the CLO and Cor
 
 ## (Rejected by) McIntire School of Commerce <a name="rejected"></a>
 
-In the spring of 2017, I was rejected in the first round of admissions by the UVA McIntire School of Commerce. More so than any of my previous failures, this rejection taught me invaluable lessons about friendship, honesty, and responsibility. 
+In the spring of 2017, I was rejected in the first round of admissions by the [UVA McIntire School of Commerce](https://www.commerce.virginia.edu/). More so than any of my previous failures, this rejection taught me invaluable lessons about friendship, honesty, and responsibility. 
 
 When I attended an Alternative Investment Fund meeting the subsequent week, I was asked by the sector manager if I had been accepted. This wasn't a rude question in the context of the club (which maintained a near 100% acceptance rate to McIntire), but I still hadn't planned for the situation (even though, in hindsight, it was inevitable). Too embarassed to identify myself as the only one in the room who had been rejected, I responded sheepishly that I was majoring in Math and Computer Science. When probed as to whether I had rescinded my application, I accepted this out even though it was a lie. To this day, I regret this lie and, from that day forward, I vowed to own my failures instead of hiding them. At the time, the following quote by Ray Dalio helped me realize my mistake:
 

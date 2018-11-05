@@ -1,4 +1,8 @@
-# Protocol Development Ideas
+
+* [protocol development ideas](#protocol)
+* [Use Cases](#use)
+
+# Protocol Development Ideas <a name="protocol"></a>
 
 * [Radical Consensus Substrate Blockchain](#RadicalConsensus)
 * [Optimizing SimpleSerialize](#ssz)
@@ -17,3 +21,13 @@ Vitalik came up with the [spec](https://github.com/ethereum/eth2.0-specs/blob/ma
 > I have a hunch that this spec is not optimized and can be improved upon. Check out [ssz implementation by sigp/lighthouse](https://github.com/sigp/lighthouse/tree/master/beacon_chain/utils/ssz).
 
 > Need to understand this in-depth and consider interaction with WebAssembly...can we further optimize this with the expectation that we are interacting with WebAssembly on the front-end?
+
+# Use Case Ideas <a name="use"></a>
+
+* [University](#uni)
+
+## University <a name="uni"></a>
+
+By increasing accessibility to learning resources, the internet has challenged the role of the university as the primary gatekeeper for knowledge (or at least higher level education). 
+
+I think the blockchain (or more generally, distributed systems and cryptography) will enable ease of tracking verifiable digital credentials, thereby enabling *autodidacts*, or students of the internet, to prove their knowledge. This **should** be the final blow to take down the monopology of universities over higher level education, but here we ignore the cultural and psychological attachment to college. Parents want their kids to do it because they did it. People also don't think about how the world changes, only about the status quo.

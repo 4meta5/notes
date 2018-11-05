@@ -20,3 +20,16 @@ Eventually, I may destructure these notes into multiple files, but for now I'm j
     * **We can do better, but we shouldn't build on these systems. We need to rebuild them.** This is where blockchain comes into play.
 
 Even though design is often reduced down to a "consultancy" role, Steve Jobs showed us that design is much more than that; we can innovate and shape the world with design.
+
+
+### Finding Truth in an Indeterminate World
+> Barad
+
+Ground-shifting reading by Bohr, a reading that seeks to resolve one of the most famous conundrums in physics -- whether light is a particle or a wave. 
+
+Phenomena become determinate, have particular determined characteristics, in relation to the apparatuses through which they are observed, made visible and made knowable. The apparatus that registers the mark of a phenomenon forms part of the objective conditions for determining the very characteristics of that phenomenon.
+
+Objectivity for Bohr and Barad, instead of being a thing outside ourselves always just out of the reach of our limited subjective selves, is the ability to accurately describe and recreate the conditions necessary to reproduce a given phenomenon.
+
+=> This means that the words (concepts) are not divorced from things (reality) but are part of a process of materialization in the stabilization of phenomenon. **Descriptions matter**
+> One might say that concepts are effective to the extent that they are able to matter

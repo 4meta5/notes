@@ -19,7 +19,6 @@ If a shard block achieves a sufficient number of attestations, it creates a **cr
 * A **cycle** is a span of slots when all validators have exactly one chance to make an attestation
 * The withdrawal period specifies the number of slots between a validator exit and when the validator balance is withdrawable
 
-
 The beacon chain's main responsibilities are:
 1. store and maintain the set of active, queued and exited validators
 2. process crosslinks

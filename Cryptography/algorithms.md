@@ -1,5 +1,5 @@
 # Algorithms
-> Notes from [Competitive Programmer's Handbook]() by Antti Laaksonen; my goal is to implement in Rust using C++ code provided in the book...I'll notes here though.
+> Notes from [Competitive Programmer's Handbook](https://cses.fi/book/index.html) by Antti Laaksonen; my goal is to implement in Rust using C++ code provided in the book...I'll throw down some notes here though.
 
 * [Maximum subarray sum](#maxsubsum)
 

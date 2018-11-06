@@ -2,9 +2,11 @@
 
 Some papers that have especially shaped my worldview...
 
-## Psychology
+## Philosophy
 
 * [The Magical Number Seven, Plus or Minus Two](http://www.psych.utoronto.ca/users/peterson/psy430s2001/Miller%20GA%20Magical%20Seven%20Psych%20Review%201955.pdf)
+
+* [The 'Corroboration' of Theories](http://jwood.faculty.unlv.edu//unlv/Articles/PutnamVsPopper.pdf) by Putnam
 
 ## Cryptography
 

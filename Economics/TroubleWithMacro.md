@@ -1,6 +1,4 @@
 # Trouble With Macroeconomics
+> [Romer's Paper](https://paulromer.net/wp-content/uploads/2016/09/WP-Trouble.pdf)
 
-> Most importantly, Romer won the Prize for seeing how the non-rival nature of ideas can boost ongoing and indeed “endogenous” economic growth. Romer also showed mathematically that this process of growth is bounded, namely that it does not explode without limit, and that the associated mathematical models were tractable. [source](https://fee.org/articles/paul-romer-why-he-won-the-nobel-prize-in-economics/)
-
-## References
-[Romer's Paper](https://paulromer.net/wp-content/uploads/2016/09/WP-Trouble.pdf)
+*As former Fed chariman Alan Greenspan put it, "The models failed at a time when we needed them most...JP Morgan had the American economy accelerating three days before [the Lehman Borthers' collapse]--their model failed. The Fed model failed. The IMF model failed...So that left me asking myself: What happened?" Bill Dudley, president of the New York Fed, honed in on the problem when he said, "I think there's a fundamental problem in terms of how macroeconomists look at the economic outlook, growth, and inflation...If you look at the big macro models, they don't have a financial sector typically in them. They don't admit the possibility that the financial sector could essentially melt down, and therefore the monetary policy impulse could be completely impaired. So I think the lesson of the crisis is to do a lot more work to make sure that the finance people are talking to the macroeconomist people and building models that are more robust.* - Page 83, Principles by Ray Dalio

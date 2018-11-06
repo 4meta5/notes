@@ -6,7 +6,7 @@ These are a few of my pet peeves.
 * using personal anecdotes to shut down a conversation
     - i.e. I am "blank" and I feel "blank" so if you keep talking, you're being disrespectful to me
 * ridiculous analogies
-    - ben shapiro is the master of these (he's great both pointing out when other people abuse analogies and then using abusive hyperbole to make his own points)
+    - ben shapiro is the master of these (he's great both at pointing out when other people abuse analogies and then using abusive hyperbole to make his own points)
 * ad hominem 
 * quoting someone to justify a point (like opposite of ad hominem)
 

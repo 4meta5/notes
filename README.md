@@ -22,7 +22,7 @@ Inspired by Ray Dalio's book [Principles](https://www.principles.com/), I have s
 # RadicalXChange
 > "In the present stage of technological and economic development, when cooperation has grown too large to be managed by moral economies, the market is the appropriate computer to achieve the greatest good for the greatest number. If we see it as such, we can fix the bugs in the market's code and enable it to generate more wealth that is distributed more fairly." - [Radical Markets](http://radicalmarkets.com/) by Eric Posner, E. Glen Weyl
 
-I am committed to realizing the Radical Markets vision via the RadicalXChange movement (led by E. Glen Weyl). In this folder, I have organized my [notes](./RadicalXChange/RadicalMarkets.md) on the book, [ideas](./RadicalXChange/Ideas.md) motivated by the book, and thoughts on related topics (like QV, Liberal Radicalism, etc).
+I am committed to realizing the Radical Markets vision via the RadicalXChange movement (led by E. Glen Weyl). In this folder, I have organized my [notes](./Blockchain/RadicalXChange/RadicalMarkets.md) on the book, [ideas](./Blockchain/RadicalXChange/Ideas.md) motivated by the book, and thoughts on related topics (like QV, Liberal Radicalism, etc).
 
 # Cryptography
 > "If privacy is outlawed, only outlaws will have privacy." - Phil Zimmerman, [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)

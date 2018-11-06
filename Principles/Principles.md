@@ -18,7 +18,7 @@
 
 ## Perspective
 
-- **Top Down AND Bottom Up**: seeing things from the top down is the best way to understand ourselves and the laws of reality within the context of overarching universal laws...By taking a bottom-up perspective that looks at each individual case, we can see how it lines up with out theories about the laws that we expect to govern it. When they line up, we're good. (PAGE 139)
+- **Top Down AND Bottom Up**: seeing things from the top down is the best way to understand ourselves and the laws of reality within the context of overarching universal laws...By taking a bottom-up perspective that looks at each individual case, we can see how it lines up with our theories about the laws that we expect to govern it. When they line up, we're good. (PAGE 139)
 - **Distinguish between you as the designer of your machine and you as a worker with your machine.** One of the hardest things for people to do is to objectively look down on themselves within their circumstances (ie, their machine) so that they can act as the machine's designer and manager. Most people remain stuck in the perspective of being a worker within the machine. If you can recognize the differences between those roles and that it is much more important that you are a good designer/manager of your life than a good worker in it, you will be on the right path.
 
 # Pain + Reflection = Progress

@@ -1,6 +1,5 @@
 # Cypherpunk Reading List
-
-> add links once I'm not on this plane
+> add notes from the book I'm working on -- I have a chapter on this
 
 * Chaum 1983, 1990
 * Finney 1993

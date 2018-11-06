@@ -43,7 +43,7 @@ By contrast, people who choose what they really want, and avoid the temptations 
 4. Design plans that will get you around them.
 5. Do what's necessary to push these designs through to results.
 
-![](./assets/5step.jpg)
+![](./assets/5step.jpg = 250x)
 
 # ORGANIZE LATER / RANDOM
 

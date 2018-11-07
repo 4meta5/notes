@@ -33,6 +33,6 @@ The summer after my 3rd year, I stayed in Charlottesville. I worked remote as a 
 ## Leaving
 When I started the first semester of my 4th year, I found it hard to pull myself away from the blockchain space. While I tolerated my classes, I was not happy with how they inherently detracted from my career preparation. Cornell has 18 blockchain courses. MIT, Caltech, UC Berkeley, and Stanford all have dedicated research groups, student organizations, and specific classes for learning about blockchain technology. Meanwhile, UVA had one 1-credit class on blockchain technology in the Fall of 2018 and I was teaching it (CS1501). 
 
-After a few weeks into the semester, I became aware of rumors that had been circulating among some of my old friends. Before I was even made aware of the accusations, I was ostracized. The social environment was toxic and, even after I tried to dispel the rumors, nobody listened. I stopped eating and sleeping. Eventually, I realized that I didn’t want to be at UVA any longer.
+After a few weeks into the semester, I became aware of rumors that had been circulating among some of my old friends. Before I was even made aware of the accusations, I was ostracized. The social environment was toxic and, even after I tried to dispel the rumors, nobody listened. Eventually, I realized that I didn’t want to be at UVA any longer.
 
-I’m ready for the next chapter in my life. I’m moving to Berlin and am determined to become a Rust developer for Parity Technology. Maybe one day I’ll finish my college degree, but hopefully I won’t need to. Regardless, I’m done living my life for other people. 
+I’m ready for the next chapter in my life.

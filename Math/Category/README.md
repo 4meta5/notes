@@ -7,4 +7,4 @@ Once I'm farther along, I'll upload my latex notes in *chunks*.
 
 Code is organized according to chapter:
 
-* [Category: The Essence of Composition](./1/README.md)
+* [Category: The Essence of Composition](https://github.com/AmarRSingh/notes/tree/master/Math/Category/1)

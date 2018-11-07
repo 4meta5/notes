@@ -12,25 +12,24 @@
 
 # Radical Open Mindedness
 
-- Learning is the product of a continuous real-time feedback loop in which we make decisions, see their outcomes, and improve our understanding of reality as a result. Being radically open-minded enhances the efficiency of those feedback loops, because it makes what you are doing, and why, so clear to yourself and others that there can't be any misunderstandings. (PAGE 136)
-- **Don't get hung up on your views of how things "should" be because you will miss out on learning how they really are.**<br> (PAGE 140)
+- Learning is the product of a continuous real-time feedback loop in which we make decisions, see their outcomes, and improve our understanding of reality as a result. Being radically open-minded enhances the efficiency of those feedback loops, because it makes what you are doing, and why, so clear to yourself and others that there can't be any misunderstandings.
+- **Don't get hung up on your views of how things "should" be because you will miss out on learning how they really are.**<br>
 - **Take ownership of consequences**: don't blame bad outcomes on anyone but yourself.
 - **Sincerely believe that you might not know the best possible path and recognize that your ability to deal well with "not knowing" is more important than whatever it is you do know.**
 - **If a number of different believable people say you are doing something wrong and you are the only one who doesn't see it that way, assume you are probably biased.** While it is possible you're right and they're wrong, you should switch from a fighting mode to an "asking questions" mode, compare your believability with theirs, and if necessary agree to bring in a neutral party you all respect to break the deadlock.
 
 ## Perspective
 
-- **Top Down AND Bottom Up**: seeing things from the top down is the best way to understand ourselves and the laws of reality within the context of overarching universal laws...By taking a bottom-up perspective that looks at each individual case, we can see how it lines up with our theories about the laws that we expect to govern it. When they line up, we're good. (PAGE 139)
+- **Top Down AND Bottom Up**: seeing things from the top down is the best way to understand ourselves and the laws of reality within the context of overarching universal laws...By taking a bottom-up perspective that looks at each individual case, we can see how it lines up with our theories about the laws that we expect to govern it. When they line up, we're good.
 - **Distinguish between you as the designer of your machine and you as a worker with your machine.** One of the hardest things for people to do is to objectively look down on themselves within their circumstances (ie, their machine) so that they can act as the machine's designer and manager. Most people remain stuck in the perspective of being a worker within the machine. If you can recognize the differences between those roles and that it is much more important that you are a good designer/manager of your life than a good worker in it, you will be on the right path.
 
 # Pain + Reflection = Progress
 
-- The challenges you face will test and strengthen you. **If you're not failing, you're not pushing your limits, and if you're not pushing your limits, you're not maximizing your potential.** (PAGE 153)
+- The challenges you face will test and strengthen you. **If you're not failing, you're not pushing your limits, and if you're not pushing your limits, you're not maximizing your potential.**
 - **Embrace tough love.** In my own life, what I want to give to people, most importantly to people I love, is the power to deal with reality to get what they want. In pursuit of my goal to give them strength, I will often deny them what they "want" because that will give them the opportunity to struggle so that they can develop the strength to get what they want on their own.
 - **Regularly use pain as your guide toward quality reflection.** Mental pain often comes from being too attached to an idea when a person or an event comes along to challenge it...You will probably feel your amygdala kicking in through a tightening in your head, tension in your body, or an emerging sense of annoyance, anger, or irritability. Note these feelings when they arise in you. By being aware of such signals of closed-mindedness, you can use them as cues to control your behavior and guide yourself towards open-mindedness. Doing this regularly will strengthen your ability to keep your "higher-level you" in control. The more you do it, the stronger you will become.
 
 ## Weigh 2nd and 3rd Order Consequences
-> (PAGE 155)
 
 The first-order consequences of exercise (pain and time spent) are commonly considered undesirable, while the second-order consequences (better health and more attractive appearance) are desirable. Similarly, food that tastes good is often bad for you and vice versa.
 

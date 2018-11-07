@@ -8,7 +8,7 @@ Some papers that have especially shaped my worldview...
 * [The Drowning Child and the Expanding Circle](https://www.utilitarian.net/singer/by/199704--.htm) by Peter Singer
 * [The 'Corroboration' of Theories](http://jwood.faculty.unlv.edu//unlv/Articles/PutnamVsPopper.pdf) by Putnam
 
-## Cryptography
+## Technology
 
 * [The Humble Programmer](https://www.cs.utexas.edu/users/EWD/ewd03xx/EWD340.PDF) by Djikstra
 * [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf) by Nakamoto

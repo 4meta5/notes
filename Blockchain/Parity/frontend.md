@@ -3,7 +3,7 @@
 
 > [light.js](https://parity-js.github.io/light.js)
 
-> feather.js; first decentralized wallet
+> fether.js; first decentralized wallet; lightning client apps
 
 > polkadot.js
 

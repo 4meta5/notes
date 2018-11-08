@@ -1,4 +1,5 @@
 # Notes on Polkadot
+> [Polkadot Metalink](https://github.com/w3f/Web3-wiki/wiki/Polkadot)
 
 [Paper](https://github.com/polkadot-io/polkadotpaper/raw/master/PolkaDotPaper.pdf)
 

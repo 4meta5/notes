@@ -1,7 +1,7 @@
 # Bitcoin
 This reading list was motivated by [Bitcoin's Academic Pedigree](https://queue.acm.org/detail.cfm?id=3136559) by Arvind Narayanan and Jeremy Clark.
 
-![Bitcoin's Academic Pedigree][./assets/paths.png]
+![Bitcoin's Academic Pedigree](./assets/paths.png)
 
 1. [Linked Timestamping, Verifiable Logs](#merkle)
 2. [Digital Cash](#digicash)

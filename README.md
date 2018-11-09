@@ -31,12 +31,9 @@ I am fascinated by contemporary monetary policy, especially large scale asset pu
 # Cryptography
 > "If privacy is outlawed, only outlaws will have privacy." - Phil Zimmerman, [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
 
-Cryptography is empowering -- if used correctly, it will liberate individuals from institutional tyranny and contribute to a massive rebalancing of power. 
+[Cryptography](./Cryptography/README.md) is empowering -- if used correctly, it will liberate individuals from institutional tyranny and contribute to a massive rebalancing of power. 
 
 Aside from the positive impact this field has wrt securing individual liberty, I also enjoy the aesthetics of the pure mathematics often used to build secure, durable cryptosystems. 
-
-* [History of FHE Survey](./Cryptography/ModernFHE.pdf)
-* [MPC Notes](./Cryptography/mpc.md)
 
 # CV
 > "By the time a student gets to college, he’s spent a decade curating a bewilderingly diverse résumé to prepare for a completely unknowable future. Come what may, he’s ready—-for nothing in particular." - Peter Thiel, [0 to 1](http://zerotoonebook.com/)

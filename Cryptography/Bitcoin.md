@@ -42,7 +42,7 @@ This reading list was motivated by [Bitcoin's Academic Pedigree](https://queue.a
 ## Byzantine Fault Tolerance <a name="bft"></a>
 * [The Byzantine Generals Problem](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf) -- 1982; Lamport, Shostak, Pease
 * [Practical Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf) -- 1999; Castrov, Liskov
-* [Paxos][http://lamport.azurewebsites.net/pubs/paxos-simple.pdf] -- 2001, Lamport
+* [Paxos](http://lamport.azurewebsites.net/pubs/paxos-simple.pdf) -- 2001, Lamport
 * [The Sybil Attack](https://dl.acm.org/citation.cfm?id=687813) -- 2002, J. R. Douceur
 * [Exposing Computationally-Challenged Byzantine Impostors](http://cs.yale.edu/publications/techreports/tr1332.pdf) -- 2005; Aspnes, Jackson, Krishnamurthy
 * [Bit gold](https://unenumerated.blogspot.com/2005/12/bit-gold.html) -- 2008, Nick Szabo

@@ -77,4 +77,16 @@ Our approach can be stated as a simple rule: No investor holding shares of more 
 
 If our proposal were put into effect, competition would instead focus on the quality of governance that institutional investors provide, leading to a market where competition between institutional investors would directly help solve the Berle-Means problems by holding institutional investors accountable for governing the companies they invest in to maximize returns. (PAGE 193-194)
 
-TBC PAGE 196
+The legal prohibition on institutional investing patterns that lead to the monopoly problem we highlight is quite clear. The relevant portion of the law reads:
+> No person...shall acquire, directly or indirectly, the whole or any part of the stock or...assets of another person...where...the effect of such acquisitions may be substantially to lessen competition, or to tend to create a monopoly.
+
+A corporation counts as a "person," so a corporation cannot buy the assets or stock of another corporation where the effect is to concentrate the market to a sufficient degree. But the statute includes an exception:
+> This section shall not apply to persons purchasing such stock solely for investment and not using the same by voting or otherwise to bring about, or in attempting to bring about, the substantial lessening of competition.
+
+This provision came to be known as the passive investment defense. Thus, a corporation cannot obtain shares when doing so reduces competition; but it may obtain shares for "investment purposes." How are these provisions reconciled? In *United States vs. E.I. du Pont de Nemours & Co.*, the US Supreme Court rules that du Pont's purchase of a substantial stake in General Motors could violate Section 7. "Even when the purchase is solely for investment, the plain language of Section 7 contemplates an action at any time the stock is used to bring about, or in attempting to bring about, a substantial lessening of competition." So, in the end, the only question is whether the acquisition of stock does or does not reduce competition. (PAGE 196-197)
+
+Economist Luigi Zingales makes a forceful case in his 2012 book, *A Capitalism for the People*, that antitrust law should be used to block mergers that result in the acquisition of political influence through the concentration of lobbying capacity in a few firms.
+
+To misquote another Radical, eternal viligance is the price of market competition. (PAGE 204; abolitinist Wendell Phillips)
+
+## Data as Labor

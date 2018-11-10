@@ -1,5 +1,5 @@
 # Principles
-> motivated by Ray Dalio's [Principles](https://www.principles.com/)
+> motivated by Ray Dalio's [Principles](https://www.principles.com/); most (if not all at this point) are direct quotes!
 
 <!-- integrate my own experiences into this and change the wording to make it *mine* -->
 
@@ -17,6 +17,7 @@
 - **Take ownership of consequences**: don't blame bad outcomes on anyone but yourself.
 - **Sincerely believe that you might not know the best possible path and recognize that your ability to deal well with "not knowing" is more important than whatever it is you do know.**
 - **If a number of different believable people say you are doing something wrong and you are the only one who doesn't see it that way, assume you are probably biased.** While it is possible you're right and they're wrong, you should switch from a fighting mode to an "asking questions" mode, compare your believability with theirs, and if necessary agree to bring in a neutral party you all respect to break the deadlock.
+- Remember that accepting your weaknesses is contrary to the instincts of those parts of your brain that want to hold on to the illusion that you are perfect. Doing the things that will reduce your instinctual defensiveness takes practice, and requires operating in an environment that reinforces open-mindedness.
 
 ## Perspective
 
@@ -47,6 +48,9 @@ By contrast, people who choose what they really want, and avoid the temptations 
 
 ![](./assets/5step.jpg)
 
+## The Power fo Habit
+Habit is essentially inertia, the strong tendency to keep doing what you have been doing (or not doing what you have not been doing). **Research suggests that if you stick with a behavior for approximately eighteen months, you will build a strong tendency to stick to it nearly forever.**
+
 # Management
 
 - **Write down your plan for everyone to see and to measure your progress against.** This includes all the granular details about who needs to do what tasks and when. The tasks, the narrative, and the goals are different, so don't mix them up. Remember, the tasks are what connect the narrative to your goals.
@@ -59,12 +63,37 @@ Your deepest-seated needs and fears -- such as the need to be loved and the fear
 
 At the same time, higher-level consciousness resides in your neocortex, more specifically in the part called the prefontal cortex. This is the most distinctively human feature of your brain; relative to the rest of the brain, it's larger in humans than in most other species. This is hwere you experience the conscious awareness of decision making (the so-called "executive function"), as well as the application of logic and reasoning.
 
+### Reconcile Feelings with Thinking
+For most people, life is a never-ending battle between these two parts of the brain. While the amygdala's reactions come in spurts and then subside, reactions from the prefrontal cortex are more gradual and constant. The biggest difference between people who guide their own personal evolution and achieve their goals and those who don't is that those who make progress reflect on what causes their amygdala hijackings.
+
 ## Appreciate the Art of Thoughtful Disagreement
 > *In thoughtful disagreement, your goal is not to convince the other party that you are right -- it is to find out which view is true and decide what to do about it.*
 
 - To me, it's pointless when people get angry with each other when they disagree because most disagreements aren't threats as much as opportunities for learning
 - You should be open-minded and assertive at the same time -- you should hold and explore conflicting possibilities in your mind while moving fluidly toward whatever is likely to be true based on what you learn. 
 - To do this well, approach the conversation in a way that conveys that you're just trying to understand...Ask questions like "Would you rather I be open with my thoughts and questions or keep them to myself?"; "Are we going to try to convince each other that we a re right or are we going to open-mindedly hear each other's perspectives to try to figure out what's true and what to do about it?"; or "Are you arguing with me or seeking to understand my perspective?"
+
+# Signals
+
+## People Taxonomy
+> I'm not a huge fan of putting people in boxes, but patterns exist in human behavior. Likewise, I don't exclusively match any specific box, but it is useful to be reflective on where I tend to lean.
+
+The four main assessments we use are the Myers-Briggs Type Indicator (MBTI), the Worksplace Personality Inventory, the Team Dimensions Profile, and Stratified Systems Theory. 
+
+### Introversion vs. Extroversion
+Introverts focus on the inner world and get their energy from ideas, memories, and experiences while extroverts are externally focused and get their energy from being with people. Introversion and extroversion are also linked to differences in communication styles. If you have a friend who loves to "talk out" ideas (and even has trouble thinking through something if there isn't someone around to work it through with), he or she is likely an extrovert. Introverts will usually find such conversations painful, preferring to think privately and share only after they've worked things out on their own. I've found that it is important to help each communicate in the wa that they feel most comfortable. For example, introverts often prefer communicating in writing (such as email) rather than speaking in group settings and tend to be less open with their critical thoughts.
+
+### Intuiting vs Sensing
+Some people see big pictures (forests) and others see details (trees). 
+
+### Thinking vs Feeling
+> page 227
+
+### Planning vs Perceiving
+> page 227
+
+### Baseball Cards
+*This led to oe of my most valuable management rools: Baseball Cards...In creating the attributes for our baseball cards, I used a combination of adjectives we already used to describe people, like "conceptual", "reliable", "creative", and "determined"; the actions people took or didn't take such as "holding others accountable" or "pushing through to results"; and terms from personality tests such as "extroverted" or "judging". Once the cards were established, I created a process to have people evaluate each other, with the people rated highest in each dimension (e.g. "most creative") having more weight on the ratings of other people in that dimension. People with proven track records in a certain area would get more believability, or decision-making weight, within that area. By recording these qualities in people's Baseball Cards, others who'd never worked with them before could know what to expect from them.*
 
 ### Signs of Close-Mindedness
 

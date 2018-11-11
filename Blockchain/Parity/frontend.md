@@ -1,6 +1,4 @@
 # Parity Front-end
-
-
 > [light.js](https://parity-js.github.io/light.js)
 
 > fether.js; first decentralized wallet; lightning client apps

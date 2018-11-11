@@ -1,12 +1,12 @@
 # Parity
-> Here is where I'll organize some of my ideas related to [Parity](https://parity.io) -- you can read more about what I like about Parity [here](./<3.md)
+> Here is where I'll organize some of my ideas related to [Parity](https://parity.io) -- **you can read more about what I like about Parity [here](./<3.md)**
 
-> Parity wiki
+> [Parity wiki](https://wiki.parity.io/)
 
-* [Miscellaneous](#Miscellaneous)
-* [Frontend](#Frontend)
-* [Substrate](#Substrate)
-* [Polkadot](#Polkadot)
+* [What I like about Parity](./<3.md)
+* [Parity-Ethereum Client](./client.md)
+* [Substrate](./substrate.md)
+* [Polkadot](./polkadot.md)
 
 ## Miscellaneous
 
@@ -17,6 +17,12 @@
 * using Umbral Proxy Re-Encryption for message serialization
 
 * Building Layer 2 Scaling Solutions on Parity; increasing the number of roles via the establishment of relayer nodes (creating a network of relayers could enable Griffith-style universal logins to fix UI problems involved with gas)
+
+> Light clients will be the backbone of decentralized applications in the near term and this is very good news for a user-friendly decentralized ecosystem.
+
+* Researching the incentivization of running full nodes; make light clients perform micro-payments for each request made to full nodes (micropayments can be made cheap by utilizing state channels).
+
+* Research on allowing light clients to sync quickly while avoiding the current tradeoffs. One idea is to allow full nodes to provide zero-knowledge proofs (e.g. zk-STARKs) of the latest known header. The light client could then verify this and sync with the top of the chain without prior knowledge of the blockchain state.
 
 ## Frontend
 > [More Info on Parity's Frontend Code](./frontend.md)

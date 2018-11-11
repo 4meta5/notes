@@ -12,7 +12,7 @@
 
 * [Althea Mesh Bidirectional Payment Channels](https://github.com/althea-mesh/guac_rs)
 
-* using Bellman repo for Zero Knowledge constructions on Substrate/Polkadot
+* using Bellman repo for Zero Knowledge constructions on Substrate/Polkadot; [working with Zcash foundation](https://www.parity.io/parity-teams-up-with-zcash-foundation-for-parity-zcash-client/)
 
 * using Umbral Proxy Re-Encryption for message serialization
 

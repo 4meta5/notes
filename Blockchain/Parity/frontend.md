@@ -5,6 +5,8 @@
 
 > fether.js; first decentralized wallet; lightning client apps
 
+* [recent blog post](https://www.parity.io/parity-fether-alpha-is-here-a-decentralised-light-client-based-wallet/)
+
 > polkadot.js
 
 > 007-bonds

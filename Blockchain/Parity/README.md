@@ -35,3 +35,5 @@
 
 ## Polkadot
 > [More Info on Polkadot](./polkadot.md)
+
+"Blockchain designed for scalability and interoperability. We have a root relay chain which manages the advancement and security of various parachains, which have their own state machines and can communicate amongst eachother"

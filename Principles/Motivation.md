@@ -6,5 +6,6 @@
 * [Tom Brady: Pick #199, the GOAT](https://www.youtube.com/watch?v=zgjIOT6_yw0)
 * [Kobe Bryant: Mamba Mentality](https://www.youtube.com/watch?v=VciSpKaHifs)
 * [The Greatest - Muhammad Ali](https://www.youtube.com/watch?v=V2EfL1j4KYE)
-* [Dwayne Johnson - The Wake Up Call](https://www.youtube.com/watch?v=yvEzAx1Ij6M)
 * [Rocky Round 14](https://www.youtube.com/watch?v=PNaTy5K4Pr0)
+* [Rocky Balboa - Speech to Kid](https://www.youtube.com/watch?v=D_Vg4uyYwEk)
+* [Eric Thomas - How Bad Do You Want It?](https://www.youtube.com/watch?v=lsSC2vx7zFQ)

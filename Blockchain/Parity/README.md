@@ -37,3 +37,15 @@
 > [More Info on Polkadot](./polkadot.md)
 
 "Blockchain designed for scalability and interoperability. We have a root relay chain which manages the advancement and security of various parachains, which have their own state machines and can communicate amongst eachother"
+
+"At Parity, we've built a number of clients for different blockchains. Substrate is a framework for creating different kinds of chains.
+
+"Goal is to be adaptable -- you can update the runtime (the code itself); something that can change without a hard fork. We want a first class light client. A full node has a significant load on your system. Your average user should just have a light client. We start from the beginning with a light client. We want governance -- extends beyond encoded logic of the chain. 
+
+Powerful tool in a blockchain
+
+We want to leverage this property
+
+Signature on 
+
+Progressive consensus

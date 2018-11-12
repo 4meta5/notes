@@ -16,6 +16,10 @@ Some articles that have especially shaped my worldview...
 
 * [Aaron Turon: listening and trust, part 2](http://aturon.github.io/2018/06/02/listening-part-2/)
 
+## Markets
+
+* [The Gambler Who Cracked the Horse-Racing Code](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code)
+
 ## Culture
 
 * [Silent Technical Privilege](http://pgbovine.net/tech-privilege.htm) by Philip Guo

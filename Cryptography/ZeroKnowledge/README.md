@@ -17,6 +17,7 @@ Christian Reitweissner -- [zkSNARKs in a nutshell](https://blog.ethereum.org/201
 * [How It Works](https://z.cash/technology/) -- this is a meta-link (ie there are more links on this page)
 * [What are zk-SNARKs](https://z.cash/technology/zksnarks/) -- SNARKs Explainer series with these posts
 * [Cultivating Sapling: Faster zk-SNARKs](https://z.cash/blog/cultivating-sapling-faster-zksnarks)
+* [Anatomy of A ZCash Transaction](https://z.cash/blog/anatomy-of-zcash/)
 
 ## Podcasts
 
@@ -26,4 +27,8 @@ Christian Reitweissner -- [zkSNARKs in a nutshell](https://blog.ethereum.org/201
 * [ZeroKnowledgeFM: Benedikt Bunz on Bulletproofs and Verifiable Delay Functions](https://www.zeroknowledge.fm/40)
 * [ZeroKnowledgeFM: Intro to zkSNARKs with Howard Wu](https://www.zeroknowledge.fm/38)
 * [ZeroKnowledgeFM: Zero Knowledge at Zcon0](https://www.zeroknowledge.fm/32)
-* [Introduction to Zero Knowledge Proofs](https://www.zeroknowledge.fm/21)
+* [ZeroKnowledgeFM: Introduction to Zero Knowledge Proofs](https://www.zeroknowledge.fm/21)
+
+## Videos
+
+* [Zero-knowledge proofs into with Str4d](https://www.youtube.com/watch?v=Y9YgRDJAFEE&t=12s)

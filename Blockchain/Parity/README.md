@@ -1,7 +1,5 @@
 # Parity
-> Here is where I'll organize some of my ideas related to [Parity](https://parity.io) -- **you can read more about what I like about Parity [here](./<3.md)**
-
-> [Parity wiki](https://wiki.parity.io/)
+> Here is where I'll organize some of my ideas related to [Parity](https://parity.io)
 
 * **[What I like about Parity](./<3.md)**
 * [Parity-Ethereum Client](./client.md)

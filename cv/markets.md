@@ -3,7 +3,7 @@
 * [UVA's Investment Clubs](#uvainvestment)
 * [Collateralized Internships](#collateral)
 * [(Rejected by) UVA McIntire School of Commerce](#rejected)
-* [Federal Reserce Challenge](#fedchallenge)
+* [Federal Reserve Challenge](#fedchallenge)
 
 > I'm more into [blockchain](./blockchain.md) now, but may return to markets later!
 

@@ -1,6 +1,10 @@
 # Zero Knowledge
 > In this folder, I will keep my notes on Zero Knowledge cryptography. I could've put this in the Blockchain folder, but I chose to place it in Cryptography.
 
+**Elliptic Curve Cryptography**<br>
+* [A (Relatively Easy to Understand) Primer on Elliptic Curve Cryptography](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) by Nick Sullivan of Cloudflare
+* [Introducing Elliptic Curves](https://jeremykun.com/2014/02/08/introducing-elliptic-curves/) by Jeremy Kun
+
 **Vitalik's Attempt to Explain Zk-SNARKs**<br>
 1. [Exploring Elliptic Curve Pairings](https://medium.com/@VitalikButerin/exploring-elliptic-curve-pairings-c73c1864e627)
 2. [Quadratic Arithmetic Programs: from Zero to Hero](https://medium.com/@VitalikButerin/quadratic-arithmetic-programs-from-zero-to-hero-f6d558cea649)

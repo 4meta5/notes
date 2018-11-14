@@ -6,6 +6,7 @@
 ## Articles, Speeches, Papers, Books <a name="general"></a>
 
 * [The Humble Programmer by Dijkstra](#humbleprogrammer)
+* [Zed Shaw: Learn Python the Hard Way](https://learnpythonthehardway.org/book/intro.html)
 
 ### The Humble Programmer <a name= "humbleprogrammer"></a>
 [The Humble Programmer](https://www.cs.utexas.edu/users/EWD/ewd03xx/EWD340.PDF) by Dijkstra 

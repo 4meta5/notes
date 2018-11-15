@@ -7,6 +7,8 @@
 * [Radical Consensus Substrate Blockchain](#RadicalConsensus)
 * [Optimizing SimpleSerialize](#ssz)
 
+* how would blockchain merging work (opposite of forks; target Ethereum and Zcash)?
+
 ## Radical Consensus Substrate Blockchain <a name="RadicalConsensus"></a>
 
 I want to hack on the [Shasper beacon chain implementation using the Substrate framework](https://github.com/paritytech/shasper). I have some ambitious goals on this project to integrate Radical Markets ideas into the consenus mechanism itself.

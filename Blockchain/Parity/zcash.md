@@ -16,26 +16,33 @@ This is a fatal mistake. To build a digital environment in which people can be t
 (1) see explanations by [Vitalik](https://blog.ethereum.org/2015/04/27/visions-part-2-the-problem-of-trust/) and [Preethi](https://medium.com/@preethikasireddy/eli5-what-do-we-mean-by-blockchains-are-trustless-aa420635d5f6) for a more nuanced explanation of how blockchains minimize trust
 
 ## Zcash 
-Building on decades of research, Zcash was developed and launched by top cryptographers from MIT, Technion, John Hopkins, Tel Aviv University, and UC Berkeley. [Zcash](https://z.cash/) is a blockchain that ensures complete confidentiality of transaction data. A cryptographic primitive known as zero-knowledge proofs allow transactions to be verified without revealing the sender, receiver or transaction amount.  
+Building on decades of research, Zcash was developed and launched by top cryptographers from MIT, Technion, John Hopkins, Tel Aviv University, and UC Berkeley. [Zcash](https://z.cash/) is a blockchain that ensures complete confidentiality of transaction data. A cryptographic primitive known as zero-knowledge proofs allow transactions to be verified without revealing the sender, receiver or transaction amount.
 
+By building a new Zcash client in Rust, Parity will expand the options available to Zcash miners and users, thereby strengthening the robustness of the network. Indeed, [past experience](https://www.parity.io/onwards/) has shown that client-diversity is necessary to overcome black swan events. When asked how Parity's Ethereum client kept running during a malicious attack in September of 2016 that crashed other clients, Gavin Wood answered, "basically due to great optimization and profiling efforts, a clean codebase written for efficiency and robustness from the ground up and the use of the extremely lean Rust language". More than two years later, with significant experience building and maintaining client implementations for both Ethereum and Bitcoin in Rust, Parity is ready to take on its next challenge and build the Parity Zcash node implementation.
 
-> *don't roll out your own crypto*
+Like all other Parity projects, the new Zcash client implementation will be open source and encourages contributions from the community. To prepare for construction, we've provided links to resources on the cryptography that underpins Zcash. Even if you know *nothing* about *zero knowledge* proofs, we encourage you to take a trip down this rabbit hole!
 
-> it's naive to assume that there arent backdoors on other libraries
+**Relevant ZeroKnowledge FM Podcasts**
+* [ZeroKnowledgeFM: Zooko talks Zcash](https://www.zeroknowledge.fm/50)
+* [ZeroKnowledgeFM: Zokrates with Jacob Eberhardt](https://www.zeroknowledge.fm/41)
+* [ZeroKnowledgeFM: Benedikt Bunz on Bulletproofs and Verifiable Delay Functions](https://www.zeroknowledge.fm/40)
+* [ZeroKnowledgeFM: Intro to zkSNARKs with Howard Wu](https://www.zeroknowledge.fm/38)
+* [ZeroKnowledgeFM: Zero Knowledge at Zcon0](https://www.zeroknowledge.fm/32)
+* [ZeroKnowledgeFM: Introduction to Zero Knowledge Proofs](https://www.zeroknowledge.fm/21)
 
-> for this reason, Parity is open sourcing all of its code and encouraging participating by the developer/cryptographer community. Many heads are better than one and we want to build tools that will help everyone.
+**More Info on Zcash from Zcash**
+* [How It Works](https://z.cash/technology/)
+* [What are zk-SNARKs](https://z.cash/technology/zksnarks/)
+* [Cultivating Sapling: Faster zk-SNARKs](https://z.cash/blog/cultivating-sapling-faster-zksnarks)
+* [Anatomy of A ZCash Transaction](https://z.cash/blog/anatomy-of-zcash/)
 
-> https://jeremykun.com/2014/02/08/introducing-elliptic-curves/
+**Vitalik 3-part zk-SNARKs Explainer**
+1. [Exploring Elliptic Curve Pairings](https://medium.com/@VitalikButerin/exploring-elliptic-curve-pairings-c73c1864e627)
+2. [Quadratic Arithmetic Programs: from Zero to Hero](https://medium.com/@VitalikButerin/quadratic-arithmetic-programs-from-zero-to-hero-f6d558cea649)
+3. [Zk-SNARKs: Under the Hood](https://medium.com/@VitalikButerin/zk-snarks-under-the-hood-b33151a013f6)
 
-> https://jiggerwit.wordpress.com/2013/09/25/the-nsa-back-door-to-nist/
-
-For this reason, I want to provide a few resources for zk-SNARKs to help people get started...I also want to provide some code resources for learning Rust. We need as many hands on deck as possible for this project.
-
-> We also expect that when we launch Polkadot (LINK), encryption will play a role in number of different transaction systems
-
-## zk-SNARKs
-
-
-## zk-STARKs, Bulletproofs, and More Research
-
-
+**Other Useful Resources**
+* [A (Relatively Easy to Understand) Primer on Elliptic Curve Cryptography](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) by Nick Sullivan of Cloudflare
+* [Introducing Elliptic Curves](https://jeremykun.com/2014/02/08/introducing-elliptic-curves/) by Jeremy Kun
+* [Zero-knowledge proofs into with Str4d](https://www.youtube.com/watch?v=Y9YgRDJAFEE&t=12s)
+* [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/) by Christian Reitweissner (Ethereum Blog Post)

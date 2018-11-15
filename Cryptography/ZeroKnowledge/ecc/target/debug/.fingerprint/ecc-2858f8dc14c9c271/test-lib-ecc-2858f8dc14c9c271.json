@@ -1,0 +1,1 @@
+{"rustc":10874305566871263840,"features":"[]","target":8436649815905873379,"profile":16779494169119175004,"path":10872709659218687626,"deps":[["num-rational v0.2.1","num_rational",9504367508693932027]],"local":[{"MtimeBased":[[1542277618,610613237],".fingerprint/ecc-2858f8dc14c9c271/dep-test-lib-ecc-2858f8dc14c9c271"]}],"rustflags":[],"edition":"Edition2018"}

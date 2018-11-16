@@ -1,4 +1,4 @@
-# Motivating Construction of the ZCash Node
+# Parity + Zcash
 
 In a recent [blog post](https://www.parity.io/parity-teams-up-with-zcash-foundation-for-parity-zcash-client/), Parity announced a partnership with the Zcash foundation to build the first alternative client for Zcash in Rust. In this post, we'll motivate the project and call for support from the community.
 
@@ -34,7 +34,7 @@ Like all other Parity projects, the new Zcash client implementation will be open
 * [How It Works](https://z.cash/technology/)
 * [What are zk-SNARKs](https://z.cash/technology/zksnarks/)
 * [Cultivating Sapling: Faster zk-SNARKs](https://z.cash/blog/cultivating-sapling-faster-zksnarks)
-* [Anatomy of A ZCash Transaction](https://z.cash/blog/anatomy-of-zcash/)
+* [Anatomy of A Zcash Transaction](https://z.cash/blog/anatomy-of-zcash/)
 
 **Vitalik's 3-part zk-SNARKs Explainer**
 1. [Exploring Elliptic Curve Pairings](https://medium.com/@VitalikButerin/exploring-elliptic-curve-pairings-c73c1864e627)

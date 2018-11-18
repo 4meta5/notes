@@ -1,7 +1,6 @@
 # Zero Knowledge
 > In this folder, I will keep my notes on Zero Knowledge cryptography. I could've put this in the Blockchain folder, but I chose to place it in Cryptography.
 
------------------------------------------------------------------------------------------
 |               |   Toxic-waste free    |   Proof time  |   Verify time |   Proof size  |
 -----------------------------------------------------------------------------------------
 |  SNARKs       |           No          |      2.3 s    |       10 ms   |     ~200 B    |

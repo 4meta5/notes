@@ -9,7 +9,7 @@
 |  Aurora       |           Yes         |      10 s     |      100 ms   |    100KB      |
 
 
-> Interesting project idea (*unoriginal*): take the problem as an input and identify the best zero knowledge tool to solve the given input problem
+> Interesting project idea (*unoriginal*): take the problem as an input and identify the best zero knowledge tool to solve the given problem
 
 - [Elliptic Curve Cryptography](#ECC)
 - [Zero Knowledge Proofs General Introduction](#ZKP)

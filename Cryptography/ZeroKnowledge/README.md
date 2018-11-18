@@ -55,7 +55,7 @@
 * [What are zk-SNARKs](https://z.cash/technology/zksnarks/) -- SNARKs Explainer series with these posts
 * [Cultivating Sapling: Faster zk-SNARKs](https://z.cash/blog/cultivating-sapling-faster-zksnarks)
 * [Anatomy of A ZCash Transaction](https://z.cash/blog/anatomy-of-zcash/)
-* [Sapling](https://github.com/zcash/zips/blob/master/protocol/sapling.pdf)
+* [Sapling Paper](https://github.com/zcash/zips/blob/master/protocol/sapling.pdf)
 
 **[Coda](https://codaprotocol.com/)**
 

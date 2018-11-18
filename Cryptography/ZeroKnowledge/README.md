@@ -24,10 +24,12 @@
 
 * [A (Relatively Easy to Understand) Primer on Elliptic Curve Cryptography](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) by Nick Sullivan of Cloudflare
 * [Introducing Elliptic Curves](https://jeremykun.com/2014/02/08/introducing-elliptic-curves/) by Jeremy Kun
+* [Elliptic Curve Cryptography: a gentle introduction](http://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/) by Andrea Corbellini
 
 ## ZKP General Introduction <a name = "ZKP"></a>
 
 * [Zero Knowledge Proofs: An Illustrated Primer](https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/) by Matthew Green
+* [Demystifying Zero-Knowledge Proofs: Devcon 4 Presentation](https://docs.google.com/presentation/d/1gfB6WZMvM9mmDKofFibIgsyYShdf0RV_Y8TLz3k1Ls0/edit#slide=id.p) by Beanstalk
 
 **Hands-On Tutorial by Shir Peled (from StarkWare)**
 * [Part 1](http://www.shirpeled.com/2018/09/a-hands-on-tutorial-for-zero-knowledge.html)
@@ -39,6 +41,7 @@
 
 * [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/) by Christian Reitweissner
 * [SNARGs](https://gist.github.com/Haseeb-Qureshi/f552fdbbb649ed4bbfeb681beb4091e1) by Alessandro Chiesa
+* [Introduction to zk-SNARKs](https://blog.decentriq.ch/zk-snarks-primer-part-one/) by Decentriq
 
 **Vitalik's SNARK Series**
 1. [Exploring Elliptic Curve Pairings](https://medium.com/@VitalikButerin/exploring-elliptic-curve-pairings-c73c1864e627)
@@ -57,6 +60,7 @@
 **[Coda](https://codaprotocol.com/)**
 
 **[Zokrates](https://github.com/Zokrates/ZoKrates)**
+* [Proving Knowledge of a Hash Pre-Image with ZoKrates](https://blog.decentriq.ch/proving-hash-pre-image-zksnarks-zokrates/) by Decentriq
 
 **[Rollup: Ethereum Plasma on SNARKs](https://github.com/barryWhiteHat/roll_up)**
 

@@ -13,3 +13,13 @@
 
 ## Zero Knowledge Technology
 > stored under the Cryptography folder [here](../Cryptography/ZeroKnowledge/README.md)
+
+## Blind Spots
+> everyone has some blind spots
+
+* mesh networks
+* token bonding curves (and ODE tbh)
+* decentralized storage
+* outsourcing computation to off-chain (Truebit)
+* decentralized loan pool protocols -- I have an interest
+* mining pool protocols (loi luu's protocol)

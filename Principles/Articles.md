@@ -20,6 +20,10 @@ Some articles that have especially shaped my worldview...
 
 * [The Gambler Who Cracked the Horse-Racing Code](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code)
 
+## Self-Help
+
+* [Oh, hell, Martha, go ahead and burn yourself if you want to](https://www.epsilontheory.com/oh-hell-martha-go-ahead-and-burn-yourself-if-you-want-to/) by Ben Hunt, Epsilon Theory
+
 ## Culture
 
 * [Silent Technical Privilege](http://pgbovine.net/tech-privilege.htm) by Philip Guo

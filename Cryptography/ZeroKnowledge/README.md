@@ -1,6 +1,14 @@
 # Zero Knowledge
 > In this folder, I will keep my notes on Zero Knowledge cryptography. I could've put this in the Blockchain folder, but I chose to place it in Cryptography.
 
+-----------------------------------------------------------------------------------------
+|               |   Toxic-waste free    |   Proof time  |   Verify time |   Proof size  |
+-----------------------------------------------------------------------------------------
+|  SNARKs       |           No          |      2.3 s    |       10 ms   |     ~200 B    |
+|  STARKs       |           Yes         |     ~1.6 s    |      ~16 ms   |  ~45,000 B    |
+| Bulletproofs  |           Yes         |     ~30 s     |    ~1100 ms   |    ~1300 B    |
+|  Aurora       |           Yes         |     ~10 s     |     ~100 ms   | ~100,000 B    |
+
 **Elliptic Curve Cryptography**<br>
 * [A (Relatively Easy to Understand) Primer on Elliptic Curve Cryptography](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) by Nick Sullivan of Cloudflare
 * [Introducing Elliptic Curves](https://jeremykun.com/2014/02/08/introducing-elliptic-curves/) by Jeremy Kun

@@ -15,11 +15,17 @@
 > stored under the Cryptography folder [here](../Cryptography/ZeroKnowledge/README.md)
 
 ## Blind Spots
-> everyone has some blind spots
+> everyone has some blind spots; I have a few!
 
 * mesh networks
-* token bonding curves (and ODE tbh)
-* decentralized storage
+* token bonding curves (and ODE tbh) (Trent Mconaughy, SimonDLR, and others...NEED TO CREATE MY GRAPH)
+* decentralized storage (look at ZeroKnowledgeFM podcasts)
 * outsourcing computation to off-chain (Truebit)
 * decentralized loan pool protocols -- I have an interest
 * mining pool protocols (loi luu's protocol)
+* DAGS
+    * GHOST to SPECTRE: single-winner abstract voting rule --> multi-winner abstract voting rule, yielding more robust consensus properties.
+    * SPECTRE to PHANTOM: pairwise ordering --> linear ordering, achieved by additional assumption on network delay *upper bound*
+    * SpaceMesh
+* randomness beacons (collective coin flipping, dfinity threshhold scheme, randao)
+* fork choice rules

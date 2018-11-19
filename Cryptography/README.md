@@ -25,3 +25,12 @@ More Advanced:
 3. [Applied Cryptography Online Textbook](http://toc.cryptobook.us/) -- 2017, Boneh and Shoup
 4. [Harvard: CS217 Cryptography Notes](https://intensecrypto.org/public/) -- Spring 2018, Boaz Barak
 5. [Introduction to Computer Security at NYU Paris](https://sites.google.com/nyu.edu/paris-csci-ua9480/resources/slides) -- Fall 2018, Nadim Kobeissi
+
+
+## Blind Spots
+
+* MPC
+* Threshhold schemes
+* erasure encoding
+* hash function research (how do we build a hash function)
+* ECC

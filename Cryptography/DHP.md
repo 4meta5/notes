@@ -1,7 +1,5 @@
 <script src="//yihui.name/js/math-code.js"></script>
 <!-- Just one possible MathJax CDN below. You may use others. -->
-<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 # Diffie-Hellman Problem (DHP)
 > The motivation for this problem is that many security systems use one-way functions: mathematical functions that are fast to compute, but hard to reverse i.e. enable encrypting a message, but reversing the encryption (without the decryption key) is difficult. If solving DHP were easy, these systems would be broken. 
 

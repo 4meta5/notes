@@ -5,7 +5,7 @@
     * [Medical Data](#medical)
 
 ## Conceptual Notes <a name = "concept"></a>
-> need to add my written notes
+> link to conceptual notes
 
 ## Application <a name = "application"></a>
 

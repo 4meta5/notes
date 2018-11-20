@@ -19,9 +19,20 @@ Triplets of the first kind are often called *DDH triplet* or *DDH tuples*.
 
 DDH is easy.
 
+## External Diffie-Hellman (XDH)
+The external Diffie-Hellman (XDH) assumption is a computational hardness assumption used in elliptic curve cryptography. the XDH assumption holds that there exists certain subgroups of elliptic curves which have useful properties for cryptography. Specifically, XDH implies the existence of two distinct groups `<G_{1}, G_{2}>` wwith the following properties:
+1. The discrete logarithm problem (DLP) and the computational Diffie-Hellman problem (CDH) are instractable in `G_{1}` and `G_{2}`.
+2. There exists an efficiently computable bilinear map pairing `e(_, _): G_{1} x G_{2} -> G_{T}`.
+3. The decisional Diffie-Hellman problem (DDH) is intractable in `G_{1}`.
+
 # Discrete Logarithm Problem (DLP)
 **Discrete logarithms** are logarithms defined with regard to multiplicative cyclic groups. If `G` is a multiplicative cyclic group and `g` is a generator of `G`, then from the definition of cyclic groups, we know every element `h` in `G` can be written as `g^{x}` for some `x`. The discrete logarithm to the base `g` of `h` in the group `G` is defined to be `x`. For example, if the group is `\mathbb{Z}_{5}` and the generator is `2`, then the discrete logarithm of `1` is `4` because `2^{4} = 1 mod 5` (`=` should have three bars here, but we abuse notation). 
 
 The **discrete logarithm problem (DLP)** states, given a group `G`, a generator `g` of the group and an element `h` of `G`, find the discrete logarithm to the base `g` of `h` in the group `G`.
 
 DLP is not always hard (it depends on the groups).
+
+### References
+* [Short signatures from the Weil pairing](https://www.iacr.org/archive/asiacrypt2001/22480516.pdf) -- Boneh, Lynn, Shacham (AsiaCrypt 2001)
+* [Short Group Signatures](http://crypto.stanford.edu/~dabo/papers/groupsigs.pdf) -- Boneh, Boyen, Shacham (AsiaCrypt 2004)
+* Wikipedia

@@ -37,16 +37,24 @@ Bitcoin's UTXO model grows linearly as you accumulate more inputs from previous 
 UTXO transactions can be processed in parallel => conducive to **Schnorr Signatures**: signatures can be aggregated across multiple inputs (UTXOs) of a transaction; instead of having to provide multiple signatures for *each* input, a transaction with Schnorr allows for a *single* transaction on ALL inputs.
 
 ### Cons
-* the UTXO model is stateless => more difficult to build general purpose state channels and other sorts of applications on top of the UTXO Model
+* the UTXO model is stateless => more difficult to build general purpose state channels and other sorts of smart contract applications on top of the UTXO Model
 
 ## Account <a name = "account"></a>
 > more statefulness
 
-* this is pretty straightforward
+A global state stores a list of accounts with balances, code, and internal storage. A transaction is valid if the sending account has enough balance to pay for it, in which case the sending account is debited and the receiving account is credited with the value. If the receiving account has associated code, the code runs, and internal storage may also be changed accordingly, or the code may even create additional messages to other accounts which lead to further debits and credits.
 
-### 
+### Pros
+* stateful => enables general purpose smart contracts
+    * facilitates state channel constructions
 
+* constant light client reference: light clients can at any point access all data related to an account by scanning down the state tree in a specific direction.
+
+### Cons
+* not easily compatible with Schnorr Signatures (signature aggregation is nontrivial in this context)
 
 ### References
 * [UTXO vs Account](https://medium.com/nervosnetwork/my-comparison-between-the-utxo-and-account-model-821eb46691b2) -- by Nervos Network, October 2018
 * [Bitcoin Developer Guide: Transactions](https://bitcoin.org/en/developer-guide#transactions)
+* [Thoughts on UTXO by V](https://medium.com/@ConsenSys/thoughts-on-utxo-by-vitalik-buterin-2bb782c67e53)
+* [Ethereum Design Rationale: Accounts and Not UTXOs](https://github.com/ethereum/wiki/wiki/Design-Rationale#accounts-and-not-utxos)

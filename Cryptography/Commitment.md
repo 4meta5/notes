@@ -1,4 +1,4 @@
-# Pederson Commitments
+# Commitments
 
 > need to take and add notes
 

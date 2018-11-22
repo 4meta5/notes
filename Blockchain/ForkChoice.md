@@ -8,9 +8,6 @@ GHOST (Greedy Heaviest Observed Subtree):
 * An Uncle must be different from all other Uncles in previous blocks and the block being formed.
 * For every Uncle included in the block the miner gets a additional 3.125% and the miner of the Uncle receives 93.75% of a standard block reward.
 
-
-
-
 LMD GHOST fork choice: Let M be the set of most recent messages from all validators. Set HEAD = genesis. Loop: set HEAD to the child C of HEAD such that the largest subset of M votes for C or a descendent of C, repeat until HEAD has no choldren. Return HEAD.
 
 ### References

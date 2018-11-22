@@ -2,7 +2,7 @@
 
 > optimizing interaction with the blockchain
 
-UNDER CONSTRUCTION!
+* Data Availability Problem <-> Speaker/Listener Fault Equivalence
 
 ## Projects
 

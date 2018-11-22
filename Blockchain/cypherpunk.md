@@ -9,3 +9,6 @@
 * Reagle 2005
 
 * Nakamoto 2008
+
+* [The Cyphernomicon](https://ia600208.us.archive.org/10/items/cyphernomicon/cyphernomicon.txt)
+* [What is a Cypherpunk: CryptoAnarchy.wiki](https://cryptoanarchy.wiki/getting-started/what-is-a-cypherpunk)

@@ -1,4 +1,27 @@
-# Fork Choice Rules
+# Forks
+
+> definitions of hard fork vs soft fork
+
+* backwards compatibility
+* decreased security with separate chains (opposite of pooled security)
+
+## History
+
+### Ethereum
+
+> dear ethereum community, etc; arguments for/against contentious hard forks
+
+> list all the forks!
+
+### Bitcoin
+
+> list all forks
+
+### Polkadot
+
+* on-chain governance complicates the logistics of forks
+
+## Fork Choice Rules
 
 GHOST (Greedy Heaviest Observed Subtree):
 * A block must specify its parents and its number of Uncles

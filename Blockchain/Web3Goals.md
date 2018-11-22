@@ -1,7 +1,6 @@
 # Web 3 Goals
 
-* Permissionless
-* Decentralized => Trustless
+* Permissionless => Decentralized => Trustless
 * Anonymous (no need to link identity)
 
 # Poor Self-Organization

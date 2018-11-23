@@ -1,5 +1,5 @@
 # ZCash
-> check out the [Zero Knowledge Repo](../Cryptography/ZeroKnowledge/README.md) (in the Cryptography folder)
+> check out the [Zero Knowledge Repo](../../Cryptography/ZeroKnowledge/README.md) (in the Cryptography folder)
 
 **[Zcash](https://z.cash/)**
 * [How It Works](https://z.cash/technology/) -- this is a meta-link (ie there are more links on this page)

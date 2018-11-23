@@ -8,6 +8,9 @@
 * [My Intentions for Blockchain Governance](https://medium.com/@Vlad_Zamfir/my-intentions-for-blockchain-governance-801d19d378e5)
 * [Against On-Chain Governance](https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca)
 
+**Aragon**
+* [The Future of Organizations](http://blog.aragon.one/the-future-of-organizations/)
+
 ## Media
 
 * [Vlad and Gav go head-to-head on blockchain governance](https://www.zeroknowledge.fm/52)

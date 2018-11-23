@@ -1,6 +1,6 @@
 # State of the Space
 
->  borrow from [The Blockchain Pitch](TheBlockchainPitch.md)
+>  borrow from [The Blockchain Pitch](Pitch.md)
 
 ## Keeper Roles
 

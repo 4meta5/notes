@@ -9,6 +9,10 @@
     * [Interchain Communication](#communication)
 * [Protocol](#protocol)
     * [Stake-token liquidity](#liquidity)
+    * [Voting Norms and Disputes](#vnorms)
+    * [Interchain Routing](#routing)
+
+* [Typos](#typos)
 
 **Why existing protocols maintain wide timing margins on the expected processing time?**<br>
 The state transition mechanism, or the means by which parties collate and execute transactions, has its logic fundamentally tied into the consensus “canonicalisation" mechanism, or the means by which parties agree upon one of a number of possible, valid, histories.
@@ -111,6 +115,8 @@ Parity's solution: forcibly make 20% of token supply liquid
 
 **bond confiscation/burning -- will parameters be static or dynamic?**
 
+### Voting Norms and Disputes <a name = "vnorms" ></a>
+
 **Sealing relay blocks** entails the collection of signed statements from validators over the validity, availability and canonicality of a particular relay-chain block and the parachain blocks that it represents.
 
 The BFT consensus algorithm is motivated by Tangaora (a BFT variant of Raft), Tendermint, and HoneyBadgerBFT. The algorithm must reach an agreement on multiple parachains in parallel.
@@ -133,3 +139,44 @@ By requiring 33%+1 validators voting for availability only *eventually*, and not
 Under the current model, the size of the system scales with the number of chains to ensure processing is distributed; since each chain will require at least one validator and we fix the availability attestation to a constant proportion of validators, then participants similarly grows with the number of chains. We end up with: **latency = size^{2}**.
 
 **Mitigating the Data Availability Problem**<br>
+1. *Public Participants*, similar to fishermen, police the validators who claim availability; specifically, their task is to find the validators that appear unable to demonstrate validity and lodging corresponding micro-complaints to other validators. **Speaker/Listener Fault Equivalence still exists here; we just increase complexity!**
+2. *Availability Guarantors*: nominate a second set of bonded validators that attest to the availability of all important interchain data. 
+> This has the advantage of relaxing the equivalence between *participants* and *chains*. Essentially chains can grow (along with the original chain validator set), whereas the participants, and specifically those taking part in data availability testament, can remain at the least sub-linear and quite possibly constant.
+
+3. Collators have an intrinsic incentive to ensure that all data is available for their chosen parachain since without it they are unable to author further blocks from which they can collect transaction fees. Recent collators are given the ability to issue challenges to the availability of external data for a particular parachain block to validators for a small bond...Validators must contact those from the apparently offending validator sub-groups who testified and either acquire and return the data to the collator or escalate the matter by testifying the lack of availability (direct refusal to provide the data counts as a bond-confiscating offense, therefore the misbehaving validator will likely just drop the connection) and contacting additional validator to return the same test. In the latter case, the collator's bond is returned...once a quorum of validators who can make such non-availability testimonials is reached, they are released, the misbehaving sub-group is punished, and the block is reverted.
+
+**In-Protocol Randomness**<br>
+Taking the XOR distance measure between the collator's address and some cryptographically secure pseudorandom number determined close to the point of the block being created. This effectively gives each collator a random chance of their candidate block *winning* over all others...To mitigate the sybil attack of a single collator "mining" an address close to the winning ticket and thus being a favorite each block, we would add some inertia to the collator's address. 
+
+*Collator Insurance*<br>
+To disincentivize collators from sending invalid or overweight block candidates to validators, any validator may place in the next block a transaction including the offending block alleging misbehavior with the effect of transferring some proportion of the misbehaving collator's stake to the aggrieved validator. This transfer front-runs any others to ensure the collator cannot remove the funds prior to the punishment...To prevent malicious validators confiscating collators' funds, the collator may appeal the validator's decisions with a jury of randomly chosen validators in return for placing a small deposit. If they find in the validator's favor, the deposit is consumed by them; if not, the deposit is returned and the validator is fined.
+
+> **Attacks/Critiques**: (1) I grief another validator who confiscates my funds before I can be punished from the validator I actually hurt (I know the validator who front-runs the valid accusation) (2) What if I appeal an invalid accusation and the validator bribes the random council of validators (by posting some bounty greater than the deposit necessary for my appeal) (3) What is the initial fine is illegitimate? The appeal process would need to be non-binary in this case, which would add a lot of complexity...if the punishment is non-binary then this would need to be figured out.
+
+#### Validator Shuffling
+Fixed total of c^{2} - c validators with c-1 validators in each sub-group. 
+
+### Interchain Routing <a name = "routing"></a>
+*Interchain Transaction Routing*: how a posted transaction gets from being a desired output from one *source* parachain to being a non-negotiable input of another *destination* parachain without any trust requirements.
+
+Posts are structured as several FIFO queues; the number of lists is referred to as the *routing base* and may be around 16. In a way, this number represents the quantity of parachains that can be supported without having to resort to *multi-phase* routing (**hyper-routing** to scale past the initial set of parachains).
+
+> page 14, routing algorithm outlined
+
+**Non-Manipulateable Validator Selection**<br>
+Assume strong, CSPR sub-block ordering to achieve a deterministic operation that offers no favoritism between any parachain block pairing. (check citation [9])
+
+* data paths per node grow linearly with the overall complexity of the system
+* multi-phase routing may be used to reduce the number of instantaneous pathways at a cost of introducing storage buffers and latency
+
+#### Hyper-cube Routing
+Rather than growing the node connectivity with the number of parachains and sub-group nodes, we grow only with the logarithm of parachains. Posts may transit between several parachains' queues on their way to final delivery.
+
+> section 6.6.4
+
+
+
+
+# Typos <a name = "typos"></a>
+1. page 15; 6.6.4 "*Hyper-cube routing is a mechanism which can mostly be build*"...should be "built"
+

@@ -1,18 +1,24 @@
-# Notes on Parity Consensus Modules
+# Parity Consensus Modules
 
 
-## GRANDPA / SHAFT
+## GRANDPA (SHAFT)
 * SHAFT: Shared Ancestry Finality Tool
-* GRANDPA: 
+* GRANDPA
 
-## Aurand
+> iteration or two beyond Rhododendron; progressive finality
+
+### Parity / Polkadot
+
+## Aura
 > probabilistic finality (poa)
 
-## Rhododendron
-> BFT-eque
+### Aurand
+> **Ouroboros**-variant
 
-## Ouroboros
-> planning to be implemented
+## Rhododendron
+> BFT-eque; pulls from PBFT
+
+* instant finality
 
 ## Shasper
 > based on Serenity (Eth 2.0)

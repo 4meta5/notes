@@ -46,3 +46,37 @@ One counterargument is that current stakeholders rarely have the incentive to ce
 
 **Gavin Wood**
 * [Epicenter: Substrate, Polkadot and the Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg)
+
+*automated upgrades are a sharp knife* -- [Epicenter Interview with Gavin](https://www.youtube.com/watch?v=eP4mT19S_jg)
+
+> sharp knife is dangerous but a good chef prefers a sharp knife to a dull knife; we can do much more (use it to close the section)
+
+> need to ensure that the upgrade fits within your chain definition and there are an appropriate number of safeguards to prevent them from being misused
+
+on-chain governance: extend consensus technology to dictate not only what happens on the chain but what happens with the chain as well
+
+Substrate is a meta-version of Ethereum; instead of having a smart contract that dictates a state transition function,we store a runtime on chain which dictates the state transition function...this model can be viewed as enabling greater *smart contract* upgradeability
+
+> how do we upgrade our on-chain governance in this case? 
+
+Caveats: we need to design correct fail-safes
+
+on-chain governance is a strictly defined process; off-chain governance is too ambiguous and often leads to an abuse of power
+
+"Bitcoin is controlled by Bitcoin Core and 7-8 miners. Ethereum is essentially a dictatorship -- if Vitalik wants to do something, then it is done."
+
+Plutocracy/Oligarchy vs Dictatorship
+
+> stakeholder voting by itself is an improvement
+
+> design the coin distribution mechanism so that no oneparty controls more than 10% of the coins
+
+adage/maxim: if >50% of coinholders votes to make a change, the change is made (not 51+% of the turnout, 51+% of the coinholders)
+
+council: voted in through apprval voting; by deferring to a smaller set of people, they can bring about and propose sensible changes; still with a demographic safeguard
+
+idea expressed...when you vote for a change, you lock your coins up for some period after the change is implemented...
+
+idea expressed...incorporating forking into governance (where if a vote goes through, the minority's stake is slashed but they fork onto a new chain on which the majority's stake is slashed)...what does forking mean in the context of polkadot though?
+
+*"It's very easy to fork"* -- I really think this is a misperception.

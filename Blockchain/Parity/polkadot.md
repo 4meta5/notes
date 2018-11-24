@@ -17,11 +17,11 @@ The state transition mechanism, or the means by which parties collate and execut
 
 ## History <a name = "history"></a>
 
-A more complex scalable solution known as Chain fibers, dating back to June 2014 and first published later that year, made the case for a single relay-chain and mul- tiple homogeneous chains providing a transparent inter- chain execution mechanism. Decoherence was paid for through transaction latency—transactions requiring the coordination of disparate portions of the system would take longer to process. [source](https://github.com/ethereum/wiki/wiki/Chain-Fibers-Redux)
+A more complex scalable solution known as Chain fibers, dating back to June 2014 and first published later that year, made the case for a single relay-chain and multiple homogeneous chains providing a transparent interchain execution mechanism. Decoherence was paid for through transaction latency-transactions requiring the coordination of disparate portions of the system would take longer to process. [source](https://github.com/ethereum/wiki/wiki/Chain-Fibers-Redux)
 
 > high-frequency chains (with very low block times)
 
-## Properties <a name = "prooperties"></a>
+## Properties <a name = "properties"></a>
 
 Polkadot is equivalent to a set of independent chains except for two important points:
 1. Pooled security
@@ -33,17 +33,17 @@ Mark Twain:
 ### Roles <a name = "roles"></a>
 
 **Validator**:<br>
-* must run a relay-chain client implementa- tion with high availability and bandwidth
+* must run a relay-chain client implementation with high availability and bandwidth
     *  the node must be ready to accept the role of ratifying a new block on a nominated parachain
         * ratifying => receiving, validating and republishing candidate blocks
-* Once all new parachain blocks have been properly ratified by their appointed validator subgroups (**collators**), validators must then ratify the relay-chain block itself. T
+* Once all new parachain blocks have been properly ratified by their appointed validator subgroups (**collators**), validators must then ratify the relay-chain block itself.
     * To ratify the relay-chain block: updating the state of the transaction queues (essentially moving data from a parachain’s output queue to another parachain’s input queue), processing the transactions of the ratified relay-chain transaction set and ratifying the final block, including the final parachain changes.
     
 **Nominator**: <br>
 * A nominator is a stake-holding party who contributes to the security bond of a validator.
 
 **Collators**:<br>
-* maintain a “full-node” for a par- ticular parachain
+* maintain a “full-node” for a particular parachain
 * collate and execute transactions to create an unsealed block, and provide it, together with a zero-knowledge proof, to one or more validators presently responsible for proposing a parachain block
 
 > collator pools who vie to collect the most transaction fees
@@ -52,7 +52,7 @@ Mark Twain:
 
 **Fishermen**:<br>
 * get their reward through a timely proof that at least one bonded party acted illegally
-    * Illegal actions include signing two blocks each with the same ratified par- ent or, in the case of parachains, helping ratify an invalid block
+    * Illegal actions include signing two blocks each with the same ratified parent or, in the case of parachains, helping ratify an invalid block
 * fishermen must post a small bond (to prevent sybil attacks from wasting validator compute resource)
     * they can achieve a hefty profit from identifying bad behavior (but this will occur relatively infrequently)
 
@@ -97,7 +97,7 @@ Notable differences from Ethereum:
 To tie the network security to the *market capitalization* of the staking token, as many tokens as possible should be staked within the network maintenance operations.
 > we could incentivize this with a high interest rate paid out to validators
 
-**Key problem**: if the token is locked in the Staking Contract under punishment of re- duction, how can a substantial portion remain sufficiently liquid in order to allow price discovery?
+**Key problem**: if the token is locked in the Staking Contract under punishment of reduction, how can a substantial portion remain sufficiently liquid in order to allow price discovery?
 
 Potential solution? straight-forward derivative contract, securing fungible tokens on an underlying staked token...but this is difficult to create in a trust-free manner and there is an inherent disparity between the value of the derivative and the underlying.
 
@@ -115,4 +115,21 @@ Parity's solution: forcibly make 20% of token supply liquid
 
 The BFT consensus algorithm is motivated by Tangaora (a BFT variant of Raft), Tendermint, and HoneyBadgerBFT. The algorithm must reach an agreement on multiple parachains in parallel.
 
-> page 11 stopped
+The basic rules for validity of the individual blocks (that allow the total set of validators as a whole to come to consensus on it becoming the unique parachain candidate to be referenced from the canonical rely):
+* must have at least two thirds of its validators voting positively and none voting negatively
+* must have over one third validators voting positively to the availability of egress queue information
+
+> **unanimous voting is impractical** => allowing negative votes to deadlock the process seems unnecessary; but adaptive quorum biasing was introduced later
+
+After the votes are counted from the full validator set, if the losing opinion has a substantial proportion, it is assumed to be an accidental parachain fork and the parachain is suspended from the consensus process. Otherwise, we assume it is a malicious act and punish the minority who were voting for the dissenting opinion.
+
+> **do we punish dissenters?** and **how do forks work for parachains???**
+
+The ongoing network resource consumption (in terms of bandwidth) grows with the square of the chains, an untenable property in the long-term...Ultimately, we are likely to keep baashing our heads against the fundamental limitations which states that for a consensus network to be considered available safe, the ongoing bandwidth requirements of the order of total validators times total input information. This is due to the inability of an untrusted network to properly distribute the task of data storage across many nodes, which sits apart from the eminently distributable task of processing.
+
+**Introducing Latency**<br>
+By requiring 33%+1 validators voting for availability only *eventually*, and not *immediately*, we can better utilize exponential data propagation and help even out peaks in data-interchange. A reasonable equality (though unproven) may be **latency = participants X chains**. 
+
+Under the current model, the size of the system scales with the number of chains to ensure processing is distributed; since each chain will require at least one validator and we fix the availability attestation to a constant proportion of validators, then participants similarly grows with the number of chains. We end up with: **latency = size^{2}**.
+
+**Mitigating the Data Availability Problem**<br>

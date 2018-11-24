@@ -43,3 +43,6 @@ One counterargument is that current stakeholders rarely have the incentive to ce
 * [Blockchain Governance 101](https://blog.goodaudience.com/blockchain-governance-101-eea5201d7992)
 * [My Intentions for Blockchain Governance](https://medium.com/@Vlad_Zamfir/my-intentions-for-blockchain-governance-801d19d378e5)
 * [Against On-Chain Governance](https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca)
+
+**Gavin Wood**
+* [Epicenter: Substrate, Polkadot and the Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg)

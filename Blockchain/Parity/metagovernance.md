@@ -1,5 +1,5 @@
 # Metagovernance
-> There are number of claims made here that are not 100% true. For example, we can still execute hard forks for binding on-chain governance protocols, but I ignore the nuances of such situations for the purpose of clearly communicating the main points...[Sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
+> There are number of claims made here that are not 100% true. For example, we can still execute hard forks for binding on-chain governance protocols, but I ignore the nuances of such situations for the purpose of clearly communicating the main points...[sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
 
 Blockchain protocols leverage a combination of cryptography, game theory, and network security to reach consensus on the ordering of transactions in a distributed setting. The value proposition of blockchain technology lies in its ability to incentivize cooperation among a network's stakeholders, even if the set of stakeholders isn't well-defined. By implementing a *permissionless* miner/validator set, blockchains can achieve *decentralization*, a necessary prerequisite for adequately distributing trust to claim *trustlessness*.
 

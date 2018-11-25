@@ -1,25 +1,20 @@
-# Automatic Upgrades Are A Sharp Knife
+# *Automatic Upgrades Are A Sharp Knife*
 
 Blockchain protocols leverage a combination of cryptography, game theory, and network security to reach consensus on the ordering of transactions in a distributed setting. Likewise, the value proposition of blockchain technology lies in its ability to incentivize cooperation among a network's stakeholders, even if the set of stakeholders isn't well-defined. By fostering a *permissionless* miner/validator set, blockchains can achieve decentralization, a necessary prerequisite for adequately distributing trust to claim *trustlessness*.
 
-Admittedly, many of these properties are hard to define and even more difficult to measure. Because of the ambiguity of '*permissionless*', '*decentralized*', and '*trustless*', it is tempting to denounce these features as unrealistic, succumb to the pressure of scaling transaction throughput, and forego the initial vision. But similar to how no one entity controls the blockchain consensus mechanism, no one person should be able to determine which tradeoffs we make when updating blockchain protocols. With this in mind, the focus naturally shifts to reassessing how we govern blockchains themselves, a nuanced sort of *[metagovernance](https://en.wiktionary.org/wiki/metagovernance)*.
+**Admittedly, many of these properties are hard to define and even more difficult to measure**. Because of the ambiguity of '*permissionless*', '*decentralized*', and '*trustless*', it is tempting to denounce these features as unrealistic, succumb to the pressure of scaling transaction throughput, and forego the initial vision. But similar to how no one entity controls the blockchain consensus mechanism, no one person should be able to determine which tradeoffs we make when updating blockchain protocols. With this in mind, the focus naturally shifts to reassessing how we govern blockchains themselves, an interesting variant of *[metagovernance](https://en.wiktionary.org/wiki/metagovernance)*.
 
+In a [recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/52), Vlad Zamfir and Gavin Wood debate the merits of on-chain vs. off-chain governance. Gavin argues in favor of *on-chain governance*, which he defines as extending blockchain consensus technology to dictate not only what happens on the chain but also what happens with the chain. Vlad argues in opposition of formalized metagovernance and in support of *off-chain governance* (~ *rough consensus*). Under this model, informal discussions enable the *community* to signal preferences on software updates and come to consensus before making a decision.
 
+At its core, we are asking the following question: *should we formalize blockchain governance with the same mechanisms we use to reach consensus on transaction data or should we keep blockchain governance informal?* In this post, we will discuss the metagovernance debate in the hopes of clearly communicating each side; in the end, things are much more nuanced than a binary determination of right vs. wrong.
 
-In a [recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/52), Vlad Zamfir and Gavin Wood debate the merits of on-chain vs. off-chain governance. Gavin argues in favor of *on-chain governance*, which consists of extending blockchain consensus technology to dictate not only what happens on the chain but also what happens with the chain. Vlad 
-
-At this point in time, the community seems split in terms of the best way to proceed; should we formalize governance of the blockchain by using the same mechanisms we use to reach consensus on transaction data or should we keep blockchain governance informal to keep the process as open and dynamic as possible?
-
-Blockchain governance is a unique form of *[metagovernance](https://en.wiktionary.org/wiki/metagovernance)*. 
-
-*On-chain governance* consists of extending blockchain consensus technology to dictate not only what happens on the chain but also what happens with the chain. 
-
-
-On the o†her hand, *off-chain governance* prefers a more informal route in which discussions enable the *community* to come to consensus on software updates.
+## Off-Chain Governance via Rough Consensus
 
 -- where do I want to define stakeholders...full node operators, light clients, community members, dapp developers, coin holders, etc.
 
-## Off-Chain Governance via Rough Consensus
+-- no sybil mechanism for many of the stakeholders in the blockchain space
+
+> start with discussion of how the blockchain comes to consensus on transactions (with miners); then explain how there are many other parties that makes this process possible. Full nodes play a significant role
 
 It is nearly impossible to predict the next major innovation. In the blockchain ecosystem, the pace of development moves considerably faster than any established policy-making process. Likewise, when we formalize metagovernance based on how the blockchain works today, we tacitly strengthen and weaken certain power dynamics between existing stakeholders, thereby limiting the future participation of new stakeholders which may make the entire process more efficient.
 
@@ -49,6 +44,10 @@ One approach is to make the policy-making process more dynamic in order to keep 
 basic idea: just because the process is informal and NOBODY understands it doesn't mean that it doesn't work...this is a red herring for sure
 
 ## Binding On-Chain Governance
+
+-- If there is a power law distribution and only a few forks are ever successful, then do we really have a choice to fork blockchains? We treat this as if it is a bona fide mechanism for voicing dissent when, in reality, it represents a false choice. If I disagree with a protocol upgrade and am in the minority, it is probably not worth dissenting if it means sacrificing the network effects enjoyed by the existing community. Sure, I can stand by my principles, but if that means losing capital as well as future support from core developers, it seems obvious that the choice never really existed. Instead of pretending that hard forks offer users a legitimate voice, why can't we accept that informal governance is often just as coercive as mandatory software upgrades?
+
+-- fear mongering on tap (Vlad); a lot of this sounds a lot like what people said before blockchains
 
 In *Cypherpunks*, Jeremie Zimmerman argues that "policy has to adapt to society, and not the other way around". He expands on his point, claiming that "good policy looks at the world and adapts to it in order to correct what is wrong and enable what is good. I'm convinced that when you enable the most powerful industrial actors to decide what policy should be, you don't go that way".
 
@@ -81,7 +80,7 @@ The premise is incorrect here!
 
 - contentious hard forks are misleading; do people really have a choice? Not really
 
-### References
+# References
 * [Blockchain Communities and Their Emergent Governance](https://medium.com/amentum/blockchain-communities-and-their-emergent-governance-cfe5627dcf52) by Matthew Prewitt and Steven McKie
 
 **Vlad Zamfir**

@@ -1,5 +1,4 @@
 # Metagovernance
-> There are number of claims made here that are not 100% true. For example, we can still execute hard forks for binding on-chain governance protocols, but I ignore the nuances of such situations for the purpose of clearly communicating the main points...[sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
 
 Blockchain protocols leverage a combination of cryptography, game theory, and network security to reach consensus on the ordering of transactions in a distributed setting. The value proposition of blockchain technology lies in its ability to incentivize cooperation among a network's stakeholders, even if the set of stakeholders isn't well-defined. By implementing a *permissionless* miner/validator set, blockchains can achieve *decentralization*, a necessary prerequisite for adequately distributing trust to claim *trustlessness*.
 
@@ -8,6 +7,8 @@ Blockchain protocols leverage a combination of cryptography, game theory, and ne
 In a [recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/52), Vlad Zamfir and Gavin Wood debate the merits of on-chain vs. off-chain governance. Gavin argues in favor of *on-chain governance*, which he defines as extending blockchain consensus technology to dictate not only what happens on the chain but also what happens with the chain. Vlad argues in opposition of formalized metagovernance and in support of *off-chain governance*. Under this model, informal discussions enable the community to signal preferences on software updates and come to *rough consensus* before making a decision.
 
 At its core, we are asking the following question: *should we formalize blockchain governance with the same mechanisms we use to reach consensus on transaction data or should we keep blockchain governance informal?* In this post, we will discuss the metagovernance debate in the hopes of clearly communicating each side; in the end, things are much more nuanced than a binary determination of right or wrong.
+
+> There are number of claims that are not 100% true. For example, we can still execute hard forks for binding on-chain governance protocols, but I ignore the nuances of such situations for the purpose of clearly communicating the main points...[sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
 
 ## Off-Chain Governance via Rough Consensus
 > *Treat your articulation of governance problems and proposals as a loaded weapon and don't shoot in the dark.* ~ Vlad Zamfir, [Against on-chain governance](https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca)

@@ -1,15 +1,14 @@
 # Automatic Upgrades Are A Sharp Knife
-> [Vlad and Gav go head-to-head on blockchain governance](https://www.zeroknowledge.fm/52)
 
-Blockchain protocols leverage a combination of cryptography, game theory, and network security to reach consensus on the ordering of transactions in a distributed setting. Likewise, the value proposition of blockchain technology lies in its ability to incentivize cooperation among a network's stakeholders, even if the set of stakeholders isn't necessarily well-defined. By fostering a *permissionless* miner/validator set, blockchains can achieve decentralization, a necessary prerequisite for adequately distributing trust to claim *trustlessness*.
+Blockchain protocols leverage a combination of cryptography, game theory, and network security to reach consensus on the ordering of transactions in a distributed setting. Likewise, the value proposition of blockchain technology lies in its ability to incentivize cooperation among a network's stakeholders, even if the set of stakeholders isn't well-defined. By fostering a *permissionless* miner/validator set, blockchains can achieve decentralization, a necessary prerequisite for adequately distributing trust to claim *trustlessness*.
 
-Admittedly, many of these properties are hard to define and even more difficult to measure. Because of the ambiguity of '*permissionless*', '*decentralized*', and '*trustless*', it is tempting to denounce these features as unrealistic, succumb to the pressure of scaling transaction throughput, and forego the initial vision. But the beauty of this space is the fact that no one person should be able to make this decision. At this point, the focus naturally shifts to reassessing how we govern blockchains themselves, a nuanced sort of *[metagovernance](https://en.wiktionary.org/wiki/metagovernance)*.
+Admittedly, many of these properties are hard to define and even more difficult to measure. Because of the ambiguity of '*permissionless*', '*decentralized*', and '*trustless*', it is tempting to denounce these features as unrealistic, succumb to the pressure of scaling transaction throughput, and forego the initial vision. But similar to how no one entity controls the blockchain consensus mechanism, no one person should be able to determine which tradeoffs we make when updating blockchain protocols. With this in mind, the focus naturally shifts to reassessing how we govern blockchains themselves, a nuanced sort of *[metagovernance](https://en.wiktionary.org/wiki/metagovernance)*.
 
+
+
+In a [recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/52), Vlad Zamfir and Gavin Wood debate the merits of on-chain vs. off-chain governance. Gavin argues in favor of *on-chain governance*, which consists of extending blockchain consensus technology to dictate not only what happens on the chain but also what happens with the chain. Vlad 
 
 At this point in time, the community seems split in terms of the best way to proceed; should we formalize governance of the blockchain by using the same mechanisms we use to reach consensus on transaction data or should we keep blockchain governance informal to keep the process as open and dynamic as possible?
-
-
-
 
 Blockchain governance is a unique form of *[metagovernance](https://en.wiktionary.org/wiki/metagovernance)*. 
 

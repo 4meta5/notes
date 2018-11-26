@@ -48,35 +48,36 @@ So we've thoroughly covered the flaws of off-chain governance, but **how do we m
 
 As we formalize the governance of these systems to mitigate the potential for abuse, it makes sense to vest power in the stakeholders who have *[skin the game](https://en.wikipedia.org/wiki/Skin_in_the_Game_(book))*. For blockchain protocols, this stakeholder group is the coin hodlers. If coin hodlers make coercive upgrades that are disadvantageous to other stakeholders, we can expect the market to punish them via a decrease in the price of the native currency. Likewise, instead of relying on the highly subjective interpretation of stakeholder opinions, we can use markets to hold coin hodlers accountable in their role as metagovernance agents.
 
-Admittedly, there are many problems with the naive implementation of on-chain governance via coin hodler voting, but we can mitigate these problems by incorporating additional checks and balances into our metagovernance system. Before discussing specific proposals, it is necessary to emphasize the importance of experimenting with multiple on-chain governance protocols in parallel. Sequential testing via iterative development can be misleading because we'll cease experimentation prematurely. The [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect) reveals that the best approach is to test in parallel; in this context, that means deploying multiple on-chain governance protocols (on different blockchain networks) to determine what works and what doesn't.
-
-> The outline of the following proposal is pretty high level -- I'll try and provide links for interested readers.
-
-### Council of Experts
-> Polkadot
-
-One of the main critiques 
-
-### Adaptive Quorum Biasing
-> "Any governance that depends on high turnout is doomed to fail" - Fredrik Harrysson, CTO Parity, Polkadot
-
-### Futarchy
-> Tezos
+Admittedly, there are many problems with the naive implementation of on-chain governance via coin hodler voting, but we can mitigate these problems by incorporating additional checks and balances into our metagovernance system. Before mentioning specific proposals, it is necessary to emphasize the importance of experimenting with multiple on-chain governance proposals in parallel. Sequential testing via iterative development can be misleading because we'll cease experimentation prematurely. The [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect) reveals that the best approach is to test in parallel; in this context, that means deploying multiple on-chain governance protocols (on different blockchain networks) to determine what works and what doesn't.
 
 In summary, the main arguments for *on-chain governance* include:
 1. In practice, off-chain governance creates centralized points of trust that are susceptible to abuse.
 2. It makes sense to vest responsibility for metagovernance decisions in the stakeholders that have *skin in the game* i.e. coin hodlers.
-3. Experimentation is objectively good. We can experiment with varying shades of conservatism among metagovernance protocols to decide on the right balance.
-4. We can mitigate the seemingly coercive nature of binding on-chain governance with additional protocols.
+3. We can experiment with varying shades of conservatism (liveness) among metagovernance protocols to decide on the right balance; experimentation in parallel is the best approach!
+4. We can mitigate the seemingly coercive nature of binding on-chain governance with additional protocols (links posted below).
 
-# References
+### Polkadot
+
+* [Polkadot wiki: Governance](https://github.com/paritytech/polkadot/wiki/Governance)
+* [How polkadot tackles the biggest problems facing blockchain innovators](https://medium.com/polkadot-network/how-polkadot-tackles-the-biggest-problems-facing-blockchain-innovators-1affc1309b0f)
+
+### Tezos
+
+* [Towards Futarchy in Tezos](https://medium.com/tezos/towards-futarchy-in-tezos-54a7b8926967) by Arthur Breitman
+* ["There is no need for hard forks"](https://medium.com/tezos/there-is-no-need-for-hard-forks-86b68165e67d)
+* [Hard Fork Politics](https://medium.com/tezos/hard-fork-politics-part-1-b767abbb5c19)
+
+# Other References
+
 * [Vlad and Gavin go head-to-head on blockchain governance](https://www.zeroknowledge.fm/52)
-* [Blockchain Communities and Their Emergent Governance](https://medium.com/amentum/blockchain-communities-and-their-emergent-governance-cfe5627dcf52) by Matthew Prewitt and Steven McKie
+* [Blockchain Communities and Their Emergent Governance](https://medium.com/amentum/blockchain-communities-and-their-emergent-governance-cfe5627dcf52) by Matthew Prewitt and Steven McKie, Amentum Partners
+* [Why on-chain governance](https://medium.com/polkadot-network/why-on-chain-governance-82ecf28f314c) by Phil Lucsok, Parity and Polkadot
 
 **Vlad Zamfir**
 * [Blockchain Governance 101](https://blog.goodaudience.com/blockchain-governance-101-eea5201d7992)
 * [My Intentions for Blockchain Governance](https://medium.com/@Vlad_Zamfir/my-intentions-for-blockchain-governance-801d19d378e5)
 * [Against On-Chain Governance](https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca)
+* [Governance in Web2 vs Governance in Web3](https://www.youtube.com/watch?v=lLMVkmSTwho)
 
 **Gavin Wood**
 * [Epicenter: Substrate, Polkadot and the Case for On-Chain Governance](https://www.youtube.com/watch?v=eP4mT19S_jg)

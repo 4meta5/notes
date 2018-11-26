@@ -56,8 +56,8 @@ Admittedly, there are many problems with the naive implementation of on-chain go
 In summary, the main arguments for *on-chain governance* include:
 1. In practice, off-chain governance creates centralized points of trust that are susceptible to abuse.
 2. It makes sense to vest responsibility for metagovernance decisions in the stakeholders that have *skin in the game* i.e. coin hodlers.
-3. We can experiment with varying shades of conservatism (liveness) among metagovernance protocols to decide on the right balance; experimentation in parallel is the best approach!
-4. We can mitigate the seemingly coercive nature of binding on-chain governance with additional protocols (some links posted below).
+3. We can experiment with varying shades of liveness among metagovernance protocols to decide on the right balance; experimentation in parallel is the best approach!
+4. We can mitigate the seemingly coercive nature of binding on-chain governance with additional protocols.
 
 ### Polkadot
 

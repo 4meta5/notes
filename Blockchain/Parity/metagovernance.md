@@ -8,7 +8,7 @@ In a [recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/52), Vlad Zam
 
 At its core, we are asking the following question: *should we formalize blockchain governance with the same mechanisms we use to reach consensus on transaction data or should we keep blockchain governance informal?* In this post, we will discuss the metagovernance debate in the hopes of clearly communicating each side; in the end, things are much more nuanced than a binary determination of right or wrong.
 
-> There are number of claims that are not 100% true. For example, we can still execute hard forks for binding on-chain governance protocols, but I ignore such situations for the purpose of clearly communicating the main points...[sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
+> There are number of claims that are not 100% true. For example, we can still *technically* execute hard forks for binding on-chain governance protocols, but I ignore such situations for the purpose of clearly communicating the main points...[sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
 
 ## Off-Chain Governance via Rough Consensus
 > *Treat your articulation of governance problems and proposals as a loaded weapon and don't shoot in the dark.* ~ Vlad Zamfir, [Against on-chain governance](https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca)
@@ -25,10 +25,10 @@ In the on-chain governance paradigm, full nodes automatically update when an on-
 
 Looking forward, it is nearly impossible to predict the next major innovation. In the blockchain ecosystem, the pace of development moves considerably faster than any established policy-making process. Likewise, when we formalize metagovernance based on how the blockchain works today, we tacitly strengthen and weaken certain power dynamics between existing stakeholders, thereby limiting the future participation of new stakeholders which may make the entire process more efficient.
 
-Just because we're making collective decisions does not necessarily mean that we need to agree on the criteria for making those decisions. *Rough consensus* is predicated on **thoughtful disagreement**; even in the midst of controversy, we can create open forums to communicate our thoughts and signal our preferences. In the end, stakeholders are not affected by governance decisions in proportion to their coin holdings. With this in mind, we need to maintain informal off-chain governance processes to represent as many people as possible, while still keeping everything open and *permissionless*.
+*Rough consensus* is predicated on **thoughtful disagreement**; even in the midst of controversy, we can create open forums to communicate our thoughts and signal our preferences. Just because we're making collective decisions does not necessarily mean that we need to agree on the criteria for making those decisions. In the end, stakeholders are not affected by governance decisions in proportion to their coin holdings. With this in mind, we need to maintain informal off-chain governance processes to represent as many people as possible, while still keeping everything open and *permissionless*.
 
 In summary, the main arguments for off-chain governance via *rough consensus* include:
-1. Off-chain governance incorporates the preferences of stakeholders (ie node operators) for which there does not exist a known anti-sybil mechanism.
+1. Off-chain governance incorporates the preferences of stakeholders (i.e. node operators) for which there does not exist a known anti-sybil mechanism.
 2. Binding on-chain governance is coercive; it forces full nodes to follow the outcome even if their preferences are not take into account.
 3. When we formalize governance prematurely, we disenfranchise future stakeholders and take away potentially more efficient, informal governance mechanisms that may arise organically from stakeholder interaction with the system.
 > Although the lack of an anti-sybil mechanism prevents the formalization of key stakeholder participation in governance, *rough consensus* through community discussions can offer an informal way for blockchain clients (and other important stakeholders) to voice their preferences.
@@ -40,43 +40,34 @@ As we mentioned in the introduction, the value proposition of blockchains is the
 
 The whole raison d'être of blockchains is to systemize this transaction ordering process. As Gavin mentions in [the debate](https://www.zeroknowledge.fm/52), "Our entire civilization is built on writing processes and adhering to them. Why? Because it means that the humans who are actually doing the mechanistic work of administering don't allow their own opinions to change the outcome." 
 
-Although rough consensus sounds great *in theory*, delegating the interpretation of informal discussions to a small group of individuals is a recipe for disaster. As Hudson Jameson admits in [a less recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/43), "some voices are louder than others". Tasked with recording the opinions on developer calls, Hudson is in a unique position that should probably not exist. Even though we don't question his objectivity, if he was ever opinionated on a given issue, then he could miscommunicate or misdirect what actually transpired. As such, the rough consensus model is susceptible to abuse; pleas to place trust in some abstract notion of *legitimacy* seem like a [red herring](https://en.wikipedia.org/wiki/Red_herring) from the stakeholders that have the most to lose. 
+Although rough consensus sounds great *in theory*, delegating the interpretation of informal discussions to a small group of individuals is a recipe for disaster. As Hudson Jameson admits in [a less recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/43), "some voices are louder than others". Tasked with recording the opinions on developer calls, Hudson is in a unique position that probably should not exist. Even though we don't question his objectivity, if he was ever opinionated on a given issue, then he could miscommunicate or misdirect what actually transpired. As such, the rough consensus model is susceptible to abuse; pleas to place trust in some abstract notion of *legitimacy* seem like a [red herring](https://en.wikipedia.org/wiki/Red_herring) from the stakeholders that have the most to lose. 
 
 Moreover, many arguments for off-chain governance misrepresent the optionality provided by the hard fork mechanism. Although binding on-chain governance may take away this path, it is worth considering whether the choice ever existed in the first place. It has been established that blockchains have strong network effects, which implies that only a few forks will ever be successful. Indeed, off-chain governance proponents treat hard forks as if they are a bona fide mechanism for voicing dissent when, in reality, they often represent a false choice. If a node operator disagrees with a protocol upgrade and is in the minority, standing by their principles is often not worth sacrificing the network effects enjoyed by staying a part of the existing community. If executing a hard fork means losing capital as well as future support from core and client developers, it seems obvious that the choice never really existed. Instead of pretending that hard forks offer users a voice, we need to accept the fact that informal governance is often just as coercive as mandatory software upgrades.
 
-So we've definitely discussed the flaws of off-chain governance, but **how do we make on-chain governance work?**
+So we've thoroughly covered the flaws of off-chain governance, but **how do we make on-chain governance work?**
 
 As we formalize the governance of these systems to mitigate the potential for abuse, it makes sense to vest power in the stakeholders who have *[skin the game](https://en.wikipedia.org/wiki/Skin_in_the_Game_(book))*. For blockchain protocols, this stakeholder group is the coin hodlers. If coin hodlers make coercive upgrades that are disadvantageous to other stakeholders, we can expect the market to punish them via a decrease in the price of the native currency. Likewise, instead of relying on the highly subjective interpretation of stakeholder opinions, we can use markets to hold coin hodlers accountable in their role as metagovernance agents.
 
-> 
+Admittedly, there are many problems with the naive implementation of on-chain governance via coin hodler voting, but we can mitigate these problems by incorporating additional checks and balances into our metagovernance system. Before discussing specific proposals, it is necessary to emphasize the importance of experimenting with multiple on-chain governance protocols in parallel. Sequential testing via iterative development can be misleading because we'll cease experimentation prematurely. The [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect) reveals that the best approach is to test in parallel; in this context, that means deploying multiple on-chain governance protocols (on different blockchain networks) to determine what works and what doesn't.
 
-> admittedly, there are problems with this model! But it is important for us to experiment with live metaprotocols that can make progress. We ... 
+> The outline of the following proposal is pretty high level -- I'll try and provide links for interested readers.
 
-3. We need to experiment with more live metaprotocols that can make progress. We can have varying shades of conservativism among the blockchain systems; let the market decide who is right...
+### Council of Experts
+> Polkadot
 
-> "any governance that depends on high turnout is doomed to fail" - Fredrik
+One of the main critiques 
 
-Discussion of adaptive quorum biasing -- pros and cons?
+### Adaptive Quorum Biasing
+> "Any governance that depends on high turnout is doomed to fail" - Fredrik Harrysson, CTO Parity, Polkadot
 
-4. We can mitigate the seemingly coercive nature of binding on-chain governance with a few additional protocols: (1) council of experts (2) ...other stuff below
-
-In *Cypherpunks*, Jeremie Zimmerman argues that "policy has to adapt to society, and not the other way around". He expands on his point, claiming that "good policy looks at the world and adapts to it in order to correct what is wrong and enable what is good. I'm convinced that when you enable the most powerful industrial actors to decide what policy should be, you don't go that way".
+### Futarchy
+> Tezos
 
 In summary, the main arguments for *on-chain governance* include:
 1. In practice, off-chain governance creates centralized points of trust that are susceptible to abuse.
 2. It makes sense to vest responsibility for metagovernance decisions in the stakeholders that have *skin in the game* i.e. coin hodlers.
 3. Experimentation is objectively good. We can experiment with varying shades of conservatism among metagovernance protocols to decide on the right balance.
 4. We can mitigate the seemingly coercive nature of binding on-chain governance with additional protocols.
-> Some dope end sentence here
-
-## WHO IS RIGHT?
-> discussion of clash!
-
-The premise is incorrect here!
-
-— there’s a balance here that needs to be considered, and this balance is important. Goldilocks principle...in my opinion, the best approach will be a diversity of networks with **different shades of formalized governance**. See McKie and Pruitt recent blog post.
-
-> what if we did develop a protocol for enabling sybil resistant measurement of full node operators based on the number of light clients that they serve? There is a measureable cost here and we can gauge voting power accordingly? A big research question is developing an anti-sybil mechanism for full node operators; I personally think that this could be managed via some proof of service to light clients. If we create a protocol for micropayments to incentivize full node operation (via payments from light clients to the full nodes), then we can use the proof of service as an anti-sybil mechanism to enable full node participation in on-chain governance. 
 
 # References
 * [Vlad and Gavin go head-to-head on blockchain governance](https://www.zeroknowledge.fm/52)

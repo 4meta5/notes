@@ -1,4 +1,4 @@
-# Metagovernance
+# Both Sides of the Metagovernance Debate
 
 Blockchain protocols leverage a combination of cryptography, game theory, and network security to reach consensus on the ordering of transactions in a distributed setting. The value proposition of blockchain technology lies in its ability to incentivize cooperation among a network's stakeholders, even if the set of stakeholders isn't well-defined. By implementing a *permissionless* miner/validator set, blockchains can achieve *decentralization*, a necessary prerequisite for adequately distributing trust to claim *trustlessness*.
 
@@ -8,14 +8,17 @@ In a [recent ZeroKnowledgeFM podcast](https://www.zeroknowledge.fm/52), Vlad Zam
 
 At its core, we are asking the following question: *should we formalize blockchain governance with mechanisms similar to the ones used to reach consensus on transaction data or should we keep blockchain governance informal?* In this post, we will discuss the metagovernance debate in the hopes of clearly communicating each side; in the end, things are much more nuanced than a binary determination of right or wrong.
 
+* [Off-Chain Governance via Rough Consensus](#rough)
+* [Binding On-Chain Governance](#binding)
+
 > This post contains a few claims that are not 100% true. For example, we can still *technically* execute hard forks on binding on-chain governance protocols, but I ignore such situations for the purpose of clearly communicating the main points...[sue me](https://www.youtube.com/watch?v=lppTJFYigoU)
 
-## Off-Chain Governance via Rough Consensus
+## Off-Chain Governance via Rough Consensus <a name = "rough"></a>
 > *Treat your articulation of governance problems and proposals as a loaded weapon and don't shoot in the dark.* ~ Vlad Zamfir, [Against on-chain governance](https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca)
 
 Before we jump into the metagovernance debate, we should consider the stakeholders involved in maintaining public blockchains. 
 
-At the consensus level, **miners/validators** participate in an algorithm to organize transactions into blocks and commit blocks to the blockchain. Consensus algorithms implement an [anti-sybil](https://bitcoin.stackexchange.com/questions/50922/whats-a-sybil-attack) mechanism in order to attach a cost to the establishment of identity (corresponding to computational power in Proof of Work and coins staked in Proof of Stake). Indeed, the anti-sybil mechanism is a necessary part of any on-chain governance protocol because, without it, malicious actors could create an arbitrary number of identities to bias the outcome of a vote. 
+At the consensus level, **miners/validators** participate in an algorithm to organize transactions into blocks and commit blocks to the blockchain. Consensus algorithms implement an [anti-sybil](https://bitcoin.stackexchange.com/questions/50922/whats-a-sybil-attack) mechanism in order to attach a cost to the establishment of identity (corresponding to computational power in Proof of Work and coins staked in Proof of Stake). Indeed, the anti-sybil mechanism is a necessary part of any on-chain governance protocol because, in its absence, malicious actors could create an arbitrary number of identities to bias the outcome of a vote. 
 
 In addition to miners/validators, there are number of other significant actors that support critical blockchain infrastucture. Some organizations and individuals run **full nodes** to enable secure user interaction with the blockchain. Using these full nodes as intermediaries, users may run **light clients**. Although light clients don't directly help the network, they provide a smooth end-user experience without incurring the overhead required to maintain a full node. Other blockchain stakeholders include DApp **developers**, DApp **users**, and even **coin hodlers**. For each of these stakeholder groups (with the exception of coin hodlers), there is no known anti-sybil mechanism to enable participation in on-chain governance protocols.
 
@@ -33,7 +36,7 @@ In summary, the main arguments for off-chain governance via *rough consensus* in
 3. **When we formalize governance prematurely, we disenfranchise future stakeholders and take away potentially more efficient, informal governance mechanisms that may arise organically from stakeholder interaction with the system.**
 > Although the lack of an anti-sybil mechanism prevents the formalization of key stakeholder participation in governance, *rough consensus* through community discussions can offer an informal way for blockchain clients (and other important stakeholders) to voice their preferences.
 
-## Binding On-Chain Governance
+## Binding On-Chain Governance <a name = "binding"></a>
 > *Automatic upgrades are a sharp knife* ~ Gavin Wood, [Epicenter #259](https://www.youtube.com/watch?v=eP4mT19S_jg)
 
 As we mentioned in the introduction, the value proposition of blockchains is the way by which consensus algorithms incentivize cooperation among a network's stakeholders and distribute trust. Rather than relying on a single person or organization, blockchains delegate the ordering of transactions to a group of validators/miners that follow a specific protocol for coming to agreement. This protocol is designed to foster an environment conducive to healthy competition so that users can trust and verify correct execution. 

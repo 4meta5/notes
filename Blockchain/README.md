@@ -29,3 +29,4 @@
     * SpaceMesh
 * randomness beacons (collective coin flipping, dfinity threshhold scheme, randao)
 * fork choice rules
+* **the concept of rent in the context of blockchains**

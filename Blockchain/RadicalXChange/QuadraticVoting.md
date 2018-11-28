@@ -4,5 +4,9 @@
 
 > most voting protocols don't effectively aggregate preferences
 
+> could convert this into a post on the problem with coin voting and on-chain governance that entirely relies on coinvoting
+
+> recent idea: explain how the massive inequality of capital (not labor, but capital) is the primary reason why proof of stake protocols are invalid => they lead to the same subsect of society continuing to accrue capital...I think we should make some sort of lottery protocol instead based on labor instead of capital...LABOR > CAPITAL BECAUSE CAPITAL IS INHERITED
+
 ## References
 * [Eric Posner Blog Post on QV](http://ericposner.com/quadratic-voting/)

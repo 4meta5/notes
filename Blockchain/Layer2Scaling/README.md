@@ -2,7 +2,7 @@
 
 > optimizing interaction with the blockchain
 
-* Data Availability Problem <-> Speaker/Listener Fault Equivalence
+* Data Availability Problem <-> Speaker/Listener Fault Equivalence; [my related notes](../Availability.md); solution is to increase observers (introduce the actor role of availability guarantors)
 
 ## Projects
 

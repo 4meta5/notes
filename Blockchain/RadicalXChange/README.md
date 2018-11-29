@@ -8,3 +8,7 @@
 > my [Liberal Radicalism notes](./LiberalRadicalism.md)
 
 * an [idea](./LibRad.md) had on using Zero Knowledge Proofs as part of an anti-sybil mechanism to proof set membership
+
+## ReadingQ
+
+* [RadicalxChange: An Academic Agenda](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3291055)

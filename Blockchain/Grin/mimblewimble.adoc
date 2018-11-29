@@ -88,7 +88,7 @@ A MimmbleWimble transaction includes the following:
 
 === Cut Through
 
-We can generalize this logic to blocks by using Schnorr aggregation on the transactions themselves. We uphold privacy and prevent reconstruction the _subset problem_ by introducing kernel offsets.
+We can generalize this logic to blocks by using Schnorr aggregation on the transactions themselves. We uphold privacy and prevent reconstruction via the _subset problem_ by introducing kernel offsets.
 
 
 [NOTE]

@@ -18,4 +18,4 @@
 
 * [Zexe: Enabling Decentralized Private Computation](https://eprint.iacr.org/2018/962.pdf)
 
-
+* [A CCA-secure collision-resistant Identity-based Proxy Re-Encryption Scheme](https://eprint.iacr.org/2018/1131.pdf)

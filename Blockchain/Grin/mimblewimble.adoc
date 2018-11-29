@@ -1,0 +1,99 @@
+[[mimblewimble]]
+= MimbleWimble
+:hardbreaks:
+
+_Notes on link:https://github.com/mimblewimble/grin/blob/master/doc/intro.md[Intro to Grin]_
+
+((("mimblewimble", id="ix_14mimblewimble-asciidoc0", range="startofrange")))MimbleWimble is a blockchain protocol that provides:
+:===
+Scalability
+Fungibility
+Privacy
+:===
+The protocol is designed to scale with the number of users rather than the number of transactions (thereby saving memory overhead). It relies on <<ecc>>.
+
+[[ecc]]
+== Elliptic Curve Cryptography
+
+In ECC, if we pick a very large number $k$ as a private key, then $k * H$ is considered the corresponding public key. While multiplication is trivial, division by elliptic curve points is extremely difficult => even if one knows the value $k * H$, deducing $k$ is close to extemely difficult.
+
+
+[NOTE]
+====
+In Bitcoin, Hierarchical Deterministic wallets rely on the commutative and associative properties of addition and multiplication for elliptic curves. More specifically, $(k+j)*H = k*H + j*H$, with $k$ and $j$ both private keys, demonstrates that a public key is obtained from the addition of two private keys ($(k+j)*H$) is identical to the addition of the public keys for each of these two private keys ($k*H + j*H$).
+====
+
+MimbleWimble relies on the same rule! Validation of MimbleWimble transactions relies on two important properties:
+
+* *Verification of zero sums*. The sum of outputs less inputs always equal zero, proving that the transaction did not create new funds, _without revealing the actual amounts_
+* *Possession of private keys*. Ownership of transaction outputs is guaranteed by posession of ECC private keys, but proof of ownership isn't achieved by signing the transaction itself.
+
+=== Balance
+
+If $v$ is the value of a transaction input (or output) and $H$ is an elliptic curve, we can embed $v*H$ to validate the sum of the outputs of a transaction equal the sum of the outputs without revealing the underlying values. This follows from the fact that 
+
+--
+$v1 + v2 = v3 => v1*H + v2*H + v3*H$
+--
+
+There are two problems with this naive construction: (1) there are a finite number of usable values and one could try every single one of them to guess the value of your transaction and (2) knowing $v1$ from a previous transaction and the resulting $v1 * H$  reveals all outputs with value v1 across the blockchain. Therefore, we must introduce a second elliptic curve $G$ and a private key $r$ used as a _blinding factor_.
+
+[NOTE]
+====
+In practice, $H$ and $G$ are generators on the same elliptic curve.
+====
+
+An input or output in a transaction can therefore be expressed as:
+
+--
+$r*G + v*H$ such that
+--
+
+* $r$ is a private key used as a blinding factor, $G$ is an elliptic curve and their product $r*G$ is the public key for $r$ on $G$.
+* $v$ is the value of an input or output and $H$ is another elliptic curve.
+
+Neither $v$ nor $r$ can be deduced, leveraging the fundamental properties of <<ecc>>.  In this context, $r*G + v*H$ is a *Pederson Commitment*.
+
+Let's say we want to build a transaction with two inputs and one output. Ignoring fees, we can denote
+
+* $vi1$ and $vi2$ as the input values
+* $vo3$ as the output value
+
+Generating a private key as a binding factor for each input value and replacing each value with their respective Pedersen Commitments in the previous equation, we obtain:
+
+--
+$(ri1*G + vi1*H) + (ri2*G + vi2*H) = (ro3*G + vo3*H)$
+--
+
+Which therefore requires that
+
+--
+ri1 + ri2 = ro3
+--
+
+This method of validating a transaction without knowing any of the values was first discussed in Adam Back's proposal for homomorphic values applied to Bitcoin and later formalized in Greg Maxwell's link:https://www.elementsproject.org/elements/confidential-transactions/[Confidential Transactions].
+
+Note that the binding factor is really just the private key...
+
+=== Let's Cut to the Chase
+
+A MimmbleWimble transaction includes the following:
+
+* A set of inputs, that reference and spend a set of previous outputs
+* A set of new outputs that include:
+** A value and binding factor (which is just a new private key) multiplied on a curve and summed to be $r*G + v*H$
+** A *range proof* that shows $v$ is non-negative
+* An explicit transaction fee, in clear
+* A signature, computed by taking the excess blinding value (the sum of all outputs plus the fee minus the inputs) and using it as a private key
+
+=== Cut Through
+
+We can generalize this logic to blocks by using Schnorr aggregation on the transactions themselves. We uphold privacy and prevent reconstruction the _subset problem_ by introducing kernel offsets.
+
+
+[NOTE]
+====
+The _subset problem_ states that given a set of inputs, outputs and transaction kernels, a subset of these will recombine to reconstruct a valid transaction. This leads to privacy leakage.
+====
+
+(((range="endofrange", startref="ix_14mimblewimble-asciidoc0")))

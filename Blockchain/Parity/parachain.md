@@ -1,7 +1,10 @@
 # Parachain
 > ideas for parachains
 
-## MimbleWimble Parachain
+## Zero Knowledge
+* like Zcash, but better upgradeability
+
+## MimbleWimble
 * UTXO Model + Pederson Commitments
 * Dandelion for network routing?
 * Schnorr signature aggregation

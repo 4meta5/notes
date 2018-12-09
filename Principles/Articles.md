@@ -23,6 +23,7 @@ Some articles that have especially shaped my worldview...
 ## Self-Help
 
 * [Oh, hell, Martha, go ahead and burn yourself if you want to](https://www.epsilontheory.com/oh-hell-martha-go-ahead-and-burn-yourself-if-you-want-to/) by Ben Hunt, Epsilon Theory
+* [Ascend](https://hoverbear.org/2018/10/09/ascend/) by Hoverbear
 
 ## Culture
 

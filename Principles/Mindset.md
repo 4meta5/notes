@@ -1,4 +1,9 @@
-# Motivation
+# Mindset
+> videos that have helped me with my mindset
+
+* [Randy Pausch's Last Lecture: Achieving Your Childhood Dreams](https://www.youtube.com/watch?v=ji5_MqicxSo)
+
+## Motivation
 > A few stories that have pushed me to push myself over the years.
 
 * [Inky Johnson: It's Not About You](https://www.youtube.com/watch?v=zeWg73GzVbc)
@@ -11,7 +16,8 @@
 * [Rocky Balboa - Speech to Kid](https://www.youtube.com/watch?v=D_Vg4uyYwEk)
 * [Why Do We Fall](https://www.youtube.com/watch?v=mgmVOuLgFB0)
 
-## Trap
+
+### Trap
 The motivation trap occurs when you start becoming dependent on motivation to jumpstart your productivity. With this in mind, motivational videos should be used sparingly in time of necessity. If they are invoked more than once a day or even more than once a week, they will lose their potency.
 
 Part of the trap entails watching motivational videos, and feeling as if one is fulfilled from the video itself instead of putting their transitory drive into action. 

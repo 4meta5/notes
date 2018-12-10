@@ -1,6 +1,6 @@
 # Passion
 
-Secret recipe: intellectual curiosity + drive
+Secret recipe: intellectual curiosity + drive + ambition + independent thought
 
 # Intellectual Curiosity
 On why Paulson picked Blankfein to succeed him, Blankfein was theoretically 3rd in line at the time:

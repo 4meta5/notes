@@ -1,6 +1,8 @@
 # Principles
 > motivated by Ray Dalio's [Principles](https://www.principles.com/); most (if not all at this point) are direct quotes!
 
+> Gabe Robin's [quotes](http://www.cs.virginia.edu/~robins/quotes.html)
+
 <!-- integrate my own experiences into this and change the wording to make it *mine* -->
 
 * Growth Comes from Failure

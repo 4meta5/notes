@@ -9,4 +9,9 @@
 
 3. Whether or not someone asks lots of questions is a good barometer for gauging intellectual curiosity.
 
-4. 
+4. People (including myself) often take lessons from rationalizing their own position in life -- be aware of this very common cognitive bias.
+
+## Relevant Accounts
+* Naval
+* Thibaut
+* Ed Latimore

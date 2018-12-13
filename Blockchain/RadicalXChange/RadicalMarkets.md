@@ -57,7 +57,7 @@ Many Europeans are not just abstractly aware of the possibility that migrants st
 
 By empowering communities to decide the texture of their cultural life, the VIP would avoid the negative reactions that are possible when people feel rapid changes are being imposed from above. (157)
 
-> Communities are not homogeneous and this sort of program may be perceived as rapid changes imposed from above by some members of a community. Even if this is a relatively small minority, their preferences may be voiced more aggressively and this may cause strife withing the community.
+> Communities are not homogeneous and this sort of program may be perceived as rapid changes imposed from above by some members of a community. Even if this is a relatively small minority, their preferences may be voiced more aggressively and this may cause strife within the community.
 
 We need to acknowledge that we in the United States already have a subordinate class of low-wage workers--they are illegal aliens. Americans have exploited this class for decades, and it has for those decades been tolerated by the US government because of its importance for many industries. By bringing this underground economy into the open, our approach would allow it to be regulated and monitored. It would be put on a more rational basis so that better matches are made between the needs of the US economy and the interests of foreign workers. (PAGE 165)
 
@@ -119,4 +119,23 @@ Yet even as unions have declined, some of the conditions we describe above have 
 
 We reject the assumed tradeoff between productivity and employment underlying the debate. Market power is fundamental to our view of the economy and market power simultaneously retards productivity and depresses employment. Hoarding of property away from its most productive uses creates unemployment but also reduces economic growth. Monopsony power, whether created by sintitutional investors or by natural monopsony in data economies, induces artificial unemployment to hold down wages and devalue work. Exclusion of the workers of poor countries from the opportunities in rich ones lowers global productivity and may reduce work opportunities overall by spurring automation. Anemic employment and low productivity growth result from institutional failure rather than changes in technology. (PAGE 255)
 
-TBC 256
+the COST will improve the efficiency of the economy by reducing monopoly power. Because goods will move more quickly to their most valued use, economic growth will pick up. Because the prices of assets will decline, harming wealthy people at the margin and helping poorer people, inequality will decline. This more efficient method of raising revenue will make it cheaper to fund public goods that benefit people and to offer a social dividend to people whose talents are not valued by the market. Restrictions on institutional investing will also reduce the role of market power in the economy.
+
+QV will magnify these positive effects. One of the greatest sources of inefficiency in the economy is the primitive way that public goods are selected. In the current system, revenues raised from the general public often get funneled to special interests or are recycled in the form of inefficiently designed entitlements for the majority. By "marketizing" the political system, QV will help ensure that public goods reflect the preferences of the public at large rather than subsets of it. (PAGE 256)
+
+To understand how a COST on human capital might work, imagine that individuals were to self-assess a value of their time, pay a tax on this self-assessed value, and stand ready to work for an employer willing to pay this wage. Consider a surgeon, for example, who announced that she would perform a gullbladder surgery for $2,000. She would pay a tax based on that amount, and be required to perform an operation on anyone who offered that amount. The tax would discourage her from overvaluing her time and thus denying her talents to a needy community, while the need to be on-call at that wage would avoid her setting too low a wage. 
+
+In principle, a COST on human capital would be immensely valuable. Indeed, it would address the single biggest threat to equality and productivity that we have not addressed -- the ability of the most talented people (the top scientists, lawyers, accountants, entertainers, financial whizzes) to withhold their services unless paid a monopoly price. (PAGE 257)
+
+In tandem with monetized QV, QV itself could be used to reduce the influence of money on politics. Small political contributions could be matched and large ones taxed according to a rule suggested by the logic of QV: a political campaign should receive an amount proportional to the square root of the amount contributed. Such a system would reduce the influence of wealth on politics while preserving freedom of expression. (PAGE 263-264)
+
+> *the familiar lines of economic and political debate are artifacts of poor imagination and stale assumptions. To build a better world, we must move beyond the self-defeating conflict of left and right* (PAGE 276)
+
+## After Markets?
+
+Hayek argued that no central planner could obtain information about people's tastes and productivity necessary to allocate resources efficiently. **The genius of the market was the way that the price system could, in disaggregated fashion, collect this information from everyone and supply it to those who needed to know it**, without the involvement of a government planning board. (PAGE 278)
+
+Cosma...Shalizi notes in his essay, "In the Soviet Union, Optimization Problem Solves *You*," the computer power it takes to solve an economic allocation problem increases more than proportionally to the number of commodities in the economy. In practical terms, this means that in any large economy, central planning by a single computer is impossible.
+
+> *We advocate "Radical Markets" because we believe that in the present stage of technological and economic development, where cooperation has grown too large to be managed by moral economies, the market is the appropriate computer to achieve the greatest good for the greatest number. If we see it as such, we can fix the bugs in the market's code and enable it to generate more wealth that is distributed more fairly.*
+

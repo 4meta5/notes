@@ -30,3 +30,5 @@ College
         * Markov Chain Monte Carlo
 * Perfectoid Spaces (for bridging algebraic and analytic geometry)
     * lmao jk, I'll need to spend a few years learning more math first
+
+For information theory, learn about markov chains...

@@ -1,6 +1,10 @@
 # Reading List
 > papers that I want to read that I haven't read yet
 
+* [Batching Techniques for Accumulators with Applications to IOPs and Stateless Blockchains](https://eprint.iacr.org/2018/1188) -- Boneh, Bunz, and Fisch (the Stanford trio), December 11, 2018
+
+* [Confidential Transactions have arrived, a dive into the AZTEC Protocol](https://medium.com/aztec-protocol/confidential-transactions-have-arrived-a-dive-into-the-aztec-protocol-a1794c00c009)
+
 * [Compact Multi-Signatures for Smaller Blockchains](https://eprint.iacr.org/2018/483.pdf) - Boneh 2018
 * [Signatures with Flexible Private Key: Introducing Equivalence Classes for Public Keys](https://eprint.iacr.org/2018/191.pdf) -- 2018
 * [On Multiparty Garbling of Arithmetic Circuits](https://eprint.iacr.org/2017/1186.pdf) -- 2017

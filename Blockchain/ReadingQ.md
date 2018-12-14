@@ -1,12 +1,28 @@
 # Reading List
 > resources that I want to read that I haven't read yet
 
+## DApps to Try
+
+* [voting on blockstack](https://vote.blockstack.org/)
+* [Handshake Academy](https://handshakeacademy.org/en/)
+
 ## Consensus
+
+* [Using the Beacon Chain to POS-finalize the ETH 1.0 chain](https://ethresear.ch/t/using-the-beacon-chain-to-pos-finalize-the-ethereum-1-0-chain/4521)
+
+* [What's New in Eth2](https://notes.ethereum.org/c/Sk8Zs--CQ/https%3A%2F%2Fbenjaminion.xyz%2Fnewineth2%2F20181210.html)
 
 * [Snowflake to Avalanche](https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYwrRVGV)
 * [PHANTOM. GHOSTDAG](https://eprint.iacr.org/2018/104.pdf) -- Two Scalable BlockDAG protocols
 
+* [A CBC Casper Tutorial](https://vitalik.ca/general/2018/12/05/cbc_casper.html) by Vitalik
+
 ## Community
+
+* [sourcegrain](https://github.com/sourcegrain/mission)
+    * similarly, sourcegraph
+    * pando
+> consider making a file for this category of projects
 
 * [Community by the Numbers, Part One: Group Thresholds](http://www.lifewithalacrity.com/2008/09/group-threshold.html)
 

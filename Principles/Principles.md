@@ -50,7 +50,7 @@ By contrast, people who choose what they really want, and avoid the temptations 
 
 ![](./assets/5step.jpg)
 
-## The Power fo Habit
+## The Power of Habit
 Habit is essentially inertia, the strong tendency to keep doing what you have been doing (or not doing what you have not been doing). **Research suggests that if you stick with a behavior for approximately eighteen months, you will build a strong tendency to stick to it nearly forever.**
 
 # Management
@@ -82,6 +82,8 @@ For most people, life is a never-ending battle between these two parts of the br
 
 The four main assessments we use are the Myers-Briggs Type Indicator (MBTI), the Worksplace Personality Inventory, the Team Dimensions Profile, and Stratified Systems Theory. 
 
+* Getting the right people in the right roles in support of your goal is the key to succeeding at whatever you choose to accomplish.
+
 ### Introversion vs. Extroversion
 Introverts focus on the inner world and get their energy from ideas, memories, and experiences while extroverts are externally focused and get their energy from being with people. Introversion and extroversion are also linked to differences in communication styles. If you have a friend who loves to "talk out" ideas (and even has trouble thinking through something if there isn't someone around to work it through with), he or she is likely an extrovert. Introverts will usually find such conversations painful, preferring to think privately and share only after they've worked things out on their own. I've found that it is important to help each communicate in the wa that they feel most comfortable. For example, introverts often prefer communicating in writing (such as email) rather than speaking in group settings and tend to be less open with their critical thoughts.
 
@@ -95,7 +97,7 @@ Some people see big pictures (forests) and others see details (trees).
 > page 227
 
 ### Baseball Cards
-*This led to oe of my most valuable management rools: Baseball Cards...In creating the attributes for our baseball cards, I used a combination of adjectives we already used to describe people, like "conceptual", "reliable", "creative", and "determined"; the actions people took or didn't take such as "holding others accountable" or "pushing through to results"; and terms from personality tests such as "extroverted" or "judging". Once the cards were established, I created a process to have people evaluate each other, with the people rated highest in each dimension (e.g. "most creative") having more weight on the ratings of other people in that dimension. People with proven track records in a certain area would get more believability, or decision-making weight, within that area. By recording these qualities in people's Baseball Cards, others who'd never worked with them before could know what to expect from them.*
+*This led to one of my most valuable management rools: Baseball Cards...In creating the attributes for our baseball cards, I used a combination of adjectives we already used to describe people, like "conceptual", "reliable", "creative", and "determined"; the actions people took or didn't take such as "holding others accountable" or "pushing through to results"; and terms from personality tests such as "extroverted" or "judging". Once the cards were established, I created a process to have people evaluate each other, with the people rated highest in each dimension (e.g. "most creative") having more weight on the ratings of other people in that dimension. People with proven track records in a certain area would get more believability, or decision-making weight, within that area. By recording these qualities in people's Baseball Cards, others who'd never worked with them before could know what to expect from them.*
 
 ### Signs of Close-Mindedness
 
@@ -108,5 +110,7 @@ Some people see big pictures (forests) and others see details (trees).
 - Closed-minded people lack a deep sense of humility.
 
 # ORGANIZE LATER / RANDOM
+
+Because our educational system is hung up on precision, the art of being good at approximations is insufficiently valued. This impedes conceptual thinking. For example, when asked to multiply 38 by 12, most people do it the slow and hard way rather than simply rounding 38 up to 40, rounding 12 down to 10, and quickly determining that the answer is about 400.
 
 I believe in **due process** and **checks and balances**. These ideas may seem abstract, but consider the way by which most people make decisions or come to conclusions. Instead of concluding something one way or another, I prefer to reserve judgement and keep an open mind until I have all the facts. Even then, I consider the possibility that I am wrong. This is what I mean by *due process*. *Checks and balances* in this context refers to my preference to get a diversity of opinions before making a decision or coming to a conclusion. These opinions are weighted according to believability (which should be established based on historical *data*).

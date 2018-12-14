@@ -1,4 +1,5 @@
 # Attacks
+> this should either become its own folder or it should be one document that links to docs within each folder specific to each protocol
 
 * [Byzantine Fault Tolerance]
 * [Long Range Attacks]
@@ -19,7 +20,6 @@
 ## Mispricing Gas
 
 ## DAO Hack
-
 
 > [link to Level K attack in Griefing.md](./Griefing.md)
 

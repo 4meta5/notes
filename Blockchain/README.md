@@ -2,19 +2,19 @@
 > constantly UNDER CONSTRUCTION!
 
 ## Basics
-> just the [basics](./Basics/README.md)
+> just the [basics](./Basics/)
 
 ## Parity
-> read more [here](./Parity/README.md)
+> read more [here](./Parity/)
 
 ## RadicalXChange
-> read more [here](./RadicalXChange/README.md)
+> read more [here](../Economics/RadicalXChange/)
 
 ## Layer 2 Scaling
 > read more [here](./Layer2Scaling/README.md)
 
 ## Zero Knowledge Technology
-> stored under the Cryptography folder [here](../Cryptography/ZeroKnowledge/README.md)
+> stored under the Cryptography folder [here](../Cryptography/ZeroKnowledge/)
 
 ## Blind Spots
 > everyone has some blind spots; I have a few!

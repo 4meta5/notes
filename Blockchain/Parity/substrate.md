@@ -1,4 +1,5 @@
 # Substrate
+> make this into its own directory soon
 
 > notes on [Substrate](https://github.com/paritytech/substrate)
 
@@ -14,7 +15,7 @@ Substrate maintains a dynamic, self-defining state transition function. This STF
 
 Runtime is dynamic => any of these parts can be switched out!
 
-## Substrate Light Client
+## Light Client
 
 Basic header format:
 * `parent_hash`

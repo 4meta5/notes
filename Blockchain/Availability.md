@@ -15,6 +15,8 @@ If we add observers that actively watch consensus, we can increase fault toleran
 If the assumptions of both the threshold-dependent and latency-dependent consensus algorithms are broken *at the same time* (or in consecutive rounds), then the algorithm can break down...However, this is unavoidable; the impossibility of safe-under-asynchrony consensus is more than 1/3 fault tolerance is a well-established result in Byzantine Fault Tolerance Theory, as is the impossibility of more than 1/2 fault tolernace even allowing synchrony assumptions but assuming offline observers.
 
 ## Polkadot Solution
+
+**Availability Guarantors**
 > Section 6.5.3 (page 13) of the [Polkadot Whitepaper](https://polkadot.network/PolkaDotPaper.pdf)
 
 **Mitigating the Data Availability Problem**<br>
@@ -24,12 +26,15 @@ If the assumptions of both the threshold-dependent and latency-dependent consens
 
 3. Collators have an intrinsic incentive to ensure that all data is available for their chosen parachain since without it they are unable to author further blocks from which they can collect transaction fees. Recent collators are given the ability to issue challenges to the availability of external data for a particular parachain block to validators for a small bond...Validators must contact those from the apparently offending validator sub-groups who testified and either acquire and return the data to the collator or escalate the matter by testifying the lack of availability (direct refusal to provide the data counts as a bond-confiscating offense, therefore the misbehaving validator will likely just drop the connection) and contacting additional validator to return the same test. In the latter case, the collator's bond is returned...once a quorum of validators who can make such non-availability testimonials is reached, they are released, the misbehaving sub-group is punished, and the block is reverted.
 
+**Reputational Guarantees**
+* supermajority BLS-aggregate voting to determine unavailability
+
 ## Proof of Custody
 
 * [Enforcing windback (validity and availability), and a proof of custody](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
 * [Finality and Windback - Proof of Custody Revisited](https://ethresear.ch/t/finality-and-windback-proof-of-custody-revisited/1434)
 * [Extending skin-in-the-game of notarization with proofs of custody](https://ethresear.ch/t/extending-skin-in-the-game-of-notarization-with-proofs-of-custody/1639)
 
-### References
+#### References
 * [A note on data availability and erasure coding](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
 * [Unsolved Problems in Blockchain Sharding](https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43)

@@ -8,6 +8,7 @@
 * [Generality](#generality)
 * [Interperability](#interop)
 * [Upgradeability](#upgrade)
+* [Protocol](#protocol)
 
 ## Generality <a name = "generality" ></a>
 
@@ -16,6 +17,14 @@ We don't want to lock developers (or users) into any specific constraints wrt ho
 ### De-Duplication of Work
 
 * comes with first-class light client
+
+Substrate maintains a dynamic, self-defining state transition function. This STF is coded in WASM and is referred to as the "runtime". This defines the ```execute_block``` function while also specifying 
+* staking algorithm
+* transaction semantics
+* logging mechanisms
+* governance
+
+Runtime is dynamic => any of these parts can be switched out!
 
 ## Interoperability <a name = "interop" ></a>
 
@@ -30,10 +39,26 @@ The **relay chain** negotiates the passing of messages between many other chains
 
 > This is also a useful tool for scalability. This solution to interoperability plays well with scalability -- we can get things like hierarchical chains and form of sharding, by uniting distinct and heterogeneous state transitions under the same consensus process.
 
+**Parachain Building Blocks**
+* Validity Function: WebAssembly stored on-chain in the parachain registry
+* Collator Node: Creates "candidate" blocks that satisfy the validity function
+* Message Queues: candidates must also process incoming and produce outgoing messages
+
+### Pooled Security
+
+* change mining/validating from a zero-sum game to something more collaborative
+
 ### Scalability
 At the root level, you run into quadratic scaling issues. If you have a bunch of chains sending messages amongst eachother, communication complexity scales quadratically; a fundamental scaling issues.
 
 By localizing chains close to eachother to the ones they need to communicate with the most, we can reduce the scaling barrier. We can compress many chains communicating into one chain communicating with others. That sense of *locality* is very useful when overcoming fundamental scaling limits.
+
+**Hierarchical Architecture**
+* parachain which is also a relay chain -- 2nd order relay chain
+    * trie-like structure of blockchains
+    * security flows from the root
+
+> consider trying to quantify how security lessens at each level (would be useful for ethereum l2 solutions as well)
 
 ### Finality
 
@@ -83,6 +108,41 @@ There is a more expensive cost to sending messages between chains.
 * approval voting
 * council voting
 * qualified abstention biasing (<=> adaptive quorum biasing?)
+
+## Protocol <a name = "protocol">
+
+> [consensus](./consensus.md)
+
+### Roles
+
+**Validators**
+* manage relay-chain block authorship
+* parachain candidate agreement shuffled over parachains
+    * collator gives parachain candidate block
+    * validator approves/denies candidate block
+* steward availability of external data
+    * proof of custody?
+
+**Nominators**
+* stake on behalf of good validators
+    * mitigate tradeoff between economic security and decentralization
+* economic security without additional consensus overhead
+* heuristic-based assignment
+
+**Collators**
+* create parachain candidates to give to validators
+* work on single parachain only
+* monitor parachain sub-net for misbehavior
+
+**Fishermen**
+* final line of defense: watch for misbehavior of validators
+* anyone can be a fisherman
+* can trigger the "validity/availability" game and slash bad validators
+
+### Ensuring Availability
+
+* checking parachain blocks requires off-chain data
+    * guaranteeing data availability is nontrivial
 
 ## References and Resources
 

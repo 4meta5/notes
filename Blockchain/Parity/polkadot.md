@@ -3,11 +3,21 @@
 
 > [Polkadot Metalink](https://github.com/w3f/Web3-wiki/wiki/Polkadot)
 
-## Generality
+> blockchain for scalability and interoperability
+
+* [Generality](#generality)
+* [Interperability](#interop)
+* [Upgradeability](#upgrade)
+
+## Generality <a name = "generality" ></a>
 
 We don't want to lock developers (or users) into any specific constraints wrt how data is stored, or metering for computation. The courser the grains of computation you meter for with fees, the more work you can do. 
 
-## Interoperability
+### De-Duplication of Work
+
+* comes with first-class light client
+
+## Interoperability <a name = "interop" ></a>
 
 * Chains are initially isolated, and serve distinct purposes
 * A messaging framework is overlayed
@@ -15,6 +25,8 @@ We don't want to lock developers (or users) into any specific constraints wrt ho
 * Messages have predictable properties: in-order and eventual receipt
 
 The **relay chain** negotiates the passing of messages between many other chains. It unites them all under a single consensus process; it also unites this hidden state of their message queues under this consensus process.
+
+* Polkadot: network with a root relay chain which manages advancement and security of various parachains that have their own state machine and can communicate amongst eachother
 
 > This is also a useful tool for scalability. This solution to interoperability plays well with scalability -- we can get things like hierarchical chains and form of sharding, by uniting distinct and heterogeneous state transitions under the same consensus process.
 
@@ -47,17 +59,33 @@ There is a more expensive cost to sending messages between chains.
 * Smart contract platforms (like Ethereum) specialized for intra-operability. You can do communication within a smart contract platform synchronously and, therefore, very efficiently.
     * Optimized for maximizing the network effect within a specific bubble
 
-## Upgradeability
+## Upgradeability <a name = "upgrade" ></a>
 
 * blockchains are encoded as a representation of its state transition function; registered on-chain on the root level relay chain
     * chain could issue a specific message for upgrading code
     * could also (simultaneously) register a new chain with new code (hard fork without hard forking) -- part of the community migrates over to the new chain
         * don't get into schism situation where we lose the network effects due to disagreement
 
-### No Forks?
-* this is nuanced; expand
+> is it as easy to update the network layer? Look into this (ie switching between libp2p vs devp2p)
 
-### References and Resources
+### No Forks?
+> expand on above
+
+### Governance
+
+* adaptive quorum biasing
+* progressive consensus
+    * consensus algorithm which achieves finality slowly (/gradually)
+        * blockchain - property that every block references all of the blocks before it
+            * economic attestaion to the validity of the new block
+
+* stakeholder referendum
+* approval voting
+* council voting
+* qualified abstention biasing (<=> adaptive quorum biasing?)
+
+## References and Resources
 
 **Videos**
 * [Implications of Interoperability at Web3 Summit 2018](https://www.youtube.com/watch?v=TBeGIGvC6r8&feature=youtu.be) by Rob Habermeier
+* [Rob Habermeier presents Parity Substrate: the foundation for blockchain innovators](https://www.youtube.com/watch?v=q1zLHO7Lkuk)

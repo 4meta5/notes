@@ -13,3 +13,14 @@ Substrate maintains a dynamic, self-defining state transition function. This STF
 * governance
 
 Runtime is dynamic => any of these parts can be switched out!
+
+## Substrate Light Client
+
+Basic header format:
+* `parent_hash`
+* `extrinsics_root`
+* `receipt_hash` (receipts form the basis of Substrate's approach to light clients)
+    * `number`
+    * `storage_root`
+    * `changelog_root` -- represents the root node of the Merkle trie formed as the ordered storage keys that changed this block, themselves keyed with a sequential integer (enables light clients to receive trustless proofs that any key in storage didn't change or, if it did, the extrinsic(s) which changed it)
+    * `digest` -- an array of fragments that the runtime can use to encode important events (enables trustless tracking of validator set changes to allow for *warp* sync)

@@ -5,14 +5,24 @@
 
 As Ethereum transitions to a PoS sidechain and other interoperability-focused networks emerge (i.e. Polkadot and Cosmos), the data availability problem will take on increased significance. With this in mind, we need to reintroduce a solution for speaker/listener fault equivalence that was identified as early as the canonical paper: [The Byzantine Generals Problem](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf) by Lamport, Shostak, and Pease.
 
-We'll start by reviewing a blog post released by Vitalik Buterin on this topic in August 2018. Then, we'll review the same idea explored by Gavin Wood in the original Polkadot whitepaper two years earlier.
+## Proof of Custody
+> [Erasure Encoding Notes](../Cryptography/InformationTheory/ErasureEncoding.md); [Error Correction Notes](../Cryptography/InformationTheory/ErrorCorrection.md)
+
+**Fraud Proofs**<br>
+*Take Notes Soon*
+
+**Reading Now**
+* [Enforcing windback (validity and availability), and a proof of custody](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
+* [Fraud Proofs: Maximizing Light Client Security and Scaling Blockchains with Dishonest Majorities](https://arxiv.org/pdf/1809.09044.pdf) -- Paper by Mustafa Al-Bassam, Alberto Sinnino, and Vitalik Buterin
+* [Finality and Windback - Proof of Custody Revisited](https://ethresear.ch/t/finality-and-windback-proof-of-custody-revisited/1434)
+* [Extending skin-in-the-game of notarization with proofs of custody](https://ethresear.ch/t/extending-skin-in-the-game-of-notarization-with-proofs-of-custody/1639)
 
 ## Increasing Fault Tolerance via Observers
 > [A Guide to 99% Fault Tolerant Consensus](https://vitalik.ca/general/2018/08/07/99_fault_tolerant.html) by Vitalik Buterin
 
 If we add observers that actively watch consensus, we can increase fault tolerance all the way to 99%.
 
-If the assumptions of both the threshold-dependent and latency-dependent consensus algorithms are broken *at the same time* (or in consecutive rounds), then the algorithm can break down...However, this is unavoidable; the impossibility of safe-under-asynchrony consensus is more than 1/3 fault tolerance is a well-established result in Byzantine Fault Tolerance Theory, as is the impossibility of more than 1/2 fault tolernace even allowing synchrony assumptions but assuming offline observers.
+> If the assumptions of both the threshold-dependent and latency-dependent consensus algorithms are broken *at the same time* (or in consecutive rounds), then the algorithm can break down...However, this is unavoidable; the impossibility of safe-under-asynchrony consensus is more than 1/3 fault tolerance is a well-established result in Byzantine Fault Tolerance Theory, as is the impossibility of more than 1/2 fault tolernace even allowing synchrony assumptions but assuming offline observers.
 
 ## Polkadot Solution
 
@@ -29,12 +39,11 @@ If the assumptions of both the threshold-dependent and latency-dependent consens
 **Reputational Guarantees**
 * supermajority BLS-aggregate voting to determine unavailability
 
-## Proof of Custody
-
-* [Enforcing windback (validity and availability), and a proof of custody](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
-* [Finality and Windback - Proof of Custody Revisited](https://ethresear.ch/t/finality-and-windback-proof-of-custody-revisited/1434)
-* [Extending skin-in-the-game of notarization with proofs of custody](https://ethresear.ch/t/extending-skin-in-the-game-of-notarization-with-proofs-of-custody/1639)
-
 #### References
 * [A note on data availability and erasure coding](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
 * [Unsolved Problems in Blockchain Sharding](https://medium.com/nearprotocol/unsolved-problems-in-blockchain-sharding-2327d6517f43)
+
+* [Enforcing windback (validity and availability), and a proof of custody](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding)
+* [Fraud Proofs: Maximizing Light Client Security and Scaling Blockchains with Dishonest Majorities](https://arxiv.org/pdf/1809.09044.pdf) -- Paper by Mustafa Al-Bassam, Alberto Sinnino, and Vitalik Buterin
+* [Finality and Windback - Proof of Custody Revisited](https://ethresear.ch/t/finality-and-windback-proof-of-custody-revisited/1434)
+* [Extending skin-in-the-game of notarization with proofs of custody](https://ethresear.ch/t/extending-skin-in-the-game-of-notarization-with-proofs-of-custody/1639)

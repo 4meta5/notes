@@ -6,3 +6,7 @@
 * [Thesis: Applied Erasure Encoding in Networks and Distributed Storage](https://arxiv.org/pdf/1803.01358.pdf) -- recent (published March 4, 2018)
 * [The Codes of Solomon, Reed, and Muller](https://jeremykun.com/2015/03/23/the-codes-of-solomon-reed-and-muller/)
 * [The Welch-Berlekamp Algorithm for Correcting Errors in Data](https://jeremykun.com/2015/09/07/welch-berlekamp/)
+
+* [Repairable Fountain Codes](https://arxiv.org/abs/1401.0734)
+* [Streaming Authenticated Data Structures: Abstraction and Implementation](http://users.umiacs.umd.edu/~zhangyp/papers/p129-qian.pdf)
+* [Fraud Proofs: Maximizing Light Client Security and Scaling Blockchains with Dishonest Majorities](https://arxiv.org/abs/1809.09044)

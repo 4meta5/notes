@@ -24,6 +24,8 @@
     * pando
 > consider making a file for this category of projects
 
+* [Who Controls Bitcoin Core](https://medium.com/@lopp/who-controls-bitcoin-core-c55c0af91b8a)
+
 * [Community by the Numbers, Part One: Group Thresholds](http://www.lifewithalacrity.com/2008/09/group-threshold.html)
 
 ## Cryptoeconomics

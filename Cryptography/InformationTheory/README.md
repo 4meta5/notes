@@ -3,6 +3,8 @@
 * [Erasure Encoding Notes](./ErasureEncoding.md)
 * [Error Correction Notes](./ErrorCorrection.md)
 
+## Intro to Information Theory
+
 There are two basic problems central to Information Theory.
 
 **Noiseless coding problem**: an encoding scheme for messages which minimizes the expected length of an encoded message and guarantees the ability to unambiguously decode a message.

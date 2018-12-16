@@ -10,6 +10,15 @@
 * [Upgradeability](#upgrade)
 * [Protocol](#protocol)
 
+**Where are we now?**
+* PoC-1: Governance, staking, basic UI, and forkless upgrades
+* PoC-2: "co-finalization" of non-communicating parachains and basic light client. First dynamic update...
+* PoC-3: Implementation of hybrid consensus
+* PoC-4: Interchain messaging
+* PoC-5: Implementation of Validity/Availability game (incentive alignment)
+* In parallel: developer tools for parachains
+    * Rust-based DSL for writing blockchains
+
 ## Generality <a name = "generality" ></a>
 
 We don't want to lock developers (or users) into any specific constraints wrt how data is stored, or metering for computation. The courser the grains of computation you meter for with fees, the more work you can do. 
@@ -108,6 +117,10 @@ There is a more expensive cost to sending messages between chains.
 * approval voting
 * council voting
 * qualified abstention biasing (<=> adaptive quorum biasing?)
+
+* bicameral
+    * coinholders 
+    * council
 
 ## Protocol <a name = "protocol">
 

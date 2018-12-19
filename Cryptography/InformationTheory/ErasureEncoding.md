@@ -1,7 +1,9 @@
 # Erasure Encoding
 
+While the *Hamming code* meets the Hamming bound, which is a measure of how densely a code can be packed inside an ambient space and still maintain a given distance, the **Reed-Solomon code** optimizes for a different bound called the *Singleton bound*. We will eventually generalize this to a larger class of codes called Reed-Muller codes.
 
 ### References
+* [A Gentle Introduction to Erasure Codes](https://www.akalin.com/intro-erasure-codes)
 * [darrenldl/reed-solomon-erasure](https://github.com/darrenldl/reed-solomon-erasure)
 * [Thesis: Applied Erasure Encoding in Networks and Distributed Storage](https://arxiv.org/pdf/1803.01358.pdf) -- recent (published March 4, 2018)
 * [The Codes of Solomon, Reed, and Muller](https://jeremykun.com/2015/03/23/the-codes-of-solomon-reed-and-muller/)

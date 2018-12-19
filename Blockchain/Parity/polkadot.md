@@ -74,7 +74,7 @@ By localizing chains close to eachother to the ones they need to communicate wit
 * Finality can always be reverted for a price
     * absolute finality really just means we have reached the price threshold (and that's what consensus algorithms try to do -- bring that price threshold to revert a block up to the maximum cost)
 
-The problem with just creating a bridge protocol between chains is the increased ease by which we can attack weaker chains. Therefore, we need to make attaching one chain as expensive as attacking another chain.
+The problem with just creating a bridge protocol between chains is the increased ease by which we can attack weaker chains. Therefore, we need to make attacking one chain as expensive as attacking another chain.
 
 ### Locality
 > DApps are likely to have a lot of different moving parts. Keeping portions of the on-chain application logic localized near or on the chains it interacts with most.

@@ -6,6 +6,8 @@
 * [voting on blockstack](https://vote.blockstack.org/)
 * [Handshake Academy](https://handshakeacademy.org/en/)
 
+* [Everything You Didn't Know About the Handshake Naming System](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
+
 ## Consensus
 
 * [Using the Beacon Chain to POS-finalize the ETH 1.0 chain](https://ethresear.ch/t/using-the-beacon-chain-to-pos-finalize-the-ethereum-1-0-chain/4521)

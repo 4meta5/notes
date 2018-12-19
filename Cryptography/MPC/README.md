@@ -3,5 +3,7 @@
 
 * [The Car Talk](https://www.cartalk.com/content/coney-island-crab-cake-company)
 
-### References
-> [A Pragmatic Introduction to Secure Multi-Party Computation](https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf) -- Professor David Evans
+### ReadingQ
+* [A Pragmatic Introduction to Secure Multi-Party Computation](https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf) -- Professor David Evans
+
+* [MetaLink -- Resources for Getting Started with MPC](http://u.cs.biu.ac.il/~lindell/MPC-resources.html)

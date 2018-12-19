@@ -11,7 +11,7 @@
 > read more [here](../Economics/RadicalXChange/)
 
 ## Layer 2 Scaling
-> read more [here](./Layer2Scaling/README.md)
+> read more [here](./Layer2Scaling/)
 
 ## Zero Knowledge Technology
 > stored under the Cryptography folder [here](../Cryptography/ZeroKnowledge/)
@@ -22,7 +22,7 @@
 * data availability and validity
     * erasure encoding
 * rent
-    * [ethnews high level](https://www.ethnews.com/to-alleviate-ethereum-state-bloat-developers-consider-charging-rent)
+    * [ethnews high level article on rent](https://www.ethnews.com/to-alleviate-ethereum-state-bloat-developers-consider-charging-rent)
 * sources of randomness
     * mpc
     * collective coin flipping; randao; dfinity threshold scheme

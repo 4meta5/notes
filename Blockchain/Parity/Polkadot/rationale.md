@@ -1,23 +1,10 @@
 # Polkadot
-> random notes on polkadot; organized haphazards and **will be made into its own directory soon**
-
-> [Polkadot Metalink](https://github.com/w3f/Web3-wiki/wiki/Polkadot)
-
 > blockchain for scalability and interoperability
 
 * [Generality](#generality)
 * [Interperability](#interop)
 * [Upgradeability](#upgrade)
 * [Protocol](#protocol)
-
-**Where are we now?**
-* PoC-1: Governance, staking, basic UI, and forkless upgrades
-* PoC-2: "co-finalization" of non-communicating parachains and basic light client. First dynamic update...
-* PoC-3: Implementation of hybrid consensus
-* PoC-4: Interchain messaging
-* PoC-5: Implementation of Validity/Availability game (incentive alignment)
-* In parallel: developer tools for parachains
-    * Rust-based DSL for writing blockchains
 
 ## Generality <a name = "generality" ></a>
 
@@ -156,9 +143,3 @@ There is a more expensive cost to sending messages between chains.
 
 * checking parachain blocks requires off-chain data
     * guaranteeing data availability is nontrivial
-
-## References and Resources
-
-**Videos**
-* [Implications of Interoperability at Web3 Summit 2018](https://www.youtube.com/watch?v=TBeGIGvC6r8&feature=youtu.be) by Rob Habermeier
-* [Rob Habermeier presents Parity Substrate: the foundation for blockchain innovators](https://www.youtube.com/watch?v=q1zLHO7Lkuk)

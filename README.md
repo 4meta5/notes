@@ -18,15 +18,15 @@ I have organized lists of [Articles](./Principles/Articles.md), [Books](./Princi
 
 I am learning Rust to hack on Parity's Substrate framework for building blockchains in preparation for the launch of the Polkadot network in Q3 2019.
 
-## RadicalXChange
-> "In the present stage of technological and economic development, when cooperation has grown too large to be managed by moral economies, the market is the appropriate computer to achieve the greatest good for the greatest number. If we see it as such, we can fix the bugs in the market's code and enable it to generate more wealth that is distributed more fairly." - [Radical Markets](http://radicalmarkets.com/) by Eric Posner, E. Glen Weyl
-
-I am committed to realizing the Radical Markets vision via the RadicalXChange movement (led by E. Glen Weyl). In this folder, I have organized my [notes](./Blockchain/RadicalXChange/RadicalMarkets.md) on the book, [ideas](./Blockchain/RadicalXChange/Ideas.md) motivated by the book, and thoughts on related topics (like QV, Liberal Radicalism, etc).
-
 # Economics
 > "To put it bluntly, the discipline of economics has yet to get over its childish passion for mathematics and for purely theoretical and often highly ideological speculation, at the expense of historical research and collaboration with the other social sciences." - Thomas Picketty, [Capital in the 21st Century](http://www.hup.harvard.edu/catalog.php?isbn=9780674979857)
 
 I am fascinated by contemporary monetary policy, especially large scale asset purchases (also known as QE) and the impact a large balance sheet will have on the Fed (and other central bank) decisions moving forward. Somewhat related, being part of the Federal Reserve Challenge team at UVA was very formative for me during my time in college and it was by far my favorite extracurricular activity.
+
+## RadicalXChange
+> "In the present stage of technological and economic development, when cooperation has grown too large to be managed by moral economies, the market is the appropriate computer to achieve the greatest good for the greatest number. If we see it as such, we can fix the bugs in the market's code and enable it to generate more wealth that is distributed more fairly." - [Radical Markets](http://radicalmarkets.com/) by Eric Posner, E. Glen Weyl
+
+I am committed to realizing the Radical Markets vision via the RadicalXChange movement (led by E. Glen Weyl). In this folder, I have organized my [notes](./Economics/RadicalXChange/RadicalMarkets.md) on the book, [ideas](./Economics/RadicalXChange/Ideas.md) motivated by the book, and thoughts on related topics (like QV, Liberal Radicalism, etc).
 
 # Cryptography
 > "If privacy is outlawed, only outlaws will have privacy." - Phil Zimmerman, [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)

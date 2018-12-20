@@ -1,0 +1,14 @@
+# Moby Dick
+> by Herman Melville
+
+Ignorance is the parent of fear.
+
+Consider the subtleness of the sea; how its most dreaded creatures glide under water, unapparent for the most part, and treacherously hidden beneath the loveliest tints of azure. Consider also the devilish brilliance and beauty of many of its most remorseless tribes, as the dainty embellished shape of many species of sharks. Consider, once more, the universal cannibalism of the sea; all whose creatures prey upon each other, carrying on eternal war since the world began. 
+
+Consider all this; and then turn to the green, gentle, and most docile earth; consider them both, the sea and the land; and do you not find a strange analogy to something in yourself? For as this appalling ocean surrounds the verdant land, so in the soul of man there lies one insular Tahiti, full of peace and joy, but encompassed by all the horrors of the half-known life. God keep thee! Push not off from that isle, thou canst never return!
+
+To enjoy bodily warmth, some small part of you must be cold, for there is no quality in this world that is not what it is merely by contrast. Nothing exists in itself. If you flatter yourself that you are all over comfortable, and have been so a long time, then you cannot be said to be comfortable any more. For this reason a sleeping apartment should never be furnished with a fire, which is one of the luxurious discomforts of the rich. For the height of this sort of deliciousness is to have nothing but the blanket between you and your snugness and the cold of the outer air. Then there you lie like the one warm spark in the heart of an arctic crystal.
+
+Who ain’t a slave? Tell me that. Well, then, however the old sea-captains may order me about—however they may thump and punch me about, I have the satisfaction of knowing that it is all right; that everybody else is one way or other served in much the same way— either in a physical or metaphysical point of view, that is; and so the universal thump is passed round, and all hands should rub each other’s shoulder-blades, and be content.
+
+There is no steady unretracing progress in this life; we do not advance through fixed gradations, and at the last one pause:-- through infancy's unconscious spell, boyhood's thoughtless faith, adolescence' doubt (the common doom), then scepticism, then disbelief, resting at last in manhood's pondering repose of If. But once gone through, we trace the round again; and are infants, boys, and men, and Ifs eternally. Where lies the final harbor, whence we unmoor no more? In what rapt ether sails the world, of which the weariest will never weary? Where is the foundling's father hidden? Our souls are like those orphans whose unwedded mothers die in bearing them: the secret of our paternity lies in their grave, and we must there to learn it.

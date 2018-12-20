@@ -5,6 +5,8 @@
 
 ## Articles, Speeches, Papers, Books <a name="general"></a>
 
+* [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
+
 * [The Humble Programmer by Dijkstra](#humbleprogrammer)
 * [Zed Shaw: Learn Python the Hard Way](https://learnpythonthehardway.org/book/intro.html)
 

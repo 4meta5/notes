@@ -41,6 +41,7 @@
 ## SNARKs <a name = "SNARK"></a>
 
 * [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/) by Christian Reitweissner
+    * [paper](https://chriseth.github.io/notes/articles/zksnarks/zksnarks.pdf)
 * [SNARGs](https://gist.github.com/Haseeb-Qureshi/f552fdbbb649ed4bbfeb681beb4091e1) by Alessandro Chiesa
 * [Introduction to zk-SNARKs](https://blog.decentriq.ch/zk-snarks-primer-part-one/) by Decentriq
 

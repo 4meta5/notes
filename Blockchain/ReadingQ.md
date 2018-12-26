@@ -8,6 +8,9 @@
 
 * [Everything You Didn't Know About the Handshake Naming System](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
 
+## Trends
+* [What's in a wallet -- metaphors for understanding and designing crypto wallets](https://medium.com/ideo-colab/whats-in-a-wallet-e0ba6348d6f1)
+
 ## Consensus
 
 * [Using the Beacon Chain to POS-finalize the ETH 1.0 chain](https://ethresear.ch/t/using-the-beacon-chain-to-pos-finalize-the-ethereum-1-0-chain/4521)

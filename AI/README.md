@@ -8,3 +8,7 @@
 * [Neural Networks as Ordinary Differential Equations](https://rkevingibson.github.io/blog/neural-networks-as-ordinary-differential-equations/)
 
 * [A Tour of the Top 10 Algorithms for Machine Learning Newbies](https://towardsdatascience.com/a-tour-of-the-top-10-algorithms-for-machine-learning-newbies-dde4edffae11)
+
+* [The Wave Function Collapse Algorithm Explained](https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/)
+
+* [A Beginner's Guide to the Mathematics of Neural Networks](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.3556&rep=rep1&type=pdf)

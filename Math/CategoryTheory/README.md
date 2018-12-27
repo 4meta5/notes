@@ -8,3 +8,5 @@ Once I'm farther along, I'll upload my latex notes in *chunks*.
 Code is organized according to chapter:
 
 * [Category: The Essence of Composition](https://github.com/AmarRSingh/notes/tree/master/Math/Category/1)
+
+* [A Gentle Intro to Category Theory (Textbook)](https://www.logicmatters.net/resources/pdfs/GentleIntro.pdf)

@@ -13,6 +13,7 @@
 
 - [Elliptic Curve Cryptography](#ECC)
 - [Zero Knowledge Proofs General Introduction](#ZKP)
+    - [Projects](#ZK-Projects)
 - [zk-SNARKs](#SNARK)
     - [Projects](#SNARK-Projects)
 - [zk-STARKs](#STARK)
@@ -37,6 +38,11 @@
 * [Part 2](http://www.shirpeled.com/2018/10/a-hands-on-tutorial-for-zero-knowledge.html)
 * [Part 3](http://www.shirpeled.com/2018/10/a-hands-on-tutorial-for-zero-knowledge_2.html)
 * [Part 4](http://www.shirpeled.com/2018/10/a-hands-on-tutorial-for-zero-knowledge_4.html)
+
+### Projects
+
+* [Cloudlfare Privacy Pass](https://blog.cloudflare.com/cloudflare-supports-privacy-pass/)
+    * [protocol design document](https://privacypass.github.io/protocol/)
 
 ## SNARKs <a name = "SNARK"></a>
 

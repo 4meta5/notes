@@ -35,5 +35,6 @@ LMD GHOST fork choice: Let M be the set of most recent messages from all validat
 
 ### References
 
+* [Short Paper: An Empirical Analysis of Blockchain Forks in Bitcoin](https://dsn.tm.kit.edu/bitcoin/forks/blockprop.pdf)
 * [Secure High-Rate Transaction Processing in Bitcoin](https://eprint.iacr.org/2013/881.pdf)
 * [PoS fork choice rule desiderata](https://ethresear.ch/t/pos-fork-choice-rule-desiderata/2636)

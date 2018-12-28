@@ -8,6 +8,9 @@
 
 * [Everything You Didn't Know About the Handshake Naming System](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
 
+* [A Minimal Verification Client - Christoph Jentzsch (Slock It)](https://www.youtube.com/watch?v=_vodQubed2A) (video)
+* [Simple Casper Light Client](https://ethresear.ch/t/simple-casper-light-client/828)
+
 ## Trends
 * [What's in a wallet -- metaphors for understanding and designing crypto wallets](https://medium.com/ideo-colab/whats-in-a-wallet-e0ba6348d6f1)
 

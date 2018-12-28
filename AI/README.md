@@ -12,3 +12,6 @@
 * [The Wave Function Collapse Algorithm Explained](https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/)
 
 * [A Beginner's Guide to the Mathematics of Neural Networks](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.3556&rep=rep1&type=pdf)
+
+### Tangential ReadingQ
+* [How Much of the Internet is Fake? Turns Out, a Lot of It, Actually.](http://nymag.com/intelligencer/2018/12/how-much-of-the-internet-is-fake.html) -- December 26, 2018

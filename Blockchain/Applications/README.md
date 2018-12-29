@@ -4,4 +4,6 @@
 * decentralized reputation/identity
 * dispute resolution
 * radical market ideas
-* 
+* DEX, liquidity/loan pools
+* gambling
+* gaming

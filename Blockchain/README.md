@@ -39,3 +39,40 @@
 * outsourcing computation to off-chain (Truebit)
 * decentralized loan pool protocols -- I have an interest
 * mining pool protocols (loi luu's protocol)
+
+## ReadingQ
+
+### DApps to Try
+
+* [voting on blockstack](https://vote.blockstack.org/)
+* [Handshake Academy](https://handshakeacademy.org/en/)
+
+* [Everything You Didn't Know About the Handshake Naming System](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
+
+* [A Minimal Verification Client - Christoph Jentzsch (Slock It)](https://www.youtube.com/watch?v=_vodQubed2A) (video)
+* [Simple Casper Light Client](https://ethresear.ch/t/simple-casper-light-client/828)
+
+### Trends
+* [What's in a wallet -- metaphors for understanding and designing crypto wallets](https://medium.com/ideo-colab/whats-in-a-wallet-e0ba6348d6f1)
+
+### Community
+
+* [sourcegrain](https://github.com/sourcegrain/mission)
+    * similarly, sourcegraph
+    * pando
+> consider making a file for this category of projects
+
+* [Who Controls Bitcoin Core](https://medium.com/@lopp/who-controls-bitcoin-core-c55c0af91b8a)
+
+* [Community by the Numbers, Part One: Group Thresholds](http://www.lifewithalacrity.com/2008/09/group-threshold.html)
+
+### Cryptoeconomics
+
+* [Crypto Public Choice](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3236025)
+
+* [A Systematic Approach to Cryptocurrency Fees](http://fc18.ifca.ai/bitcoin/papers/bitcoin18-final18.pdf)
+
+* [A Simple and principled way to compute rent fees](https://ethresear.ch/t/a-simple-and-principled-way-to-compute-rent-fees/1455)
+
+* [Central Planning as Overfitting](https://radicalxchange.org/blog/posts/2018-11-26-4m9b8b/)
+    * come up with a rebuttal for this; use the same concepts to argue for on-chain governance

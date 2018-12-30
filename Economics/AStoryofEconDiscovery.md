@@ -25,6 +25,33 @@ The standard textbook demonstrations of how the mere passage of the time necessa
 
 Beyond its ordinary meaning -- curving outward like the surface of a sphere -- the term "convexity" had a special significance for economics. All the analysis of perfect competition had come to be built upon the logic of convex sets, just as during the preceding century it had been built on calculus -- set theory had trumped calculus by dispensing with some of its unrealistic assumptions about the "smoothness" of the world. In return, economics got inequalities instead of equations -- statements that carved out whole sets of points instead of simply describing a line. George Dantzig's beanpole, as a rough-shaped cone, was a convex set. So were all the other high abstractions, borrowed from rocket science, which economists had found so useful. **The infinite-dimensional spreadsheet was anchored in convexity**. The separating hyperplane theorem was a standard tool of convex analysis. It could be used to establish something as grand as competitive equilibrium, or to illustrate the supposition that any difference between market prices and natural prices will soon be erased by adjustments in price and quantity. (218)
 
+Freshwater (economists) => New Classicals, Saltwater (economists) => New Keynesians
+
+Suppose there are `N` workers in total, with skill levels `h` ranging from `0` to `infinity`. Let there be `N(h)` workers with skill level `h`, so that `N = N(h)dh`. Suppose a worker with skill `h` devotes a fraction `u(h)` of his non-leisure time to current production, and the remaining `1 - u(h)` to human capital accumulation. Then the effective workforce in production -- the analogue to `N(t)` in equation (2) -- is the sum `N^{e} = \int_{0}^{infinity} u(h)N(h)hdh` of the skill-weighted manhours devoted to current production. Thus if output is a function of total capital `K` and effective labor `N^{e}` is `F(K, N^{e})`, the hourly wage of a worker at skill `h` is `F_{N}(K, N^{e})h` and his total earnings are `F_{N}(K, N^{e})hu(h)`. (242)
+
+If a poor country maintained property rights, permitted markets to function, and accumulated a certain amount of human capital, it tended to converge with the industrial leaders. (The newly industrializing Asian countries provided a good example.) Countries that failed to establish certain basic institutions on the other hand, tended to lag far behind. (269)
+
+...the cost to skiers of waiting in line would seem small compared with the fixed cost of getting on the mountain in the first place. The effect of the queues was to make riders bear the uncertainty of how many other skiers would show up. The same idea explained why lift passes cost the same throughout the season; owners didn't raise prices but the lines are longer. Lengthening queues were an alternative to flexible money prices; they automatically adjusted the *real* prices that skiers paid. (278)
+> The paper "Ski-Lift Pricing, with Applications to Labor and Other Markets" (1987) cites that these *proxy* mechanisms are used partly because of the inconvenience and added costs of setting up a more dynamic pricing mechanism. Even so, **blockchain => L2 => cheap micropayments (w/ finality) => cheap, dynamic price mechanisms**...
+
+Clubs were groups that shared something valuable exclusively among their members -- swimming pools, golf courses, ski mountains, toll roads, trades associations, and so on. Club goods depended critically on *excludability* to make them work. The exclusion mechanism could be a guard, a gate, a fence, a ticket office, a checklist maintained by a greeter at a door -- anything that served to let member in and keep nonmembers out. Club theory was a way of identifying impure public goods and disentangling the relationship between their costs and the groups that consumed them. (281)
+
+## Overarching Trends
+
+[wrt "Endogenous Technological Change"] The first paragraph contained a sentence that was intially more puzzling than not: "The distinguishing feature of ... technology as input is that it is neither a conventional good nor a public good; it is a nonrival, partially excludable good..." (xvi)
+
+his [Solow's] basic innovation was to make his model of production depend on substitution. In the Domar model there had been no possibility of substituting labor for capital in production. The ratios were fixed, and steady growth occurred only under certain rigid specified conditions. Solow replaced the fixed capital/output ratio of the Harrod and Domar models with the relatively new concept of a variable production function, whose advantages were twofold. The convention permitted producers to shift back and forth, using capital when labor was too expensive and vice versa. As a result, no longer did the model present a knife-edge problem. The new mechanism also accomodated a term determined outside the model -- a parameter, a "given" -- that described the rate of technical change. (143)
+
+Looking to a residual for evidence of unseen forces was an old and useful trick in science. In 1846 the planet Neptune was discovered thanks to a residual in the calculations of Uranus's orbit; the neutrino was only a measurement residual for many years until the existence of the subatomic particle was experimentally confirmed in the 1950s. Paul Samuelson says that Solow was like Enrico Fermi, meaning an imaginative theorist who could also get things to work. The assumption was that A of (t), the rate of technical change, must explain the rest, by enhancing general productivity. (147)
+
+Economists were finding that they could exploit a property of the geometry known as duality, meaning that every problem stated in terms of a linear program was intimately related to a second problem called its dual. This was what Paul Samuelson had foreseen. Any economic problem could be worked from either end -- solve the pricing problem, and you could get the answer to the allocation problem, too. Hyperplanes also play a computational role in Dantzig's simplex method for linear programming, separating feasible solutions from ones that could not be achieved. (162)
+
+What Allyn Young had so boldly told his listeners in 1928 was that Adam Smith had missed the point. By concentrating single-mindedly on what went on *inside* the walls of the Pin Factory, he had overlooked the essential matter of the pin industry's relationship with its neighbors. The subdivision and repition of complex tasks was only part of the story of the division of labor -- the less important part at that. The invention of *new* tools and machinery and *new* materials and designs involved the division of labor as well. Often this transformation was described simply as "progress". (220)
+
+Increasing returns were an open invitation to government internvention. In this case, if the ostensibly sovereign consumer could be locked into an inferior keyboard design by the exertions of a powerful first mover, then the Invisible Hand outcome in keyboards or, perhaps, for other things as well...That was the moral of what Krugman will soon be calling QWERTY-nomics. (234)
+
+So Romer resorted to a time-honored trick. In hopes of showing that new knowledge was driving the system in some places faster than in others, he equated growth of knowledge with the rate of capital investment. After all, most new machines represented significant advances over old ones. Maybe technical progress was "built-in" to new capital investment, and could be discerned if capital could be assigned a "vintage." This was the **"embodiment" hypothesis**...(264)
+
 ## What is Economics and what does studying it entail?
 
 Managing the tension between these ends -- furthering the growth of knowledge while ensuring that its benefits are widely shared -- is a responsibility of government every bit as important as monetary and fiscal policy. If the intricate system of incentives to create new ideas is underdeveloped, society suffers from the general lack of progress (most of all, the poor). (xvii)
@@ -45,17 +72,7 @@ Romer ~ The first interaction I can remember is playing with some control theory
 
 The hard sciences excel at dealing with complex systems, says Solow, because they can isolate, they can experiment, and they can make repeated observations under controlled conditions wherein the forces being studied are not swamped by the noise. The hard sciences are good for topics like the hydrogen atom or the optic nerve. But most topics in economics are far more complex than these. The interplay between social institutions and behavior is crucial. (230)
 
-## Overarching Trends
-
-[wrt "Endogenous Technological Change"] The first paragraph contained a sentence that was intially more puzzling than not: "The distinguishing feature of ... technology as input is that it is neither a conventional good nor a public good; it is a nonrival, partially excludable good..." (xvi)
-
-his [Solow's] basic innovation was to make his model of production depend on substitution. In the Domar model there had been no possibility of substituting labor for capital in production. The ratios were fixed, and steady growth occurred only under certain rigid specified conditions. Solow replaced the fixed capital/output ratio of the Harrod and Domar models with the relatively new concept of a variable production function, whose advantages were twofold. The convention permitted producers to shift back and forth, using capital when labor was too expensive and vice versa. As a result, no longer did the model present a knife-edge problem. The new mechanism also accomodated a term determined outside the model -- a parameter, a "given" -- that described the rate of technical change. (143)
-
-Looking to a residual for evidence of unseen forces was an old and useful trick in science. In 1846 the planet Neptune was discovered thanks to a residual in the calculations of Uranus's orbit; the neutrino was only a measurement residual for many years until the existence of the subatomic particle was experimentally confirmed in the 1950s. Paul Samuelson says that Solow was like Enrico Fermi, meaning an imaginative theorist who could also get things to work. The assumption was that A of (t), the rate of technical change, must explain the rest, by enhancing general productivity. (147)
-
-Economists were finding that they could exploit a property of the geometry known as duality, meaning that every problem stated in terms of a linear program was intimately related to a second problem called its dual. This was what Paul Samuelson had foreseen. Any economic problem could be worked from either end -- solve the pricing problem, and you could get the answer to the allocation problem, too. Hyperplanes also play a computational role in Dantzig's simplex method for linear programming, separating feasible solutions from ones that could not be achieved. (162)
-
-What Allyn Young had so boldly told his listeners in 1928 was that Adam Smith had missed the point. By concentrating single-mindedly on what went on *inside* the walls of the Pin Factory, he had overlooked the essential matter of the pin industry's relationship with its neighbors. The subdivision and repition of complex tasks was only part of the story of the division of labor -- the less important part at that. The invention of *new* tools and machinery and *new* materials and designs involved the division of labor as well. Often this transformation was described simply as "progress". (220)
+We would like to think that the light bulb goes on, all at once, in colorful locations -- shouting Eureka! in the bathtub, the apple falling from the tree upon the head beneath. In fact, the discovery of the piece of the puzzle of economic growth that clarified the rest had its beginnings in a lunchroom conversation between Romer and Barro and others in the economics department at the University of Rochester. (276) 
 
 ## Random Interesting Stuff
 
@@ -65,8 +82,12 @@ The possibilities of marginalism were given their fullest statement by the Frenc
 
 It turned out N. Bourbaki was no person at all, but rather a group of French mathematicians who wrote elaborate graduate texts and ascribed their authorship to a mythical retired army general. Their enthusiasm inspired a craze for formalism among mathematicians that in the 1950s and 1960s spread even to American grade schools in the form of "the new math" -- set theory for kindergartners. (135)
 
-## Books To Read (Referenced)
+## ReadingQ (Referenced)
 
 * *The Theory of Games and Economic Behavior* (1944)
 * *Theory of Value: An Axiomatic Analysis of Economic Equilibrium*
 * *Market Structure and Foreign Trade: Increasing Returns, Imperfect Competition, and the International Economy* (1985)
+* *The Theory of Industrial Organization*
+* The "Big Push" paper (1989)
+* *An Economic Theory of Clubs* (1965)
+* [The Pure Theory of Public Expenditure](https://courses.cit.cornell.edu/econ335/out/samuelson_pure.pdf)

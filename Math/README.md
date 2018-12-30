@@ -15,7 +15,7 @@ College
 > I'm looking to improve in these areas
 
 * Logic (and /ModelTheory)
-    * [Logic Matter TLDR](https://www.logicmatters.net/tyl/shorter-tyl/)
+    * [Logic Matters TLDR](https://www.logicmatters.net/tyl/shorter-tyl/)
     * read Naive Set Theory to start off...
     * [More Teach Yourself Logic Resources](https://news.ycombinator.com/from?site=logicmatters.net)
         * [great metalink](https://www.logicmatters.net/)

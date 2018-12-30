@@ -17,3 +17,8 @@
 ### ReadingQ
 
 * [Algebraic Cryptanalysis of Jarvis and Friday](https://drive.google.com/file/d/16NOFiKxoBqe3zeRAr7quUgRbcGQTitsL/view)
+
+* [Hash-Based Signatures Part I: One-Time Signatures (OTS)](https://cryptoservices.github.io/quantum/2015/12/04/one-time-signatures.html)
+* [Hash-Based Signatures Part II: Few-Times Signatures](https://cryptoservices.github.io/quantum/2015/12/07/few-times-signatures.html)
+* [Hash-Based Signatures Part III: Many-times Signatures](https://cryptoservices.github.io/quantum/2015/12/07/many-times-signatures.html)
+* [Hash-Based Signatures Part IV: XMSS and SPHINCS](https://cryptoservices.github.io/quantum/2015/12/08/XMSS-and-SPHINCS.html)

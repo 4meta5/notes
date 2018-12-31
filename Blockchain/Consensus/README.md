@@ -23,6 +23,8 @@
 * Casper FFG
 * Consensus by bet
 
+* [Holographic Consensus by DAO Stack](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c)
+
 **Casper CBC**
 
 ## ReadingQ

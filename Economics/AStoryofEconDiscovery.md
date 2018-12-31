@@ -36,6 +36,16 @@ If a poor country maintained property rights, permitted markets to function, and
 
 Clubs were groups that shared something valuable exclusively among their members -- swimming pools, golf courses, ski mountains, toll roads, trades associations, and so on. Club goods depended critically on *excludability* to make them work. The exclusion mechanism could be a guard, a gate, a fence, a ticket office, a checklist maintained by a greeter at a door -- anything that served to let member in and keep nonmembers out. Club theory was a way of identifying impure public goods and disentangling the relationship between their costs and the groups that consumed them. (281)
 
+The distinguishing thing about the club goods is that they "weren't used up" in consumption, Buchanan noted, at least not by any one individual. Many people could enjoy their benefit at the same time. But eventually, of course, their benefits *were* exhausted; the swimming pool became crowded. So now Musgrave changed the terminology, adding a distinction between rival goods and nonrival goods. **Nonrival goods** were those that were available to all and without mutual interference. **Rival goods** were those whose benefits were enjoyed by their purchasers. (282)
+
+An indivisibility, as we have seen, or its mathematical representation, a nonconvexity, arose anytime there was a fixed cost...the unique thing about knowledge was not so much its indivisibility but rather its nonrivalry. There was indeed something indivisible about a lighthouse or a recording or a software program. It didn't exist until it was built or made or turned on, and doing that inevitably entailed a fixed cost. Once created, however, a nonrival good could be copied endlessly at almost no cost and used over and over again, without being "used up." Many people could possess it precisely because it was nonrival. (285)
+
+**Important Chart on 286**
+* degree of excludability
+* rival vs nonrival goods
+* examples: 0% excludability and nonrival => basic research and development; 100% excludability and rival => human capital (e.g. memorized commands for storing software)
+> consider some conceptual frameworks for determining the elasticity of supply and demand for rival and nonrival goods dependent upon the degree of excludability
+
 ## Overarching Trends
 
 [wrt "Endogenous Technological Change"] The first paragraph contained a sentence that was intially more puzzling than not: "The distinguishing feature of ... technology as input is that it is neither a conventional good nor a public good; it is a nonrival, partially excludable good..." (xvi)
@@ -91,3 +101,4 @@ It turned out N. Bourbaki was no person at all, but rather a group of French mat
 * The "Big Push" paper (1989)
 * *An Economic Theory of Clubs* (1965)
 * [The Pure Theory of Public Expenditure](https://courses.cit.cornell.edu/econ335/out/samuelson_pure.pdf)
+* *The Theory Externalities, Public Goods, and Club Goods* (textbook by Richard Cornes and Tood Sandler)

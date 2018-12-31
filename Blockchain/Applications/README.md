@@ -7,3 +7,6 @@
 * DEX, liquidity/loan pools
 * gambling
 * gaming
+
+* Micropayments (layer 2 scaling solutions)
+    * Althea

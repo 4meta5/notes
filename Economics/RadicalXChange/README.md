@@ -11,6 +11,8 @@
 
 ## ReadingQ
 
+* [Critique of RM by Paul Berg](https://paulrberg.com/post/2018/12/31/critique-radical-markets/)
+
 * [Radical Markets Syllabus (Princeton Course taught by Glen)](https://www.dropbox.com/s/fjzbpaoiq545s55/Syllabus.pdf?dl=0)
 * [RadicalxChange: An Academic Agenda](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3291055)
 * [Radical Markets and Generalized Capitalist Realism](https://medium.com/@mittmattmutt/radical-markets-and-generalized-capitalist-realism-16213b71ed8)

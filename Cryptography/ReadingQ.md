@@ -1,6 +1,9 @@
 # Reading List
 > papers that I want to read that I haven't read yet
 
+* [The Writings of Leslie Lamport (abridged)](https://blog.bigchaindb.com/the-writings-of-leslie-lamport-abridged-a67df77f464)
+* [The Writings of David Chaum (abridged)](https://medium.com/@mikerahqc/the-writings-of-david-chaum-abridged-c1c885b2bb64)
+
 * [Batching Techniques for Accumulators with Applications to IOPs and Stateless Blockchains](https://eprint.iacr.org/2018/1188) -- Boneh, Bunz, and Fisch (the Stanford trio), December 11, 2018
 
 * [Confidential Transactions have arrived, a dive into the AZTEC Protocol](https://medium.com/aztec-protocol/confidential-transactions-have-arrived-a-dive-into-the-aztec-protocol-a1794c00c009)

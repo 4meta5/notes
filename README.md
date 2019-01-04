@@ -1,17 +1,16 @@
 # Amar's Notes
 
-| [Principles](#Principles) | [Blockchain](#Blockchain) | [Economics](#Economics) | [RadicalXChange](#RadicalXChange) | [Cryptography](#Cryptography) | [CV](#cv) | [Website](https://about.me/amar-singh)
+| [Philosophy](#Philosophy) | [Blockchain](#Blockchain) | [Economics](#Economics) | [RadicalXChange](#RadicalXChange) | [Cryptography](#Cryptography) | [CV](#cv) | [Website](https://about.me/amar-singh)
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
 > contact me at <ars9he@virginia.edu> or <asinghchrony@protonmail.com>
 
-# Principles
-> "Time is like a river that carries us forward into encounters with reality that require us to make decisions. We can't stop our movement down this river and we can't avoid those encounters. We can only approach them in the best possible way." - [Principles](https://www.principles.com/) by Ray Dalio
+> Under some construction at the moment; will be cleaned up soon :)
 
-I have organized lists of [Articles](./Principles/Articles.md), [Books](./Principles/Books.md), and [Papers](./Principles/Papers.md) that have had a significant impact on how I perceive the world and live my life. Inspired by Ray Dalio, I have also started to catalogue [my own life principles/values](./Principles/Principles.md), most important of which include:
-1. Radical Open Mindedness
-2. Thoughtful Disagreement
-3. Pain + Reflection = Progress
+# Philosophy
+> [goto](./Philosophy)
+
+> this folder contains my `Principles`
 
 # Blockchain
 > "When we remove the gatekeepers that babysit every state transition [within an application], we can create very novel mechanisms to effectively harness collective intelligence." ~ Gavin Wood, Parity Technology London Meet-Up

@@ -16,3 +16,15 @@ Indeed, a common criticism of the Enlightenment project—that it is a Western i
 
 To take something on faith means to believe it without good reason, so by definition a faith in the existence of supernatural entities clashes with reason. Religions also commonly clash with humanism whenever they elevate some moral good above the well-being of humans, such as accepting a divine savior, ratifying a sacred narrative, enforcing rituals and taboos, proselytizing other people to do the same, and punishing or demonizing those who don’t. Religions can also clash with humanism by valuing souls above lives, which is not as uplifting as it sounds. Belief in an afterlife implies that health and happiness are not such a big deal, because life on earth is an infinitesimal portion of one’s existence; that coercing people into accepting salvation is doing them a favor; and that martyrdom may be the best thing that can ever happen to you.
 > **Religion**
+
+"If you had to choose a moment in history to be born, and you did not know ahead of time who you would be—you didn’t know whether you were going to be born into a wealthy family or a poor family, what country you’d be born in, whether you were going to be a man or a woman—if you had to choose blindly what moment you’d want to be born, you’d choose now."  ~ Barack Obama, 2016
+
+The news, far from being a “first draft of history,” is closer to play-by-play sports commentary. It focuses on discrete events, generally those that took place since the last edition (in earlier times, the day before; now, seconds before). Bad things can happen quickly, but good things aren’t built in a day, and as they unfold, they will be out of sync with the news cycle. The peace researcher John Galtung pointed out that if a newspaper came out once every fifty years, it would not report half a century of celebrity gossip and political scandals. It would report momentous global changes such as the increase in life expectancy.
+> **News**
+
+The nature of news is likely to distort people’s view of the world because of a mental bug that the psychologists Amos Tversky and Daniel Kahneman called the **Availability heuristic**: people estimate the probability of an event or the frequency of a kind of thing by the ease with which instances come to mind.
+> **News**
+
+The consequences of negative news are themselves negative. Far from being better informed, heavy newswatchers can become miscalibrated. They worry more about crime, even when rates are falling, and sometimes they part company with reality altogether: a 2016 poll found that a large majority of Americans follow news about ISIS closely, and 77 percent agreed that “Islamic militants operating in Syria and Iraq pose a serious threat to the existence or survival of the United States,” a belief that is nothing short of delusional.
+> **News**
+

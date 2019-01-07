@@ -20,6 +20,8 @@
 
 * [Why Data is Never Raw](https://www.thenewatlantis.com/publications/why-data-is-never-raw) -- On the seductive myth of information free of human judgment
 
+* [Data As Post-Industrial Labor](https://radicalxchange.org/blog/posts/2019-1-5-ydij2t/) by Ryan
+
 **Projects**
 * Ocean Protocol
     * [Exploring the SEA: Service Execution Agreements](https://blog.oceanprotocol.com/exploring-the-sea-service-execution-agreements-65f7523d85e2)

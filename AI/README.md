@@ -4,6 +4,14 @@
 * [Stormy Sea](https://github.com/prestwich/writing/blob/master/personal/stormy_sea.md) by James Prestwich
 * [Self Driving Economies](https://github.com/prestwich/writing/blob/master/personal/self_driving_economies.md) by James Prestwich
 
+## Notes
+
+* Back Propagation
+    * Hopfield Nets
+
+* Neural Networks
+    * perceptrons
+
 ## ReadingQ
 * [Neural Networks as Ordinary Differential Equations](https://rkevingibson.github.io/blog/neural-networks-as-ordinary-differential-equations/)
 

@@ -28,3 +28,9 @@ The nature of news is likely to distort people’s view of the world because of 
 The consequences of negative news are themselves negative. Far from being better informed, heavy newswatchers can become miscalibrated. They worry more about crime, even when rates are falling, and sometimes they part company with reality altogether: a 2016 poll found that a large majority of Americans follow news about ISIS closely, and 77 percent agreed that “Islamic militants operating in Syria and Iraq pose a serious threat to the existence or survival of the United States,” a belief that is nothing short of delusional.
 > **News**
 
+Seeing how journalistic habits and cognitive biases bring out the worst in each other, how can we soundly appraise the state of the world? The answer is to count. How many people are victims of violence as a proportion of the number of people alive? How many are sick, how many starving, how many poor, how many oppressed, how many illiterate, how many unhappy? And are those numbers going up or down? A quantitative mindset, despite its nerdy aura, is in fact the morally enlightened one, because it treats every human life as having equal value rather than privileging the people who are closest to us or most photogenic. And it holds out the hope that we might identify the causes of suffering and thereby know which measures are most likely to reduce it.
+
+Progress cannot always be monotonic because solutions to problems create new problems. [Solutions create new problems: Deutsch 2011, pp. 64, 76, 350; Berlin 1988/2013, p. 15.]
+
+By the way, the nonmonotonicity of social data provides an easy formula for news outlets to accentuate the negative. If you ignore all the years in which an indicator of some problem declines, and report every uptick (since, after all, it’s “news”), readers will come away with the impression that life is getting worse and worse even as it gets better and better.
+> **News**

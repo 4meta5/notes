@@ -13,3 +13,5 @@ The second payment is dependent on revealing the hash preimage which is revealed
 
 ### References
 * [What are cross-chain atomic swaps](http://bcoin.io/guides/swaps.html)
+
+* [Bitmex Research: Atomic Swaps and Distributed Exchanges: The Inadvertent Call Option](https://blog.bitmex.com/atomic-swaps-and-distributed-exchanges-the-inadvertent-call-option/)

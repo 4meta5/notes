@@ -7,6 +7,7 @@
 * Maniac Magee
 * DrDoctorPhd
 * CacheMeIfYouCan
+* Publicus
 
 ## Names for Stuff
 * Smerkle

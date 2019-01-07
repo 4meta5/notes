@@ -43,6 +43,8 @@
 
 * [Proof of Stake: How I Learned to Love Weak Subjectivity](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/)
 
+* [Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake](https://eprint.iacr.org/2018/1132)
+
 **Against PoS**
 * [PoS Require Subjectivity to Reach Consensus](https://forum.blockstack.org/t/pos-blockchains-require-subjectivity-to-reach-consensus/762?u=muneeb)
     * [Relevant Paper](https://eprint.iacr.org/2016/919.pdf)

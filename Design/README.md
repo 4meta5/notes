@@ -10,3 +10,5 @@
 ## ReadingQ
 
 * [The Chemical Basis of Morphogenesis (by Turing)](https://en.wikipedia.org/wiki/The_Chemical_Basis_of_Morphogenesis)
+
+* [Design for Non-designers – 39 Principles for Designing Effective Interfaces](https://www.spencergreenberg.com/2017/08/design-for-non-designers-39-principles-for-designing-effective-interfaces/)

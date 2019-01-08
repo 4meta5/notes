@@ -49,3 +49,5 @@
 * [PoS Require Subjectivity to Reach Consensus](https://forum.blockstack.org/t/pos-blockchains-require-subjectivity-to-reach-consensus/762?u=muneeb)
     * [Relevant Paper](https://eprint.iacr.org/2016/919.pdf)
 * [Proof-of-Stake & the Wrong Engineering Mindset](https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2)
+
+* [Alistair Stewart presents Consensus and Finality at Polkadot Seoul](https://www.youtube.com/watch?v=o1eKVi5ymSY)

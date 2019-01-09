@@ -34,3 +34,12 @@ Progress cannot always be monotonic because solutions to problems create new pro
 
 By the way, the nonmonotonicity of social data provides an easy formula for news outlets to accentuate the negative. If you ignore all the years in which an indicator of some problem declines, and report every uptick (since, after all, it’s “news”), readers will come away with the impression that life is getting worse and worse even as it gets better and better.
 > **News**
+
+Though primitive moral intuitions tend to lump bad things together and find a villain to blame them on, there is no coherent phenomenon of “bad things” that we can seek to understand and eliminate. (Entropy and evolution will generate them in profusion.) War, crime, pollution, poverty, disease, and incivility are evils that may have little in common, and if we want to reduce them, we can’t play word games that make it impossible even to discuss them individually.
+> **Political Correctness and Ascribing Fault**
+
+We are wired for nostalgia: in human memory, time heals most wounds. Two other illusions mislead us into thinking that things ain’t what they used to be: we mistake the growing burdens of maturity and parenthood for a less innocent world, and we mistake a decline in our own faculties for a decline in the times.
+> **Cognitive Bias**
+
+The expanding circle of sympathy makes us concerned about harms that would have passed unnoticed in more callous times. Today we recognize the Syrian civil war as a humanitarian tragedy. The wars of earlier decades, such as the Chinese Civil War, the partition of India, and the Korean War, are seldom remembered that way, though they killed and displaced more people. When I grew up, bullying was considered a natural part of boyhood. It would have strained belief to think that someday the president of the United States would deliver a speech about its evils, as Barack Obama did in 2011. As we care about more of humanity, we’re apt to mistake the harms around us for signs of how low the world has sunk rather than how high our standards have risen.
+> **Change in Standards**

@@ -12,6 +12,8 @@
 
 ## Community
 
+* [Why Ether is valuable](https://medium.com/ethhub/why-ether-is-valuable-2b4e39e01eb3)
+
 * [Contributing to EthHub Guidelines](https://medium.com/ethhub/introducing-ethhub-75e9f3bfa7e5)
 
 * [Ethereum Public Calls](https://docs.google.com/spreadsheets/d/1Wg_eX-mYopvWT3LeHe4-FEHOtJoG28h8YcHl4PFTX5k/edit#gid=0)

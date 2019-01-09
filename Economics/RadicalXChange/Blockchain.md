@@ -22,6 +22,8 @@
 
 * [Data As Post-Industrial Labor](https://radicalxchange.org/blog/posts/2019-1-5-ydij2t/) by Ryan
 
+* [A Blueprint for a better Digital Society](https://hbr.org/2018/09/a-blueprint-for-a-better-digital-society)
+
 **Projects**
 * Ocean Protocol
     * [Exploring the SEA: Service Execution Agreements](https://blog.oceanprotocol.com/exploring-the-sea-service-execution-agreements-65f7523d85e2)

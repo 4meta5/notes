@@ -43,3 +43,7 @@ We are wired for nostalgia: in human memory, time heals most wounds. Two other i
 
 The expanding circle of sympathy makes us concerned about harms that would have passed unnoticed in more callous times. Today we recognize the Syrian civil war as a humanitarian tragedy. The wars of earlier decades, such as the Chinese Civil War, the partition of India, and the Korean War, are seldom remembered that way, though they killed and displaced more people. When I grew up, bullying was considered a natural part of boyhood. It would have strained belief to think that someday the president of the United States would deliver a speech about its evils, as Barack Obama did in 2011. As we care about more of humanity, we’re apt to mistake the harms around us for signs of how low the world has sunk rather than how high our standards have risen.
 > **Change in Standards**
+
+In his 2006 bestseller The Singularity Is Near, the inventor Ray Kurzweil forecasts that those of us who make it to 2045 will live forever, thanks to advances in genetics, nanotechnology (such as nanobots that will course through our bloodstream and repair our bodies from the inside), and artificial intelligence, which will not just figure out how to do all this but recursively improve its own intelligence without limit.
+> **FUTURE**
+

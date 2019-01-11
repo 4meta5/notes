@@ -3,6 +3,11 @@
 
 *The most influential factor [for choosing a language is] the availability of open source libraries* ~ Empirical Analysis of Programming Language Adoption
 
+## Web Dev (UX primarily)
+
+* [7 Principles of Rich Web Applications](https://rauchg.com/2014/7-principles-of-rich-web-applications)
+    * design rationale for `zeit/next`
+
 ## Rust
 > it's awesome
 

@@ -8,6 +8,8 @@
 * [7 Principles of Rich Web Applications](https://rauchg.com/2014/7-principles-of-rich-web-applications)
     * design rationale for `zeit/next`
 
+* [XState](https://github.com/davidkpiano/xstate)
+
 ## Rust
 > it's awesome
 

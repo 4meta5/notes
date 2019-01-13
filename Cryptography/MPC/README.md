@@ -7,3 +7,5 @@
 * [A Pragmatic Introduction to Secure Multi-Party Computation](https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf) -- Professor David Evans
 
 * [MetaLink -- Resources for Getting Started with MPC](http://u.cs.biu.ac.il/~lindell/MPC-resources.html)
+
+* [rdragos/awesome-mpc](https://github.com/rdragos/awesome-mpc)

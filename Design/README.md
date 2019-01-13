@@ -7,6 +7,15 @@
 
 * [Notes that I need to organize](./random.md)
 
+* Lu Vinega
+* David Rudnick
+* Evil Rabbit (head of design at zeit)
+
+## Good Websites
+
+* WeTransfer.com
+* 
+
 ## ReadingQ
 
 * [The Chemical Basis of Morphogenesis (by Turing)](https://en.wikipedia.org/wiki/The_Chemical_Basis_of_Morphogenesis)

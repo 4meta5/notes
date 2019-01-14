@@ -4,6 +4,8 @@
 
 * [A Deep Dive on RSA Accumulators](https://beta.cent.co/+vcq48c)
 
+* [UTXO accumulators, UTXO commitments, and utreexo](http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/) by Tadge Dryja
+
 > from Benedict Buntz on his Zcash grant project
 
 [Batching techniques for RSA Accumulators and Vector Commitments](https://eprint.iacr.org/2018/1188)

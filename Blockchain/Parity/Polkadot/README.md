@@ -23,3 +23,4 @@
 **Videos**
 * [Implications of Interoperability at Web3 Summit 2018](https://www.youtube.com/watch?v=TBeGIGvC6r8&feature=youtu.be) by Rob Habermeier
 * [Rob Habermeier presents Parity Substrate: the foundation for blockchain innovators](https://www.youtube.com/watch?v=q1zLHO7Lkuk)
+* [Polkadot by Gav Wood in Beijing 12/6/2018](https://www.youtube.com/watch?v=M54wSJVHDGI)

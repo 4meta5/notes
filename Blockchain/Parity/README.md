@@ -1,10 +1,35 @@
 # Parity
-> Here is where I'll organize some of my ideas related to [Parity](https://parity.io)
+> [Parity](https://parity.io)
 
-* **[What I like about Parity](./<3.md)**
-* [Parity-Ethereum Client](./client.md)
-* [Substrate](./substrate.md)
-* [Polkadot](./polkadot.md)
+* [Praise for Parity](./<3.md)
+* [Core](#core)
+* [Substrate](#substrate)
+* [Polkadot](#polkadot)
+
+## Core <a name = "core"></a>
+
+Parity has lots of experience building infrastructure to support blockchains.
+
+* [Parity Bridge](./Core/bridge.md)
+* [Parity Secret Store](./Core/secretstore.md)
+* [Parity Ethereum](./Core/ethereum.md)
+* [Parity Zcash (history and motivation)](./Core/zcash.md)
+* [frontend](./Core/frontend.md)
+
+## Substrate <a name = "substrate"></a>
+> [What is Substrate?](https://www.parity.io/what-is-substrate/)  
+
+* [Substrate](./Substrate/)
+* [consensus](./Substrate/consensus.md)
+
+## Polkadot  <a name = "polkadot"></a>
+> [Polkadot Metalink](https://github.com/w3f/Web3-wiki/wiki/Polkadot)
+
+* [Polkadot](./Polkadot/)
+* [metagovernance (debate)](./Polkadot/metagovernance.md)
+* [Parachain](./Polkadot/parachain.md)
+* [Rationale](./Polkadot/rationale.md)
+* [Whitepaper (notes)](./Polkadot/whitepaper.md)
 
 ## Miscellaneous
 
@@ -23,35 +48,3 @@
 * Research on allowing light clients to sync quickly while avoiding the current tradeoffs. One idea is to allow full nodes to provide zero-knowledge proofs (e.g. zk-STARKs) of the latest known header. The light client could then verify this and sync with the top of the chain without prior knowledge of the blockchain state.
 
 * better bounty program for auditing critical code; sun is the best disinfectant
-
-## Frontend
-> [More Info on Parity's Frontend Code](./frontend.md)
-
-* smart contracts on light clients (seems like the way things will work)
-
-## Substrate
-> [More Info on Substrate](./substrate.md)
-
-* Rhododendron module
-
-* Shasper (Serenity) module --> optimize SSZ
-
-* MimbleWimble consensus module
-* Coda consensus module (scaling transaction throughput with zero knowledge proofs -- see Bellman in Misc)
-
-## Polkadot
-> [More Info on Polkadot](./polkadot.md)
-
-"Blockchain designed for scalability and interoperability. We have a root relay chain which manages the advancement and security of various parachains, which have their own state machines and can communicate amongst eachother"
-
-"At Parity, we've built a number of clients for different blockchains. Substrate is a framework for creating different kinds of chains.
-
-"Goal is to be adaptable -- you can update the runtime (the code itself); something that can change without a hard fork. We want a first class light client. A full node has a significant load on your system. Your average user should just have a light client. We start from the beginning with a light client. We want governance -- extends beyond encoded logic of the chain. 
-
-Powerful tool in a blockchain
-
-We want to leverage this property
-
-Signature on 
-
-Progressive consensus

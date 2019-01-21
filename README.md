@@ -1,7 +1,7 @@
 # Amar's Notes
 
 | [AI](./AI) | [Blockchain](./Blockchain) | [Code](./Code) | [Cryptography](./Cryptography) | [CV](./CV) | [Design](./Design) | [Economics](./Economics) | [Math](./Math) | [Philosophy](./Philosophy) | [Website](https://about.me/amar-singh) |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |   ------------- | ------------- | ------------- |
 
 > contact me at <ars9he@virginia.edu> or <asinghchrony@protonmail.com>
 

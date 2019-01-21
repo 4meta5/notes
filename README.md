@@ -1,42 +1,38 @@
 # Amar's Notes
 
-| [Philosophy](#Philosophy) | [Blockchain](#Blockchain) | [Economics](#Economics) | [RadicalXChange](#RadicalXChange) | [Cryptography](#Cryptography) | [CV](#cv) | [Website](https://about.me/amar-singh)
+| [AI](./AI) | [Blockchain](./Blockchain) | [Code](./Code) | [Cryptography](./Cryptography) | [CV](./CV) | [Design](./Design) | [Economics](./Economics) | [Math](./Math) | [Philosophy](./Philosophy) | [Website](https://about.me/amar-singh) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
 > contact me at <ars9he@virginia.edu> or <asinghchrony@protonmail.com>
 
-> Under some construction at the moment; will be cleaned up soon :)
+## AI
 
-# Philosophy
-> [goto](./Philosophy)
+* [The AI Revolution: The Road to Superintelligence](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html) by Tim Urban
 
-> this folder contains my `Principles`
+## Blockchain
 
-# Blockchain
-> "When we remove the gatekeepers that babysit every state transition [within an application], we can create very novel mechanisms to effectively harness collective intelligence." ~ Gavin Wood, Parity Technology London Meet-Up
+* [Why We Need Web 3.0](https://medium.com/@gavofyork/why-we-need-web-3-0-5da4f2bf95ab) by Gavin Wood
 
-I am learning Rust to hack on Parity's Substrate framework for building blockchains in preparation for the launch of the Polkadot network in Q3 2019.
+## Code
 
-# Economics
-> "To put it bluntly, the discipline of economics has yet to get over its childish passion for mathematics and for purely theoretical and often highly ideological speculation, at the expense of historical research and collaboration with the other social sciences." - Thomas Picketty, [Capital in the 21st Century](http://www.hup.harvard.edu/catalog.php?isbn=9780674979857)
+* [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
 
-I am fascinated by contemporary monetary policy, especially large scale asset purchases (also known as QE) and the impact a large balance sheet will have on the Fed (and other central bank) decisions moving forward. Somewhat related, being part of the Federal Reserve Challenge team at UVA was very formative for me during my time in college and it was by far my favorite extracurricular activity.
+## Cryptography
 
-## RadicalXChange
-> "In the present stage of technological and economic development, when cooperation has grown too large to be managed by moral economies, the market is the appropriate computer to achieve the greatest good for the greatest number. If we see it as such, we can fix the bugs in the market's code and enable it to generate more wealth that is distributed more fairly." - [Radical Markets](http://radicalmarkets.com/) by Eric Posner, E. Glen Weyl
+* [Bitcoin's Academic Pedigree](https://queue.acm.org/detail.cfm?id=3136559)
 
-I am committed to realizing the Radical Markets vision via the RadicalXChange movement (led by E. Glen Weyl). In this folder, I have organized my [notes](./Economics/RadicalXChange/RadicalMarkets.md) on the book, [ideas](./Economics/RadicalXChange/Ideas.md) motivated by the book, and thoughts on related topics (like QV, Liberal Radicalism, etc).
+## Design
 
-# Cryptography
-> "If privacy is outlawed, only outlaws will have privacy." - Phil Zimmerman, [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
+* [The Chemical Basis of Morphogenesis (by Turing)](https://en.wikipedia.org/wiki/The_Chemical_Basis_of_Morphogenesis)
 
-[Cryptography](./Cryptography/README.md) is empowering -- if used correctly, it will liberate individuals from institutional tyranny and contribute to a massive rebalancing of power. 
+## Economics
 
-Aside from the positive impact this field has wrt securing individual liberty, I also enjoy the aesthetics of the pure mathematics often used to build secure, durable cryptosystems. 
+* [Radical Markets and Generalized Capitalist Realism](https://medium.com/radicalxchange/radical-markets-and-generalized-capitalist-realism-16213b71ed8)
 
-# CV
-> "By the time a student gets to college, he’s spent a decade curating a bewilderingly diverse résumé to prepare for a completely unknowable future. Come what may, he’s ready—-for nothing in particular." - Peter Thiel, [0 to 1](http://zerotoonebook.com/)
+## Math
 
-* [Old Resume](./cv/old/Resume.pdf)
-* [Blockchain Story](./cv/blockchain.md)
-* [Markets Story](./cv/markets.md)
+* [Jeremy Kun's Primers](https://jeremykun.com/primers/)
+
+## Philosophy
+
+* [Icarus Moment](https://www.epsilontheory.com/the-icarus-moment/) by Ben Hunt, Epsilon Theory

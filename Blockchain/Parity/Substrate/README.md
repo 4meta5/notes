@@ -1,6 +1,4 @@
 # Substrate
-> make this into its own directory soon
-
 > notes on [Substrate](https://github.com/paritytech/substrate)
 
 Substrate consists of three main technologies: WebAssembly, Libp2p, and AfG Consensus. At a high level, it's a framework for creating decentralized systems. It abstracts away the necessary cryptographic primitives, networking code, and database storage in order to allow developers to focus on the decentralized system's state transition function.

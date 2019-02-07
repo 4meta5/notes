@@ -1,9 +1,9 @@
 # Amar's Notes
 
-| [AI](./AI) | [Blockchain](./Blockchain) | [Code](./Code) | [Cryptography](./Cryptography) | [CV](./CV) | [Design](./Design) | [Economics](./Economics) | [Math](./Math) | [Philosophy](./Philosophy) | [Website](https://about.me/amar-singh) |
+| [AI](./AI) | [Blockchain](./Blockchain) | [Code](./Code) | [Cryptography](./Cryptography) | [CV](./CV) | [Design](./Design) | [Economics](./Economics) | [Math](./Math) | [Philosophy](./Philosophy) | [Website](https://amarsingh.xyz) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |   ------------- | ------------- | ------------- |
 
-> contact me at <ars9he@virginia.edu> or <asinghchrony@protonmail.com>
+> contact me at <asinghchrony@protonmail.com>
 
 ## AI
 

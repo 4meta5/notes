@@ -1,5 +1,7 @@
 # Information Theory
 
+> [A Mini-Introduction to Information Theory](https://arxiv.org/pdf/1805.11965.pdf) by Edward Witten, Princeton
+
 * [Erasure Encoding Notes](./ErasureEncoding.md)
 * [Error Correction Notes](./ErrorCorrection.md)
 

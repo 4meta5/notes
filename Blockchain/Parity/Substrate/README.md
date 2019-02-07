@@ -1,6 +1,24 @@
 # Substrate
 > notes on [Substrate](https://github.com/paritytech/substrate)
 
+* [Development](#dev)
+* [Conceptual](#concept)
+
+## Development <a name = "dev"></a>
+> **read the source code from the [Substrate Runtime Module Library](https://github.com/paritytech/substrate/tree/master/srml)**
+
+* [Substrate Collectables Workshop](https://github.com/shawntabrizi/substrate-collectables-workshop)
+* [Substrate Proof of Existence](https://github.com/shawntabrizi/substrate-proof-of-existence)
+* [Substrate TCR](https://github.com/gautamdhameja/substrate-tcr)
+* [Substrate Events Listener](https://github.com/gautamdhameja/substrate-events-listener)
+
+> [documentation](https://substrate.readme.io/docs)
+
+* [Substrate Runtime Recipes](https://substrate.readme.io/docs/substrate-runtime-recipes)
+* [AdEx Notes](https://hackmd.io/p_v1M8WGRyy9PggYiKA_Xw#)
+
+## Conceptual <a name = "concept"></a>
+
 Substrate consists of three main technologies: WebAssembly, Libp2p, and AfG Consensus. At a high level, it's a framework for creating decentralized systems. It abstracts away the necessary cryptographic primitives, networking code, and database storage in order to allow developers to focus on the decentralized system's state transition function.
 
 * [What is Substrate?](https://www.parity.io/what-is-substrate/)

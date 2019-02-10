@@ -15,6 +15,8 @@ I have organized lists of [Articles](./Principles/Articles.md), [Books](./Princi
 * Ben Hunt, Epsilon Theory
     * [Icarus Moment](https://www.epsilontheory.com/the-icarus-moment/)
 
+* [Good stuff on objective truth and uncertainty here by rauchg](https://rauchg.com/2017/2016-in-review)
+
 * Veil of Ignorance
 
 * Maslow's Hierarchy

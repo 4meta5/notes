@@ -5,6 +5,8 @@
 * [Erasure Encoding Notes](./ErasureEncoding.md)
 * [Error Correction Notes](./ErrorCorrection.md)
 
+> [A Mathematical Theory of Communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) by Shannon
+
 ## Intro to Information Theory
 
 There are two basic problems central to Information Theory.

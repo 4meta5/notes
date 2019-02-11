@@ -16,6 +16,7 @@
 ## Code
 
 * [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
+* [`rust-playground`](https://github.com/AmarRSingh/rust-playground)
 
 ## Cryptography
 

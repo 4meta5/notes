@@ -13,8 +13,7 @@
 ## Rust
 > it's awesome
 
-* [RustFest Rome 2018 - Aaron Turon: Grappling with growth, and other good problems to have](https://www.youtube.com/watch?v=0sIgVnRAcn0&feature=youtu.be&app=desktop)
-* [Declarative programming in Rust](https://www.youtube.com/watch?v=0W20GPEqbcU)
+* [`rust-playground`](https://github.com/AmarRSingh/rust-playground)
 
 ### TODO
 * learn a functional programming language

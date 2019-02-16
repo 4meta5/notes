@@ -4,6 +4,8 @@
 
 ### References
 
+*Intro* -- [Oracles and Oraclize](https://www.harun.io/posts/oracles-and-oraclize/)
+
 * [Oracles and Schelling Points](https://beta.kauri.io/article/560693efab534c97a8f97b251984773d/v1/on-oracles-and-schelling-points)
 * [Focal points in tacit bargaining problems: Experimental Evidence](https://www.sciencedirect.com/science/article/pii/S0014292112001602)
 * [Stake size and the power of focal points in coordination games: Experimental evidence](https://www.sciencedirect.com/science/article/pii/S0899825615000688)

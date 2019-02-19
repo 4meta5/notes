@@ -5,16 +5,23 @@
 * [Conceptual](#concept)
 
 ## Development <a name = "dev"></a>
-> **read the source code from the [Substrate Runtime Module Library](https://github.com/paritytech/substrate/tree/master/srml)**
+> [runtime recipe notes](./recipes.md) ([src](https://substrate.readme.io/docs/substrate-runtime-recipes))
+
+* **[eDSL library for smart contracts](https://github.com/paritytech/fleetwood)**
+
+* **[Substrate Runtime Module Library](https://github.com/paritytech/substrate/tree/master/srml)**
 
 * [Substrate Collectables Workshop](https://github.com/shawntabrizi/substrate-collectables-workshop)
 * [Substrate Proof of Existence](https://github.com/shawntabrizi/substrate-proof-of-existence)
 * [Substrate TCR](https://github.com/gautamdhameja/substrate-tcr)
 * [Substrate Events Listener](https://github.com/gautamdhameja/substrate-events-listener)
 
+* [ERC721 on Substrate](https://github.com/parity-samples/substrate-erc721)
+* [`cumulus`: write parachains on Substrate](https://github.com/paritytech/cumulus)
+
 > [documentation](https://substrate.readme.io/docs)
 
-* [Substrate Runtime Recipes](https://substrate.readme.io/docs/substrate-runtime-recipes)
+* [srml example use w/ comments](https://github.com/paritytech/substrate/blob/master/srml/example/src/lib.rs)
 * [AdEx Notes](https://hackmd.io/p_v1M8WGRyy9PggYiKA_Xw#)
 
 ## Conceptual <a name = "concept"></a>

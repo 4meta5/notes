@@ -15,7 +15,7 @@
 
 ## Code
 
-* [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
+* [The Monadic Morass or Turing Tarpit](http://trevorjim.com/the-monadic-morass/) by Trevor Jim
 * [`rust-playground`](https://github.com/AmarRSingh/rust-playground)
 
 ## Cryptography

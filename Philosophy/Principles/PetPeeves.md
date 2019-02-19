@@ -9,6 +9,8 @@ These are a few of my pet peeves.
     - ben shapiro is the master of these (he's great both at pointing out when other people abuse analogies and then using abusive hyperbole to make his own points)
 * ad hominem 
 * quoting someone to justify a point (like opposite of ad hominem)
+* invoking `wokeness` to justify an opinion backed  by a generalization (and generalizations are often unnecessary and reactive by nature)
+* Good Ole Days Fallacy (ie Make America Great Again)
 
 ## Attachment to Grades/School
 

@@ -15,6 +15,8 @@
 
 > it's a real shame when someone cuts you off (or anyone off) as soon as they think they get something because it can often lead to them missing a significant portion of the explanation -- I see this very often when I try to explain blockchain technology to people because they aren't willing to reason through the 3-4 steps necessary to truly understand the value proposition (I ascribe this to decreased attention spans as well as this common fallacy of asserting knowledge on unknown topics for social signalling)
 
+7. Altruist's Dilemma: Would you rather have your solution be rendered useless because the problem dissipates or useful and used to solve the problem in question?
+
 ## Relevant Accounts
 * Naval
 * Thibaut

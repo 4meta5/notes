@@ -1,5 +1,5 @@
 # Polkadot
-> [Polkadot Metalink](https://github.com/w3f/Web3-wiki/wiki/Polkadot)
+> [Polkadot Metalink](https://github.com/w3f/Web3-wiki/wiki/Polkadot), [teams building on Polkadot](https://forum.web3.foundation/t/teams-building-on-polkadot/67)
 
 **Where are we now?**
 * PoC-1: Governance, staking, basic UI, and forkless upgrades

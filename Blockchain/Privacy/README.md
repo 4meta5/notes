@@ -10,3 +10,6 @@
     * irony is that this came out right before the SNARK cve was publicly released
 
 * [BLOCKCHAIN PRIVACY: EQUAL PARTS THEORY AND THEATER](https://www.tokendaily.co/blog/blockchain-privacy-equal-parts-theory-and-theater) by Iam Miers
+
+## Recent Events
+* [As Facebook Raised a Privacy Wall, It Carved An Opening for Tech Giants](https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html)

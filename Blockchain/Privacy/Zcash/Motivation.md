@@ -15,6 +15,3 @@ This is a mistake. To foster an environment in which people can be truly safe, w
 
 ## Zcash 
 Building on decades of research, Zcash was developed and launched by top cryptographers from MIT, Technion, John Hopkins, Tel Aviv University, and UC Berkeley. [Zcash](https://z.cash/) is a blockchain that ensures complete confidentiality of transaction data. Zero-knowledge proofs allow transactions to be verified without revealing the sender, receiver or transaction amount.
-
-### Recent Events
-* [As Facebook Raised a Privacy Wall, It Carved An Opening for Tech Giants](https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html)

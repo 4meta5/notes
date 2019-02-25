@@ -20,3 +20,15 @@ Vlad Zamfir: *"achieving information security goals using cryptography in econom
 ## ReadingQ
 
 * [The use of knowledge in computers: introducing nanoeconomics](https://medium.com/@cryptoeconomics/the-use-of-knowledge-in-computers-introducing-nanoeconomics-2a1b7ef5061b)
+
+* [Crypto Public Choice](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3236025)
+
+
+* [Central Planning as Overfitting](https://radicalxchange.org/blog/posts/2018-11-26-4m9b8b/)
+    * come up with a rebuttal for this; use the same concepts to argue for on-chain governance
+
+### Rent
+
+* [A Systematic Approach to Cryptocurrency Fees](http://fc18.ifca.ai/bitcoin/papers/bitcoin18-final18.pdf)
+
+* [A Simple and principled way to compute rent fees](https://ethresear.ch/t/a-simple-and-principled-way-to-compute-rent-fees/1455)

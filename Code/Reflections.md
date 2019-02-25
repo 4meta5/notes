@@ -3,7 +3,7 @@
 * [Articles, Speeches, Papers, Books](#general)
 * [Discipline](#discipline)
 
-## Articles, Speeches, Papers, Books <a name="general"></a>
+## Articles, Speeches, Papers, Books, Talks <a name="general"></a>
 
 * [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
 

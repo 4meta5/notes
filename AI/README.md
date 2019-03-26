@@ -21,6 +21,8 @@
 
 * [A Beginner's Guide to the Mathematics of Neural Networks](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.3556&rep=rep1&type=pdf)
 
+* [It’s Only Natural: An Excessively Deep Dive Into Natural Gradient Optimization](https://towardsdatascience.com/its-only-natural-an-excessively-deep-dive-into-natural-gradient-optimization-75d464b89dbb)
+
 * [An Idiot’s guide to support vector machines (SVMs)](http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf)
 
 ### Tangential ReadingQ

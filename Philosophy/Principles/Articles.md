@@ -28,6 +28,7 @@ Some articles that have especially shaped my worldview...
 ## Culture
 
 * [Silent Technical Privilege](http://pgbovine.net/tech-privilege.htm) by Philip Guo
+* [A Critique of Effective Altruism](https://www.lesswrong.com/posts/E3beR7bQ723kkNHpA/a-critique-of-effective-altruism) by benkuhn
 
 ## Psychology
 

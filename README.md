@@ -29,10 +29,12 @@
 ## Economics
 
 * [Radical Markets and Generalized Capitalist Realism](https://medium.com/radicalxchange/radical-markets-and-generalized-capitalist-realism-16213b71ed8)
+* [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/)
 
 ## Math
 
 * [Jeremy Kun's Primers](https://jeremykun.com/primers/)
+* [Did Earlier Thoughts Inspire Grothondiek?](http://www.staff.science.uu.nl/~oort0109/AGRoots-final.pdf)
 
 ## Philosophy
 

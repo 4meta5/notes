@@ -1,5 +1,4 @@
 # Network Layer (L0)
-> lmao if you thought this was the other kind of *networking*
 
 * devp2p
 
@@ -7,9 +6,6 @@
 
 * [BloxRoute](https://bloxroute.com/)
 * panoramic mixnet protocol => [Nym](https://nymtech.net/)
-
-
-## Research Todo
 
 * efficient broadcasting
 * network topology discovery

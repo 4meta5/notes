@@ -1,7 +1,9 @@
 # Cryptography
 > "If privacy is outlawed, only outlaws will have privacy." - Phil Zimmerman, [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
 
-Cryptography is empowering and beautiful. By enabling the de facto protection of privacy over digital interactions, modern cryptography has enabled the protection of individual rights.
+**[have one joint and keep it well oiled](https://www.imperialviolet.org/2016/05/16/agility.html)**. 
+
+## (college)
 
 In the Spring of 2018, I wrote a [survey paper on Fully Homomorphic Encryption](./ModernFHE.pdf) for UVA CS 4501 Introduction to Cryptography, taught by Professor Mohammed Mahmoody. I have also compiled a [list](./Bitcoin.md) of the academic ideas from Cryptography that underpin Bitcoin based on [Bitcoin's Academic Pedigree](https://queue.acm.org/detail.cfm?id=3136559) by Arvind Narayanan and Jeremy Clark.
 

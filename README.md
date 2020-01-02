@@ -28,7 +28,7 @@
 
 ## Economics
 
-* [Radical Markets and Generalized Capitalist Realism](https://medium.com/radicalxchange/radical-markets-and-generalized-capitalist-realism-16213b71ed8)
+* [Mankiw's Modern Monetary Theory Notes](https://scholar.harvard.edu/files/mankiw/files/skeptics_guide_to_modern_monetary_theory.pdf)
 * [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/)
 
 ## Math

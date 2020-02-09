@@ -21,6 +21,8 @@ The rate of a city's population growth cannot be attributed to advance planning.
 
 In countries and regions, a natural equilibrium is reached between the size of the population and the firms choosing to settle in small, medium and large cities. This equilibrium is created by the accumulated decisions of firms and households to "vote with their feet", thereby selecting to move to the cities that will grow and to leave the cities or villages that have less potential. The spontaneous spatial equilibrium created by the sum of uncoordinated, individual decisions illustrate the principle of *Order without Design*
 
+**Quantities of Private Goods are Determined by Markets, While Quantities of Public Goods Depend on Design**
+
 ## Rules/Trends
 
 Land prices decreased as one got further away from city centers. When land prices were high, households and firms consumed less land and as a consequence, population density increased. While the objective of urban planning regulations was nearly always to limit densities, I noticed that they had very little success in doing so when the price of land was high compared to household income.
@@ -49,3 +51,21 @@ Failure to manage urban transportation in a manner that maintains mobility resul
 Because the time spent commuting is a dead loss for both individuals and employers, the size and efficiency of a labor market depends on how short, cheap, and comfortable the commute is. The maximum cost in time and cash that workers are willing to spend commuting will there dictate the size of the labor market and, by extension, the productivity of a city.
 
 **The Effective Size of the Labor Market Depends on Travel Time and the Spatial Distribution of Jobs** (pg 35)
+
+### Infrastructure
+
+Governments have to use the power of eminent domain to purchase land for road alignment to link together local, privately built road segments. While the government may well compensate landowners for their land at an equivalent market price, the acquisition of the land under eminent domain is not a market operation. There is only one buyer: the government, and the seller of the land has no choice but to sell, regardless of whether she is willing to do so. (pg 62)
+
+Increasingly, governments are using contracts with private firms to build major discrete lengths of road or rail infrastructure. These build-operate-transfer (BOT) or build-operate-own-transfer (BOOT) contracts, however, do not in any way remove the primary responsibility from the government for initiating the design, deciding on the specifications, and imposing the contractual agreement. In BOT or BOOT arrangements, the government is always the initiator. Therefore, regardless of a BOT contract, the outcome is the same: A major road is always the product of government design, not of market mechanisms, even when a private contractor builds it, maintains it, and collects toll from its users. (pg 62)
+
+**Urban Road Networks Made of Privately Developed Access Roads Results in Poor Metropolitan Road Networks** (pg 63)
+So far, cities have yet to find a way to entirely rely on the private sector to design, finance, and operate a metropolitan network of roads without any government intervention.
+
+### Spatial Distribution of Land Prices and Densities (ch 4)
+
+The simplest version of the standard urban model is based on the following assumptions (pg 96):
+1. The city is located in a featureless plain where agricultural land has a uniform rent
+2. All jobs are concentrated in a central business district (CBD)
+3. People commute to work following an infinite number of straight radial roads
+
+The model aims to predict the variations in land price and density (ie land consumption) when land users compete with one another and when their transport costs are proportional to the distance between their residence and the city center.

@@ -23,6 +23,19 @@ In countries and regions, a natural equilibrium is reached between the size of t
 
 **Quantities of Private Goods are Determined by Markets, While Quantities of Public Goods Depend on Design**
 
+### Decadal City Master Plans
+
+About once every 10 years, many cities prepare a new master plan to guide future development. The master plan preparation usually follows the availability of new decadal census results. Typically, a master plan consists of three components:
+* a review of past development trends and an identification of current issues
+* a declaration of development objectives and priorities
+* a proposal for future development (including a land use map of areas to be developed, a proposal for new zoning regulations, and a list of public investments in civil work and social infrastructure consistent with the implementation of the plan's objectives
+
+In democratically elected municipalities, public hearings and public participation are expected during the various phases of preparation and before final approval by the municipal government...The traditional master plan exercise seems to be a fossil left over from the time when the planning practices of command economies fascinated the world. It would make more sense for cities to monitor data and indicators in real time and to adjust policy and investments according to what works and what does not, rather than waiting 10 years to assess results and eventually changing direction. (pg 131)
+
+Some cities like Singapore and Hong Kong, have adopted a real-time monitoring adjustment approach for managing their development. Their management system has become more similar to that of corporations, which have to adopt rapidly to external shocks. (pg 131)
+
+**Hanoi Master Plan Case Study (pg 131)**
+
 ## Rules/Trends
 
 Land prices decreased as one got further away from city centers. When land prices were high, households and firms consumed less land and as a consequence, population density increased. While the objective of urban planning regulations was nearly always to limit densities, I noticed that they had very little success in doing so when the price of land was high compared to household income.
@@ -69,3 +82,17 @@ The simplest version of the standard urban model is based on the following assum
 3. People commute to work following an infinite number of straight radial roads
 
 The model aims to predict the variations in land price and density (ie land consumption) when land users compete with one another and when their transport costs are proportional to the distance between their residence and the city center.
+
+#### Land Development Cost and the Limit of Urbanization
+
+In many cities, land subdivision regulations are setting minimum standards that developers have to meet to transform agricultural land into developable urban lots (pg 123). Complying with these regulations imposes four types of costs:
+1. civil work costs for roads, sidewalks, and infrastructure
+2. land costs, as some of the land bought from farmers has to be set aside for roads, social facilities, and open space
+3. overhead costs that include design, supervision, and "paper publishing" to obtain the various permits from different departments
+4. financial costs represented by interest during construction (interest has to be paid on the amount disbursed between the time land is acquired and the time when the plots are ready to be sold to builders)
+
+Informal developments are likely to develop at the fringe of urbanization in cities where the costs of land development are higher than what a portion of the population can afford (or is willing to pay). When a large part of the urban population cannot afford the cost of the minimum standards imposed by regulation, the enforcement of the planning rules becomes impossible...In Mumbai, informal settlements represented more than 55 percent of the housing stock in 2010. **The growth of informality is not necessarily driven by poverty but by the arbitrariness and high cost of land use regulations.** (pg 128)
+
+**Informal development is a market response to the design rigidity imposed by regulations.**
+
+A 2008 paper estimates that about 114,000 units of illegal new dwellings were built in New York City between 1990 and 2000. These new units were created by subdividing and expanding legally acquired houses built in existing developments...**The growth of informal sectors in developed and developing countries has the same cause: poorly conceived land use regulations that do not take into account the income of poor households.** (pg 128)

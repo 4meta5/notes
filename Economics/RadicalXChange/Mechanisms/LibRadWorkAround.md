@@ -11,13 +11,9 @@
 Even though the authors provide a novel solution for optimizing the allocation of public funds, their solution **assumes that the protocol can establish identity**, which is a huge limitation for applications on permissionless networks. Indeed, *permissionless* is usually indicative of an environment in which participants are free to join/leave the pool of *[keepers](https://medium.com/@rzurrer/keepers-workers-that-maintain-blockchain-networks-a40182615b66)* without linking their identity. Interestingly, modern cryptography may allow us to engineer an anti-sybil mechanism for permissionless crowdfunding networks. 
 
 ## Sybil Attacks <a name="sybil"></a>
-Before we proceed, I want to be clear why [Liberal Radicalism](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656) makes the assumption that we can establish identity. When we establish identity, it is immediately clear how many people have participated in the crowdfunding scheme. The main idea behind Liberal Radicalism is to use the number of donors to guide the matching of public funds to private contributions. In this manner, the protocol described by Vitalik gives disproportionately more public funding to projects that have more individual supporters. However, blockchain applications are designed to be permissionless. Donors may not want to disclose their identity for personal reasons, and they deserve this right to privacy. Now it seems like we're in a bit of a *quagmire*.
+Before we proceed, I want to be clear why [Liberal Radicalism](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656) makes the assumption that we can establish identity. When we establish identity, it is immediately clear how many people have participated in the crowdfunding scheme. The main idea behind Liberal Radicalism is to use the number of donors to guide the matching of public funds to private contributions. In this manner, the protocol described by Vitalik gives disproportionately more public funding to projects that have more individual supporters. However, blockchain applications are designed to be permissionless. Donors may not want to disclose their identity for personal reasons, and they deserve this right to privacy.
 
-![Quagmire](assets/quagmire.jpg)
-
-If we let anyone make user accounts, we ignore the obvious sybil attack vector in which anyone can make an infinite number of accounts. 
-
-![Fake Accounts](assets/fake.jpg)
+If we let anyone make user accounts, we ignore the obvious sybil attack vector in which anyone can make an infinite number of accounts.
 
 But, what if we weight each participant's vote according to how much of some cryptocurrency they stake? This solves the sybil attack vector in one sense (no additional benefit to creating fake accounts), but it still doesn't tell us how many individuals voted. We need to know how many individuals voted in order to allocate public funding accordingly. With this in mind, our two basic requirements for a decentralized crowdfunding mechanism are:
 1. Identify the number of donors

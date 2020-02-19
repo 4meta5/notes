@@ -1,6 +1,6 @@
 # Cities
 
-misc notes, inspired by reading [Order Without Design](./OrderWithoutDesign.md)
+misc notes, inspired by reading [Order Without Design](../OrderWithoutDesign.md)
 
 * [nyc](./nyc.md)
 * [buenos aires](./buenos_aires.md)
